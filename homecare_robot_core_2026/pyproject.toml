@@ -1,0 +1,87 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "everybot"
+version = "0.0.1"
+description = ""
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "Proprietary"}
+authors = [
+  {name = "sjk", email = "jksong@everybot.net"},
+]
+keywords = ["robot", "jetson", "linux", "softap", "mqtt"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Operating System :: POSIX :: Linux",
+]
+
+# 런타임 최소 의존성(표준 라이브러리 위주로 설계했기 때문에 비워도 됨)
+dependencies = [
+]
+
+# 선택 의존성: 필요한 기능만 설치 가능하게
+[project.optional-dependencies]
+yaml = ["PyYAML>=6.0.1"]
+mqtt = ["paho-mqtt>=2.1.0"]
+dev = [
+  "pytest>=8.0.0",
+  "ruff>=0.6.0",
+  "mypy>=1.8.0",
+  "types-PyYAML>=6.0.12.20240808",
+]
+
+# 콘솔 스크립트로도 실행하고 싶으면 제공 (python -m everybot 없이도)
+[project.scripts]
+everybot = "everybot.__main__:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["everybot*"]
+
+# -------------------------
+# Ruff: lint + format
+# -------------------------
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+src = ["src"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
+ignore = ["E501"]  # line-length는 formatter가 관리
+
+[tool.ruff.lint.isort]
+known-first-party = ["everybot"]
+combine-as-imports = true
+
+# -------------------------
+# MyPy
+# -------------------------
+[tool.mypy]
+python_version = "3.10"
+mypy_path = "src"
+packages = ["everybot"]
+strict = false
+warn_unused_ignores = true
+warn_redundant_casts = true
+warn_return_any = false
+disallow_untyped_defs = false
+no_implicit_optional = true
+
+# PyYAML이 optional이라서, 설치 안 했을 때도 타입체크가 죽지 않게
+[[tool.mypy.overrides]]
+module = ["yaml"]
+ignore_missing_imports = true
+
+# -------------------------
+# Pytest
+# -------------------------
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"

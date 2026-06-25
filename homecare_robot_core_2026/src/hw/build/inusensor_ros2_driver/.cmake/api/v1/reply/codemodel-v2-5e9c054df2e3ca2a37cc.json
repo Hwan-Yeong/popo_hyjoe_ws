@@ -1,0 +1,79 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-a056cfab584c50107bef.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "inusensor_ros2_driver",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "inusensor_ros2_driver_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-inusensor_ros2_driver_node-7682c8b864c403cf2708.json",
+					"name" : "inusensor_ros2_driver_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "inusensor_ros2_driver_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-inusensor_ros2_driver_uninstall-c4252de9165d800404a6.json",
+					"name" : "inusensor_ros2_driver_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-da1d5ef158d57e8834cc.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/everybot/bt_ws/homecare_robot_core_2026/src/hw/build/inusensor_ros2_driver",
+		"source" : "/home/everybot/bt_ws/homecare_robot_core_2026/src/hw/src/inusensor_ros2_driver"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

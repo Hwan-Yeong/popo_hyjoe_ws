@@ -1,0 +1,633 @@
+2026-05-22T13:37:25+0900 jetson python[93081]: 2026-05-22 13:37:25.804 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/config/destinations type=config_destinations
+2026-05-22T13:37:25+0900 jetson python[93081]: 2026-05-22 13:37:25.804 INFO everybot.app.wiring: [BtLayer] config published: 8 destinations, 0 visits
+2026-05-22T13:37:27+0900 jetson python[93081]: 2026-05-22 13:37:27.861 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/config/destinations type=config_destinations
+2026-05-22T13:37:27+0900 jetson python[93081]: 2026-05-22 13:37:27.861 INFO everybot.app.wiring: [BtLayer] config published: 8 destinations, 0 visits
+2026-05-22T13:37:30+0900 jetson python[93081]: 2026-05-22 13:37:29.913 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/status type=robot_status
+2026-05-22T13:37:30+0900 jetson python[93081]: 2026-05-22 13:37:29.914 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/location type=location_update
+2026-05-22T13:37:30+0900 jetson python[93081]: 2026-05-22 13:37:29.914 INFO everybot.app.wiring: [BtLayer] robot/location published: id=sweethome name=대기영역 (0.75, -0.04)
+2026-05-22T13:37:30+0900 jetson python[93081]: 2026-05-22 13:37:29.914 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/config/destinations type=config_destinations
+2026-05-22T13:37:30+0900 jetson python[93081]: 2026-05-22 13:37:29.915 INFO everybot.app.wiring: [BtLayer] config published: 8 destinations, 0 visits
+2026-05-22T13:37:30+0900 jetson python[93081]: 2026-05-22 13:37:30.481 INFO everybot.app.wiring: [BB] init=True scenario=idle emg=False map=True wifi=True battery=89%
+2026-05-22T13:37:32+0900 jetson python[93081]: 2026-05-22 13:37:32.013 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/config/destinations type=config_destinations
+2026-05-22T13:37:32+0900 jetson python[93081]: 2026-05-22 13:37:32.014 INFO everybot.app.wiring: [BtLayer] config published: 8 destinations, 0 visits
+2026-05-22T13:37:32+0900 jetson python[93081]: 2026-05-22 13:37:32.956 INFO everybot.services.ui_mqtt_service: [UiMqtt] recv topic=robot/cmd/release type=request_scenario_start
+2026-05-22T13:37:33+0900 jetson python[93081]: 2026-05-22 13:37:33.032 INFO everybot.bt.bridge: [Bridge] UiMqtt msg received: type=request_scenario_start
+2026-05-22T13:37:33+0900 jetson python[93081]: 2026-05-22 13:37:33.033 INFO everybot.bt.bridge: [Bridge] scenario_start → patrol_situation_check params={}
+2026-05-22T13:37:33+0900 jetson python[93081]: 2026-05-22 13:37:33.049 INFO everybot.bt.nodes: [LoadPatrolConfig] waypoints=['demo', 'home', 'demo'] dwell=10 repeat=1
+2026-05-22T13:37:33+0900 jetson python[93081]: 2026-05-22 13:37:33.053 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/patrol type=patrol_event
+2026-05-22T13:37:33+0900 jetson python[93081]: 2026-05-22 13:37:33.057 INFO everybot.bt.nodes: [Speak] → ' 야간 순찰을 시작하겠습니다.'
+2026-05-22T13:37:34+0900 jetson python[93081]: 2026-05-22 13:37:34.046 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/config/destinations type=config_destinations
+2026-05-22T13:37:34+0900 jetson python[93081]: 2026-05-22 13:37:34.046 INFO everybot.app.wiring: [BtLayer] config published: 8 destinations, 0 visits
+2026-05-22T13:37:34+0900 jetson python[93081]: 2026-05-22 13:37:34.912 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/status type=robot_status
+2026-05-22T13:37:34+0900 jetson python[93081]: 2026-05-22 13:37:34.913 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/location type=location_update
+2026-05-22T13:37:34+0900 jetson python[93081]: 2026-05-22 13:37:34.913 INFO everybot.app.wiring: [BtLayer] robot/location published: id=sweethome name=대기영역 (0.75, -0.04)
+2026-05-22T13:37:35+0900 jetson python[93081]: 2026-05-22 13:37:35.665 INFO everybot.app.wiring: [BB] init=True scenario=patrol_situation_check emg=False map=True wifi=True battery=89%
+2026-05-22T13:37:36+0900 jetson python[93081]: 2026-05-22 13:37:36.063 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/config/destinations type=config_destinations
+2026-05-22T13:37:36+0900 jetson python[93081]: 2026-05-22 13:37:36.063 INFO everybot.app.wiring: [BtLayer] config published: 8 destinations, 0 visits
+2026-05-22T13:37:38+0900 jetson python[93081]: 2026-05-22 13:37:38.113 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/config/destinations type=config_destinations
+2026-05-22T13:37:38+0900 jetson python[93081]: 2026-05-22 13:37:38.113 INFO everybot.app.wiring: [BtLayer] config published: 8 destinations, 0 visits
+2026-05-22T13:37:38+0900 jetson python[93081]: 2026-05-22 13:37:38.213 WARNING everybot.services.jetson_ai_service: [AIService] TTS job wait timeout job_id=tts_260522_133733_adf36267 after 5.0s
+2026-05-22T13:37:38+0900 jetson python[93081]: 2026-05-22 13:37:38.251 WARNING everybot.bt.nodes: [Speak] TTS job ended with status=timeout
+2026-05-22T13:37:38+0900 jetson python[93081]: 2026-05-22 13:37:38.252 INFO everybot.bt.nodes: [NavWaypoints] waypoints=['demo', 'home', 'demo'] repeat=1 dwell=10.0s
+2026-05-22T13:37:38+0900 jetson python[93081]: 2026-05-22 13:37:38.252 INFO everybot.services.amr_service: [AMR] send_target_position → (1.02, 4.74, -1.53)
+2026-05-22T13:37:38+0900 jetson python[93081]: 2026-05-22 13:37:38.252 INFO everybot.bt.nodes: [NavWaypoints] → wp[0]='demo' {'x': 1.02, 'y': 4.74, 'theta': -1.532}
+2026-05-22T13:37:38+0900 jetson python[93081]: 2026-05-22 13:37:38.513 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/move/status type=move_status
+2026-05-22T13:37:39+0900 jetson python[93081]: 2026-05-22 13:37:39.918 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/status type=robot_status
+2026-05-22T13:37:39+0900 jetson python[93081]: 2026-05-22 13:37:39.918 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/location type=location_update
+2026-05-22T13:37:39+0900 jetson python[93081]: 2026-05-22 13:37:39.918 INFO everybot.app.wiring: [BtLayer] robot/location published: id=sweethome name=대기영역 (0.75, -0.04)
+2026-05-22T13:37:40+0900 jetson python[93081]: 2026-05-22 13:37:40.117 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/config/destinations type=config_destinations
+2026-05-22T13:37:40+0900 jetson python[93081]: 2026-05-22 13:37:40.117 INFO everybot.app.wiring: [BtLayer] config published: 8 destinations, 0 visits
+2026-05-22T13:37:40+0900 jetson python[93081]: 2026-05-22 13:37:40.669 INFO everybot.app.wiring: [BB] init=True scenario=patrol_situation_check emg=False map=True wifi=True battery=89%
+2026-05-22T13:37:42+0900 jetson python[93081]: 2026-05-22 13:37:42.167 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/config/destinations type=config_destinations
+2026-05-22T13:37:42+0900 jetson python[93081]: 2026-05-22 13:37:42.167 INFO everybot.app.wiring: [BtLayer] config published: 8 destinations, 0 visits
+2026-05-22T13:37:43+0900 jetson python[93081]: 2026-05-22 13:37:43.554 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/move/status type=move_status
+2026-05-22T13:37:44+0900 jetson python[93081]: 2026-05-22 13:37:44.216 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/config/destinations type=config_destinations
+2026-05-22T13:37:44+0900 jetson python[93081]: 2026-05-22 13:37:44.217 INFO everybot.app.wiring: [BtLayer] config published: 8 destinations, 0 visits
+2026-05-22T13:37:44+0900 jetson python[93081]: 2026-05-22 13:37:44.967 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/status type=robot_status
+2026-05-22T13:37:44+0900 jetson python[93081]: 2026-05-22 13:37:44.968 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/location type=location_update
+2026-05-22T13:37:44+0900 jetson python[93081]: 2026-05-22 13:37:44.968 INFO everybot.app.wiring: [BtLayer] robot/location published: id=sweethome name=대기영역 (0.75, -0.04)
+2026-05-22T13:37:45+0900 jetson python[93081]: 2026-05-22 13:37:45.664 INFO everybot.app.wiring: [BB] init=True scenario=patrol_situation_check emg=False map=True wifi=True battery=89%
+2026-05-22T13:37:46+0900 jetson python[93081]: 2026-05-22 13:37:46.269 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/config/destinations type=config_destinations
+2026-05-22T13:37:46+0900 jetson python[93081]: 2026-05-22 13:37:46.270 INFO everybot.app.wiring: [BtLayer] config published: 8 destinations, 0 visits
+2026-05-22T13:37:48+0900 jetson python[93081]: 2026-05-22 13:37:48.304 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/config/destinations type=config_destinations
+2026-05-22T13:37:48+0900 jetson python[93081]: 2026-05-22 13:37:48.304 INFO everybot.app.wiring: [BtLayer] config published: 8 destinations, 0 visits
+2026-05-22T13:37:48+0900 jetson python[93081]: 2026-05-22 13:37:48.567 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/move/status type=move_status
+2026-05-22T13:37:50+0900 jetson python[93081]: 2026-05-22 13:37:50.026 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/status type=robot_status
+2026-05-22T13:37:50+0900 jetson python[93081]: 2026-05-22 13:37:50.027 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/location type=location_update
+2026-05-22T13:37:50+0900 jetson python[93081]: 2026-05-22 13:37:50.027 INFO everybot.app.wiring: [BtLayer] robot/location published: id=entrance name=입구 (1.03, 1.95)
+2026-05-22T13:37:50+0900 jetson python[93081]: 2026-05-22 13:37:50.328 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/config/destinations type=config_destinations
+2026-05-22T13:37:50+0900 jetson python[93081]: 2026-05-22 13:37:50.328 INFO everybot.app.wiring: [BtLayer] config published: 8 destinations, 0 visits
+2026-05-22T13:37:50+0900 jetson python[93081]: 2026-05-22 13:37:50.905 INFO everybot.app.wiring: [BB] init=True scenario=patrol_situation_check emg=False map=True wifi=True battery=89%
+2026-05-22T13:37:52+0900 jetson python[93081]: 2026-05-22 13:37:52.355 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/config/destinations type=config_destinations
+2026-05-22T13:37:52+0900 jetson python[93081]: 2026-05-22 13:37:52.355 INFO everybot.app.wiring: [BtLayer] config published: 8 destinations, 0 visits
+2026-05-22T13:37:53+0900 jetson python[93081]: 2026-05-22 13:37:53.598 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/move/status type=move_status
+2026-05-22T13:37:54+0900 jetson python[93081]: 2026-05-22 13:37:54.010 INFO everybot.services.ui_mqtt_service: [UiMqtt] recv topic=robot/debug/fall type=debug_fall_detected
+2026-05-22T13:37:54+0900 jetson python[93081]: 2026-05-22 13:37:54.102 INFO everybot.bt.bridge: [Bridge] UiMqtt msg received: type=debug_fall_detected
+2026-05-22T13:37:54+0900 jetson python[93081]: 2026-05-22 13:37:54.103 WARNING everybot.bt.bridge: [Bridge] debug fall detected=True candidate=False status=debug
+2026-05-22T13:37:54+0900 jetson python[93081]: 2026-05-22 13:37:54.115 WARNING everybot.bt.nodes: [FallDetectedDummy] detected=True candidate=False status=clear
+2026-05-22T13:37:54+0900 jetson python[93081]: 2026-05-22 13:37:54.115 INFO everybot.bt.nodes: [SavePatrolState] target=demo idx=0 dwell_remaining=0.0
+2026-05-22T13:37:54+0900 jetson python[93081]: 2026-05-22 13:37:54.116 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/detection type=detection_event
+2026-05-22T13:37:54+0900 jetson python[93081]: 2026-05-22 13:37:54.117 INFO everybot.services.amr_service: [AMR] send_stop
+2026-05-22T13:37:54+0900 jetson python[93081]: 2026-05-22 13:37:54.118 INFO everybot.bt.nodes: [AmrStop] stop sent
+2026-05-22T13:37:54+0900 jetson python[93081]: 2026-05-22 13:37:54.120 INFO everybot.bt.nodes: [Speak] → ' 위험 상황이 감지 되었습니다!'
+2026-05-22T13:37:54+0900 jetson python[93081]: 2026-05-22 13:37:54.374 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/config/destinations type=config_destinations
+2026-05-22T13:37:54+0900 jetson python[93081]: 2026-05-22 13:37:54.374 INFO everybot.app.wiring: [BtLayer] config published: 8 destinations, 0 visits
+2026-05-22T13:37:55+0900 jetson python[93081]: 2026-05-22 13:37:55.059 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/status type=robot_status
+2026-05-22T13:37:55+0900 jetson python[93081]: 2026-05-22 13:37:55.060 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/location type=location_update
+2026-05-22T13:37:55+0900 jetson python[93081]: 2026-05-22 13:37:55.060 INFO everybot.app.wiring: [BtLayer] robot/location published: id=103 name=103호 (1.06, 3.41)
+2026-05-22T13:37:56+0900 jetson python[93081]: 2026-05-22 13:37:56.210 INFO everybot.app.wiring: [BB] init=True scenario=patrol_situation_check emg=False map=True wifi=True battery=89%
+2026-05-22T13:37:56+0900 jetson python[93081]: 2026-05-22 13:37:56.409 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/config/destinations type=config_destinations
+2026-05-22T13:37:56+0900 jetson python[93081]: 2026-05-22 13:37:56.409 INFO everybot.app.wiring: [BtLayer] config published: 8 destinations, 0 visits
+2026-05-22T13:37:58+0900 jetson python[93081]: 2026-05-22 13:37:58.459 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/config/destinations type=config_destinations
+2026-05-22T13:37:58+0900 jetson python[93081]: 2026-05-22 13:37:58.459 INFO everybot.app.wiring: [BtLayer] config published: 8 destinations, 0 visits
+2026-05-22T13:37:58+0900 jetson python[93081]: 2026-05-22 13:37:58.609 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/move/status type=move_status
+2026-05-22T13:37:59+0900 jetson python[93081]: 2026-05-22 13:37:59.274 WARNING everybot.services.jetson_ai_service: [AIService] TTS job wait timeout job_id=tts_260522_133754_eed358c5 after 5.0s
+2026-05-22T13:37:59+0900 jetson python[93081]: 2026-05-22 13:37:59.344 WARNING everybot.bt.nodes: [Speak] TTS job ended with status=timeout
+2026-05-22T13:38:00+0900 jetson python[93081]: 2026-05-22 13:38:00.456 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/status type=robot_status
+2026-05-22T13:38:00+0900 jetson python[93081]: 2026-05-22 13:38:00.456 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/location type=location_update
+2026-05-22T13:38:00+0900 jetson python[93081]: 2026-05-22 13:38:00.456 INFO everybot.app.wiring: [BtLayer] robot/location published: id=103 name=103호 (1.06, 3.41)
+2026-05-22T13:38:00+0900 jetson python[93081]: 2026-05-22 13:38:00.599 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/config/destinations type=config_destinations
+2026-05-22T13:38:00+0900 jetson python[93081]: 2026-05-22 13:38:00.600 INFO everybot.app.wiring: [BtLayer] config published: 8 destinations, 0 visits
+2026-05-22T13:38:01+0900 jetson python[93081]: 2026-05-22 13:38:01.904 INFO everybot.app.wiring: [BB] init=True scenario=patrol_situation_check emg=False map=True wifi=True battery=89%
+2026-05-22T13:38:02+0900 jetson python[93081]: 2026-05-22 13:38:02.602 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/config/destinations type=config_destinations
+2026-05-22T13:38:02+0900 jetson python[93081]: 2026-05-22 13:38:02.603 INFO everybot.app.wiring: [BtLayer] config published: 8 destinations, 0 visits
+2026-05-22T13:38:03+0900 jetson python[93081]: 2026-05-22 13:38:03.639 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/move/status type=move_status
+2026-05-22T13:38:04+0900 jetson python[93081]: 2026-05-22 13:38:04.464 WARNING everybot.services.jetson_ai_service: [AIService] TTS job wait timeout job_id=tts_260522_133759_d4d98e95 after 5.0s
+2026-05-22T13:38:04+0900 jetson python[93081]: 2026-05-22 13:38:04.602 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/config/destinations type=config_destinations
+2026-05-22T13:38:04+0900 jetson python[93081]: 2026-05-22 13:38:04.603 INFO everybot.app.wiring: [BtLayer] config published: 8 destinations, 0 visits
+2026-05-22T13:38:05+0900 jetson python[93081]: 2026-05-22 13:38:05.503 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/status type=robot_status
+2026-05-22T13:38:05+0900 jetson python[93081]: 2026-05-22 13:38:05.503 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/location type=location_update
+2026-05-22T13:38:05+0900 jetson python[93081]: 2026-05-22 13:38:05.503 INFO everybot.app.wiring: [BtLayer] robot/location published: id=103 name=103호 (1.06, 3.41)
+2026-05-22T13:38:06+0900 jetson python[93081]: 2026-05-22 13:38:06.652 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/config/destinations type=config_destinations
+2026-05-22T13:38:06+0900 jetson python[93081]: 2026-05-22 13:38:06.653 INFO everybot.app.wiring: [BtLayer] config published: 8 destinations, 0 visits
+2026-05-22T13:38:06+0900 jetson python[93081]: 2026-05-22 13:38:06.904 INFO everybot.app.wiring: [BB] init=True scenario=patrol_situation_check emg=False map=True wifi=True battery=89%
+2026-05-22T13:38:08+0900 jetson python[93081]: 2026-05-22 13:38:08.653 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/move/status type=move_status
+2026-05-22T13:38:08+0900 jetson python[93081]: 2026-05-22 13:38:08.653 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/config/destinations type=config_destinations
+2026-05-22T13:38:08+0900 jetson python[93081]: 2026-05-22 13:38:08.653 INFO everybot.app.wiring: [BtLayer] config published: 8 destinations, 0 visits
+2026-05-22T13:38:09+0900 jetson python[93081]: 2026-05-22 13:38:09.351 INFO everybot.bt.nodes: [VoiceStatusCheck] intent=timeout end_reason=timeout response=
+2026-05-22T13:38:09+0900 jetson python[93081]: 2026-05-22 13:38:09.352 WARNING everybot.bt.nodes: [VoiceStatusCheck] timeout after 10.0s
+2026-05-22T13:38:09+0900 jetson python[93081]: 2026-05-22 13:38:09.353 INFO everybot.bt.nodes: [Speak] → ' 응답이 없어 위험 상황으로 감지되어 관리자에게 메시지를 전송했습니다.'
+2026-05-22T13:38:10+0900 jetson python[93081]: 2026-05-22 13:38:10.532 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/status type=robot_status
+2026-05-22T13:38:10+0900 jetson python[93081]: 2026-05-22 13:38:10.532 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/location type=location_update
+2026-05-22T13:38:10+0900 jetson python[93081]: 2026-05-22 13:38:10.533 INFO everybot.app.wiring: [BtLayer] robot/location published: id=103 name=103호 (1.06, 3.41)
+2026-05-22T13:38:11+0900 jetson python[93081]: 2026-05-22 13:38:10.682 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/config/destinations type=config_destinations
+2026-05-22T13:38:11+0900 jetson python[93081]: 2026-05-22 13:38:10.682 INFO everybot.app.wiring: [BtLayer] config published: 8 destinations, 0 visits
+2026-05-22T13:38:11+0900 jetson python[93081]: 2026-05-22 13:38:11.933 INFO everybot.app.wiring: [BB] init=True scenario=patrol_situation_check emg=False map=True wifi=True battery=89%
+2026-05-22T13:38:12+0900 jetson python[93081]: 2026-05-22 13:38:12.682 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/config/destinations type=config_destinations
+2026-05-22T13:38:12+0900 jetson python[93081]: 2026-05-22 13:38:12.682 INFO everybot.app.wiring: [BtLayer] config published: 8 destinations, 0 visits
+2026-05-22T13:38:13+0900 jetson python[93081]: 2026-05-22 13:38:13.682 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/move/status type=move_status
+2026-05-22T13:38:14+0900 jetson python[93081]: 2026-05-22 13:38:14.555 WARNING everybot.services.jetson_ai_service: [AIService] TTS job wait timeout job_id=tts_260522_133809_e98b2017 after 5.0s
+2026-05-22T13:38:14+0900 jetson python[93081]: 2026-05-22 13:38:14.565 WARNING everybot.bt.nodes: [Speak] TTS job ended with status=timeout
+2026-05-22T13:38:14+0900 jetson python[93081]: 2026-05-22 13:38:14.592 WARNING everybot.services.jetson_ai_service: [AIService] agent event wait timeout after 10.0s
+2026-05-22T13:38:14+0900 jetson python[93081]: 2026-05-22 13:38:14.682 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/config/destinations type=config_destinations
+2026-05-22T13:38:14+0900 jetson python[93081]: 2026-05-22 13:38:14.682 INFO everybot.app.wiring: [BtLayer] config published: 8 destinations, 0 visits
+2026-05-22T13:38:15+0900 jetson python[93081]: 2026-05-22 13:38:15.696 INFO everybot.bt.nodes: [WaitSpeakerIdle] high idle
+2026-05-22T13:38:15+0900 jetson python[93081]: 2026-05-22 13:38:15.696 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/detection type=detection_event
+2026-05-22T13:38:15+0900 jetson python[93081]: 2026-05-22 13:38:15.696 INFO everybot.bt.nodes: [RestorePatrolState] restored target=demo
+2026-05-22T13:38:15+0900 jetson python[93081]: 2026-05-22 13:38:15.697 INFO everybot.bt.nodes: [ClearFallDetection] fall flags reset
+2026-05-22T13:38:15+0900 jetson python[93081]: 2026-05-22 13:38:15.698 INFO everybot.bt.nodes: [Speak] → ' 순찰을 계속 진행합니다.'
+2026-05-22T13:38:15+0900 jetson python[93081]: 2026-05-22 13:38:15.699 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/status type=robot_status
+2026-05-22T13:38:15+0900 jetson python[93081]: 2026-05-22 13:38:15.699 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/location type=location_update
+2026-05-22T13:38:15+0900 jetson python[93081]: 2026-05-22 13:38:15.700 INFO everybot.app.wiring: [BtLayer] robot/location published: id=103 name=103호 (1.06, 3.41)
+2026-05-22T13:38:15+0900 jetson python[93081]: 2026-05-22 13:38:15.741 INFO everybot.services.amr_service: [AMR] send_target_position → (1.02, 4.74, -1.53)
+2026-05-22T13:38:15+0900 jetson python[93081]: 2026-05-22 13:38:15.741 INFO everybot.bt.nodes: [NavWaypoints] → wp[0]='demo' {'x': 1.02, 'y': 4.74, 'theta': -1.532}
+2026-05-22T13:38:15+0900 jetson python[93081]: 2026-05-22 13:38:15.742 INFO everybot.bt.nodes: [NavWaypoints] resume patrol navigation wp[0] target=demo
+2026-05-22T13:38:16+0900 jetson python[93081]: 2026-05-22 13:38:16.708 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/config/destinations type=config_destinations
+2026-05-22T13:38:16+0900 jetson python[93081]: 2026-05-22 13:38:16.708 INFO everybot.app.wiring: [BtLayer] config published: 8 destinations, 0 visits
+2026-05-22T13:38:17+0900 jetson python[93081]: 2026-05-22 13:38:17.510 INFO everybot.app.wiring: [BB] init=True scenario=patrol_situation_check emg=False map=True wifi=True battery=89%
+2026-05-22T13:38:18+0900 jetson python[93081]: 2026-05-22 13:38:18.758 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/config/destinations type=config_destinations
+2026-05-22T13:38:18+0900 jetson python[93081]: 2026-05-22 13:38:18.759 INFO everybot.app.wiring: [BtLayer] config published: 8 destinations, 0 visits
+2026-05-22T13:38:20+0900 jetson python[93081]: 2026-05-22 13:38:20.714 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/status type=robot_status
+2026-05-22T13:38:20+0900 jetson python[93081]: 2026-05-22 13:38:20.715 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/location type=location_update
+2026-05-22T13:38:20+0900 jetson python[93081]: 2026-05-22 13:38:20.715 INFO everybot.app.wiring: [BtLayer] robot/location published: id=103 name=103호 (1.06, 3.41)
+2026-05-22T13:38:20+0900 jetson python[93081]: 2026-05-22 13:38:20.764 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/config/destinations type=config_destinations
+2026-05-22T13:38:20+0900 jetson python[93081]: 2026-05-22 13:38:20.765 INFO everybot.app.wiring: [BtLayer] config published: 8 destinations, 0 visits
+2026-05-22T13:38:20+0900 jetson python[93081]: 2026-05-22 13:38:20.795 WARNING everybot.services.jetson_ai_service: [AIService] TTS job wait timeout job_id=tts_260522_133815_76ed6ea0 after 5.0s
+2026-05-22T13:38:20+0900 jetson python[93081]: 2026-05-22 13:38:20.813 WARNING everybot.bt.nodes: [Speak] TTS job ended with status=timeout
+2026-05-22T13:38:22+0900 jetson python[93081]: 2026-05-22 13:38:22.516 INFO everybot.app.wiring: [BB] init=True scenario=patrol_situation_check emg=False map=True wifi=True battery=89%
+2026-05-22T13:38:22+0900 jetson python[93081]: 2026-05-22 13:38:22.764 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/config/destinations type=config_destinations
+2026-05-22T13:38:22+0900 jetson python[93081]: 2026-05-22 13:38:22.764 INFO everybot.app.wiring: [BtLayer] config published: 8 destinations, 0 visits
+2026-05-22T13:38:24+0900 jetson python[93081]: 2026-05-22 13:38:24.064 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/move/status type=move_status
+2026-05-22T13:38:24+0900 jetson python[93081]: 2026-05-22 13:38:24.806 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/config/destinations type=config_destinations
+2026-05-22T13:38:24+0900 jetson python[93081]: 2026-05-22 13:38:24.808 INFO everybot.app.wiring: [BtLayer] config published: 8 destinations, 0 visits
+2026-05-22T13:38:25+0900 jetson python[93081]: 2026-05-22 13:38:25.714 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/status type=robot_status
+2026-05-22T13:38:25+0900 jetson python[93081]: 2026-05-22 13:38:25.715 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/location type=location_update
+2026-05-22T13:38:25+0900 jetson python[93081]: 2026-05-22 13:38:25.715 INFO everybot.app.wiring: [BtLayer] robot/location published: id=103 name=103호 (1.06, 3.41)
+2026-05-22T13:38:26+0900 jetson python[93081]: 2026-05-22 13:38:26.854 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/config/destinations type=config_destinations
+2026-05-22T13:38:26+0900 jetson python[93081]: 2026-05-22 13:38:26.855 INFO everybot.app.wiring: [BtLayer] config published: 8 destinations, 0 visits
+2026-05-22T13:38:27+0900 jetson python[93081]: 2026-05-22 13:38:27.516 INFO everybot.app.wiring: [BB] init=True scenario=patrol_situation_check emg=False map=True wifi=True battery=88%
+2026-05-22T13:38:28+0900 jetson python[93081]: 2026-05-22 13:38:28.901 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/config/destinations type=config_destinations
+2026-05-22T13:38:28+0900 jetson python[93081]: 2026-05-22 13:38:28.902 INFO everybot.app.wiring: [BtLayer] config published: 8 destinations, 0 visits
+2026-05-22T13:38:29+0900 jetson python[93081]: 2026-05-22 13:38:29.064 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/move/status type=move_status
+2026-05-22T13:38:31+0900 jetson python[93081]: 2026-05-22 13:38:31.008 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/status type=robot_status
+2026-05-22T13:38:31+0900 jetson python[93081]: 2026-05-22 13:38:31.009 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/location type=location_update
+2026-05-22T13:38:31+0900 jetson python[93081]: 2026-05-22 13:38:31.009 INFO everybot.app.wiring: [BtLayer] robot/location published: id=demo name=시연장소 (1.05, 4.27)
+2026-05-22T13:38:31+0900 jetson python[93081]: 2026-05-22 13:38:31.009 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/config/destinations type=config_destinations
+2026-05-22T13:38:31+0900 jetson python[93081]: 2026-05-22 13:38:31.009 INFO everybot.app.wiring: [BtLayer] config published: 8 destinations, 0 visits
+2026-05-22T13:38:33+0900 jetson python[93081]: 2026-05-22 13:38:33.096 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/config/destinations type=config_destinations
+2026-05-22T13:38:33+0900 jetson python[93081]: 2026-05-22 13:38:33.097 INFO everybot.app.wiring: [BtLayer] config published: 8 destinations, 0 visits
+2026-05-22T13:38:33+0900 jetson python[93081]: 2026-05-22 13:38:33.098 INFO everybot.app.wiring: [BB] init=True scenario=patrol_situation_check emg=False map=True wifi=True battery=88%
+2026-05-22T13:38:34+0900 jetson python[93081]: 2026-05-22 13:38:34.117 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/move/status type=move_status
+2026-05-22T13:38:35+0900 jetson python[93081]: 2026-05-22 13:38:35.139 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/config/destinations type=config_destinations
+2026-05-22T13:38:35+0900 jetson python[93081]: 2026-05-22 13:38:35.140 INFO everybot.app.wiring: [BtLayer] config published: 8 destinations, 0 visits
+2026-05-22T13:38:36+0900 jetson python[93081]: 2026-05-22 13:38:36.048 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/status type=robot_status
+2026-05-22T13:38:36+0900 jetson python[93081]: 2026-05-22 13:38:36.049 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/location type=location_update
+2026-05-22T13:38:36+0900 jetson python[93081]: 2026-05-22 13:38:36.049 INFO everybot.app.wiring: [BtLayer] robot/location published: id=demo name=시연장소 (1.04, 4.63)
+2026-05-22T13:38:37+0900 jetson python[93081]: 2026-05-22 13:38:37.180 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/config/destinations type=config_destinations
+2026-05-22T13:38:37+0900 jetson python[93081]: 2026-05-22 13:38:37.181 INFO everybot.app.wiring: [BtLayer] config published: 8 destinations, 0 visits
+2026-05-22T13:38:38+0900 jetson python[93081]: 2026-05-22 13:38:38.190 INFO everybot.app.wiring: [BB] init=True scenario=patrol_situation_check emg=False map=True wifi=True battery=88%
+2026-05-22T13:38:39+0900 jetson python[93081]: 2026-05-22 13:38:39.209 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/move/status type=move_status
+2026-05-22T13:38:39+0900 jetson python[93081]: 2026-05-22 13:38:39.210 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/config/destinations type=config_destinations
+2026-05-22T13:38:39+0900 jetson python[93081]: 2026-05-22 13:38:39.210 INFO everybot.app.wiring: [BtLayer] config published: 8 destinations, 0 visits
+2026-05-22T13:38:41+0900 jetson python[93081]: 2026-05-22 13:38:41.085 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/status type=robot_status
+2026-05-22T13:38:41+0900 jetson python[93081]: 2026-05-22 13:38:41.086 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/location type=location_update
+2026-05-22T13:38:41+0900 jetson python[93081]: 2026-05-22 13:38:41.086 INFO everybot.app.wiring: [BtLayer] robot/location published: id=demo name=시연장소 (1.02, 4.65)
+2026-05-22T13:38:41+0900 jetson python[93081]: 2026-05-22 13:38:41.244 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/config/destinations type=config_destinations
+2026-05-22T13:38:41+0900 jetson python[93081]: 2026-05-22 13:38:41.244 INFO everybot.app.wiring: [BtLayer] config published: 8 destinations, 0 visits
+2026-05-22T13:38:43+0900 jetson python[93081]: 2026-05-22 13:38:43.274 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/config/destinations type=config_destinations
+2026-05-22T13:38:43+0900 jetson python[93081]: 2026-05-22 13:38:43.274 INFO everybot.app.wiring: [BtLayer] config published: 8 destinations, 0 visits
+2026-05-22T13:38:43+0900 jetson python[93081]: 2026-05-22 13:38:43.274 INFO everybot.app.wiring: [BB] init=True scenario=patrol_situation_check emg=False map=True wifi=True battery=88%
+2026-05-22T13:38:44+0900 jetson python[93081]: 2026-05-22 13:38:44.291 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/move/status type=move_status
+2026-05-22T13:38:45+0900 jetson python[93081]: 2026-05-22 13:38:45.308 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/config/destinations type=config_destinations
+2026-05-22T13:38:45+0900 jetson python[93081]: 2026-05-22 13:38:45.308 INFO everybot.app.wiring: [BtLayer] config published: 8 destinations, 0 visits
+2026-05-22T13:38:46+0900 jetson python[93081]: 2026-05-22 13:38:46.088 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/status type=robot_status
+2026-05-22T13:38:46+0900 jetson python[93081]: 2026-05-22 13:38:46.090 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/location type=location_update
+2026-05-22T13:38:46+0900 jetson python[93081]: 2026-05-22 13:38:46.091 INFO everybot.app.wiring: [BtLayer] robot/location published: id=demo name=시연장소 (1.01, 4.65)
+2026-05-22T13:38:47+0900 jetson python[93081]: 2026-05-22 13:38:47.392 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/config/destinations type=config_destinations
+2026-05-22T13:38:47+0900 jetson python[93081]: 2026-05-22 13:38:47.392 INFO everybot.app.wiring: [BtLayer] config published: 8 destinations, 0 visits
+2026-05-22T13:38:50+0900 jetson python[93081]: 2026-05-22 13:38:49.463 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/move/status type=move_status
+2026-05-22T13:38:50+0900 jetson python[93081]: 2026-05-22 13:38:49.464 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/config/destinations type=config_destinations
+2026-05-22T13:38:50+0900 jetson python[93081]: 2026-05-22 13:38:49.464 INFO everybot.app.wiring: [BtLayer] config published: 8 destinations, 0 visits
+2026-05-22T13:38:50+0900 jetson python[93081]: 2026-05-22 13:38:50.034 INFO everybot.app.wiring: [BB] init=True scenario=patrol_situation_check emg=False map=True wifi=True battery=88%
+2026-05-22T13:38:51+0900 jetson python[93081]: 2026-05-22 13:38:51.111 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/status type=robot_status
+2026-05-22T13:38:51+0900 jetson python[93081]: 2026-05-22 13:38:51.114 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/location type=location_update
+2026-05-22T13:38:51+0900 jetson python[93081]: 2026-05-22 13:38:51.114 INFO everybot.app.wiring: [BtLayer] robot/location published: id=demo name=시연장소 (0.89, 4.78)
+2026-05-22T13:38:51+0900 jetson python[93081]: 2026-05-22 13:38:51.497 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/config/destinations type=config_destinations
+2026-05-22T13:38:51+0900 jetson python[93081]: 2026-05-22 13:38:51.501 INFO everybot.app.wiring: [BtLayer] config published: 8 destinations, 0 visits
+2026-05-22T13:38:53+0900 jetson python[93081]: 2026-05-22 13:38:53.554 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/config/destinations type=config_destinations
+2026-05-22T13:38:53+0900 jetson python[93081]: 2026-05-22 13:38:53.554 INFO everybot.app.wiring: [BtLayer] config published: 8 destinations, 0 visits
+2026-05-22T13:38:54+0900 jetson python[93081]: 2026-05-22 13:38:54.519 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/move/status type=move_status
+2026-05-22T13:38:55+0900 jetson python[93081]: 2026-05-22 13:38:55.127 INFO everybot.services.amr_service: [AMR] arrived event (MOVING→ARRIVED)
+2026-05-22T13:38:55+0900 jetson python[93081]: 2026-05-22 13:38:55.138 INFO everybot.bt.nodes: [NavWaypoints] wp[0] arrived ✓ state=2
+2026-05-22T13:38:55+0900 jetson python[93081]: 2026-05-22 13:38:55.138 INFO everybot.bt.nodes: [NavWaypoints] dwell 10.0s before wp[1]
+2026-05-22T13:38:55+0900 jetson python[93081]: 2026-05-22 13:38:55.149 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/move/status type=move_status
+2026-05-22T13:38:55+0900 jetson python[93081]: 2026-05-22 13:38:55.401 INFO everybot.app.wiring: [BB] init=True scenario=patrol_situation_check emg=False map=True wifi=True battery=88%
+2026-05-22T13:38:55+0900 jetson python[93081]: 2026-05-22 13:38:55.563 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/config/destinations type=config_destinations
+2026-05-22T13:38:55+0900 jetson python[93081]: 2026-05-22 13:38:55.564 INFO everybot.app.wiring: [BtLayer] config published: 8 destinations, 0 visits
+2026-05-22T13:38:56+0900 jetson python[93081]: 2026-05-22 13:38:56.143 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/status type=robot_status
+2026-05-22T13:38:56+0900 jetson python[93081]: 2026-05-22 13:38:56.145 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/location type=location_update
+2026-05-22T13:38:56+0900 jetson python[93081]: 2026-05-22 13:38:56.147 INFO everybot.app.wiring: [BtLayer] robot/location published: id=demo name=시연장소 (1.08, 4.74)
+2026-05-22T13:38:57+0900 jetson python[93081]: 2026-05-22 13:38:57.628 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/config/destinations type=config_destinations
+2026-05-22T13:38:57+0900 jetson python[93081]: 2026-05-22 13:38:57.629 INFO everybot.app.wiring: [BtLayer] config published: 8 destinations, 0 visits
+2026-05-22T13:38:59+0900 jetson python[93081]: 2026-05-22 13:38:59.703 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/config/destinations type=config_destinations
+2026-05-22T13:38:59+0900 jetson python[93081]: 2026-05-22 13:38:59.704 INFO everybot.app.wiring: [BtLayer] config published: 8 destinations, 0 visits
+2026-05-22T13:39:00+0900 jetson python[93081]: 2026-05-22 13:39:00.586 INFO everybot.app.wiring: [BB] init=True scenario=patrol_situation_check emg=False map=True wifi=True battery=88%
+2026-05-22T13:39:01+0900 jetson python[93081]: 2026-05-22 13:39:01.154 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/status type=robot_status
+2026-05-22T13:39:01+0900 jetson python[93081]: 2026-05-22 13:39:01.155 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/location type=location_update
+2026-05-22T13:39:01+0900 jetson python[93081]: 2026-05-22 13:39:01.155 INFO everybot.app.wiring: [BtLayer] robot/location published: id=demo name=시연장소 (1.07, 4.72)
+2026-05-22T13:39:01+0900 jetson python[93081]: 2026-05-22 13:39:01.770 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/config/destinations type=config_destinations
+2026-05-22T13:39:01+0900 jetson python[93081]: 2026-05-22 13:39:01.771 INFO everybot.app.wiring: [BtLayer] config published: 8 destinations, 0 visits
+2026-05-22T13:39:03+0900 jetson python[93081]: 2026-05-22 13:39:03.879 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/config/destinations type=config_destinations
+2026-05-22T13:39:03+0900 jetson python[93081]: 2026-05-22 13:39:03.880 INFO everybot.app.wiring: [BtLayer] config published: 8 destinations, 0 visits
+2026-05-22T13:39:05+0900 jetson python[93081]: 2026-05-22 13:39:05.178 INFO everybot.services.amr_service: [AMR] send_target_position → (0.87, -0.06, 1.57)
+2026-05-22T13:39:05+0900 jetson python[93081]: 2026-05-22 13:39:05.178 INFO everybot.bt.nodes: [NavWaypoints] → wp[1]='home' {'x': 0.87, 'y': -0.06, 'theta': 1.571}
+2026-05-22T13:39:05+0900 jetson python[93081]: 2026-05-22 13:39:05.507 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/move/status type=move_status
+2026-05-22T13:39:05+0900 jetson python[93081]: 2026-05-22 13:39:05.910 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/config/destinations type=config_destinations
+2026-05-22T13:39:05+0900 jetson python[93081]: 2026-05-22 13:39:05.910 INFO everybot.app.wiring: [BtLayer] config published: 8 destinations, 0 visits
+2026-05-22T13:39:06+0900 jetson python[93081]: 2026-05-22 13:39:06.257 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/status type=robot_status
+2026-05-22T13:39:06+0900 jetson python[93081]: 2026-05-22 13:39:06.258 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/location type=location_update
+2026-05-22T13:39:06+0900 jetson python[93081]: 2026-05-22 13:39:06.259 INFO everybot.app.wiring: [BtLayer] robot/location published: id=demo name=시연장소 (1.06, 4.72)
+2026-05-22T13:39:07+0900 jetson python[93081]: 2026-05-22 13:39:07.200 INFO everybot.app.wiring: [BB] init=True scenario=patrol_situation_check emg=False map=True wifi=True battery=88%
+2026-05-22T13:39:07+0900 jetson python[93081]: 2026-05-22 13:39:07.957 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/config/destinations type=config_destinations
+2026-05-22T13:39:07+0900 jetson python[93081]: 2026-05-22 13:39:07.958 INFO everybot.app.wiring: [BtLayer] config published: 8 destinations, 0 visits
+2026-05-22T13:39:09+0900 jetson python[93081]: 2026-05-22 13:39:09.976 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/config/destinations type=config_destinations
+2026-05-22T13:39:09+0900 jetson python[93081]: 2026-05-22 13:39:09.976 INFO everybot.app.wiring: [BtLayer] config published: 8 destinations, 0 visits
+2026-05-22T13:39:10+0900 jetson python[93081]: 2026-05-22 13:39:10.540 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/move/status type=move_status
+2026-05-22T13:39:11+0900 jetson python[93081]: 2026-05-22 13:39:11.284 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/status type=robot_status
+2026-05-22T13:39:11+0900 jetson python[93081]: 2026-05-22 13:39:11.284 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/location type=location_update
+2026-05-22T13:39:11+0900 jetson python[93081]: 2026-05-22 13:39:11.285 INFO everybot.app.wiring: [BtLayer] robot/location published: id=demo name=시연장소 (1.05, 4.67)
+2026-05-22T13:39:12+0900 jetson python[93081]: 2026-05-22 13:39:12.003 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/config/destinations type=config_destinations
+2026-05-22T13:39:12+0900 jetson python[93081]: 2026-05-22 13:39:12.004 INFO everybot.app.wiring: [BtLayer] config published: 8 destinations, 0 visits
+2026-05-22T13:39:12+0900 jetson python[93081]: 2026-05-22 13:39:12.365 INFO everybot.app.wiring: [BB] init=True scenario=patrol_situation_check emg=False map=True wifi=True battery=88%
+2026-05-22T13:39:14+0900 jetson python[93081]: 2026-05-22 13:39:14.012 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/config/destinations type=config_destinations
+2026-05-22T13:39:14+0900 jetson python[93081]: 2026-05-22 13:39:14.014 INFO everybot.app.wiring: [BtLayer] config published: 8 destinations, 0 visits
+2026-05-22T13:39:15+0900 jetson python[93081]: 2026-05-22 13:39:15.568 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/move/status type=move_status
+2026-05-22T13:39:16+0900 jetson python[93081]: 2026-05-22 13:39:16.041 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/config/destinations type=config_destinations
+2026-05-22T13:39:16+0900 jetson python[93081]: 2026-05-22 13:39:16.041 INFO everybot.app.wiring: [BtLayer] config published: 8 destinations, 0 visits
+2026-05-22T13:39:16+0900 jetson python[93081]: 2026-05-22 13:39:16.292 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/status type=robot_status
+2026-05-22T13:39:16+0900 jetson python[93081]: 2026-05-22 13:39:16.294 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/location type=location_update
+2026-05-22T13:39:16+0900 jetson python[93081]: 2026-05-22 13:39:16.296 INFO everybot.app.wiring: [BtLayer] robot/location published: id=101 name=101호 (0.70, 3.39)
+2026-05-22T13:39:17+0900 jetson python[93081]: 2026-05-22 13:39:17.543 INFO everybot.app.wiring: [BB] init=True scenario=patrol_situation_check emg=False map=True wifi=True battery=88%
+2026-05-22T13:39:18+0900 jetson python[93081]: 2026-05-22 13:39:18.072 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/config/destinations type=config_destinations
+2026-05-22T13:39:18+0900 jetson python[93081]: 2026-05-22 13:39:18.072 INFO everybot.app.wiring: [BtLayer] config published: 8 destinations, 0 visits
+2026-05-22T13:39:20+0900 jetson python[93081]: 2026-05-22 13:39:20.087 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/config/destinations type=config_destinations
+2026-05-22T13:39:20+0900 jetson python[93081]: 2026-05-22 13:39:20.089 INFO everybot.app.wiring: [BtLayer] config published: 8 destinations, 0 visits
+2026-05-22T13:39:20+0900 jetson python[93081]: 2026-05-22 13:39:20.605 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/move/status type=move_status
+2026-05-22T13:39:21+0900 jetson python[93081]: 2026-05-22 13:39:21.320 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/status type=robot_status
+2026-05-22T13:39:21+0900 jetson python[93081]: 2026-05-22 13:39:21.321 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/location type=location_update
+2026-05-22T13:39:21+0900 jetson python[93081]: 2026-05-22 13:39:21.321 INFO everybot.app.wiring: [BtLayer] robot/location published: id=101 name=101호 (0.81, 2.00)
+2026-05-22T13:39:22+0900 jetson python[93081]: 2026-05-22 13:39:22.099 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/config/destinations type=config_destinations
+2026-05-22T13:39:22+0900 jetson python[93081]: 2026-05-22 13:39:22.099 INFO everybot.app.wiring: [BtLayer] config published: 8 destinations, 0 visits
+2026-05-22T13:39:22+0900 jetson python[93081]: 2026-05-22 13:39:22.737 INFO everybot.app.wiring: [BB] init=True scenario=patrol_situation_check emg=False map=True wifi=True battery=88%
+2026-05-22T13:39:24+0900 jetson python[93081]: 2026-05-22 13:39:24.177 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/config/destinations type=config_destinations
+2026-05-22T13:39:24+0900 jetson python[93081]: 2026-05-22 13:39:24.178 INFO everybot.app.wiring: [BtLayer] config published: 8 destinations, 0 visits
+2026-05-22T13:39:25+0900 jetson python[93081]: 2026-05-22 13:39:25.626 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/move/status type=move_status
+2026-05-22T13:39:26+0900 jetson python[93081]: 2026-05-22 13:39:26.239 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/config/destinations type=config_destinations
+2026-05-22T13:39:26+0900 jetson python[93081]: 2026-05-22 13:39:26.240 INFO everybot.app.wiring: [BtLayer] config published: 8 destinations, 0 visits
+2026-05-22T13:39:26+0900 jetson python[93081]: 2026-05-22 13:39:26.354 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/status type=robot_status
+2026-05-22T13:39:26+0900 jetson python[93081]: 2026-05-22 13:39:26.356 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/location type=location_update
+2026-05-22T13:39:26+0900 jetson python[93081]: 2026-05-22 13:39:26.358 INFO everybot.app.wiring: [BtLayer] robot/location published: id=sweethome name=대기영역 (0.81, 0.26)
+2026-05-22T13:39:27+0900 jetson python[93081]: 2026-05-22 13:39:27.951 INFO everybot.app.wiring: [BB] init=True scenario=patrol_situation_check emg=False map=True wifi=True battery=88%
+2026-05-22T13:39:28+0900 jetson python[93081]: 2026-05-22 13:39:28.313 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/config/destinations type=config_destinations
+2026-05-22T13:39:28+0900 jetson python[93081]: 2026-05-22 13:39:28.314 INFO everybot.app.wiring: [BtLayer] config published: 8 destinations, 0 visits
+2026-05-22T13:39:30+0900 jetson python[93081]: 2026-05-22 13:39:30.385 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/config/destinations type=config_destinations
+2026-05-22T13:39:30+0900 jetson python[93081]: 2026-05-22 13:39:30.385 INFO everybot.app.wiring: [BtLayer] config published: 8 destinations, 0 visits
+2026-05-22T13:39:30+0900 jetson python[93081]: 2026-05-22 13:39:30.649 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/move/status type=move_status
+2026-05-22T13:39:31+0900 jetson python[93081]: 2026-05-22 13:39:31.428 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/status type=robot_status
+2026-05-22T13:39:31+0900 jetson python[93081]: 2026-05-22 13:39:31.429 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/location type=location_update
+2026-05-22T13:39:31+0900 jetson python[93081]: 2026-05-22 13:39:31.429 INFO everybot.app.wiring: [BtLayer] robot/location published: id=sweethome name=대기영역 (0.81, -0.07)
+2026-05-22T13:39:39+0900 jetson python[93081]: 2026-05-22 13:39:39.649 INFO everybot.services.amr_service: [AMR] arrived event (MOVING→ARRIVED)
+2026-05-22T13:39:41+0900 jetson python[93081]: 2026-05-22 13:39:41.634 INFO everybot.bt.nodes: [NavWaypoints] wp[1] arrived ✓ state=2
+2026-05-22T13:39:41+0900 jetson python[93081]: 2026-05-22 13:39:41.636 INFO everybot.bt.nodes: [NavWaypoints] dwell 10.0s before wp[2]
+2026-05-22T13:39:41+0900 jetson python[93081]: 2026-05-22 13:39:41.648 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/status type=robot_status
+2026-05-22T13:39:41+0900 jetson python[93081]: 2026-05-22 13:39:41.648 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/location type=location_update
+2026-05-22T13:39:41+0900 jetson python[93081]: 2026-05-22 13:39:41.649 INFO everybot.app.wiring: [BtLayer] robot/location published: id=sweethome name=대기영역 (0.79, -0.04)
+2026-05-22T13:39:41+0900 jetson python[93081]: 2026-05-22 13:39:41.649 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/move/status type=move_status
+2026-05-22T13:39:41+0900 jetson python[93081]: 2026-05-22 13:39:41.650 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/config/destinations type=config_destinations
+2026-05-22T13:39:41+0900 jetson python[93081]: 2026-05-22 13:39:41.650 INFO everybot.app.wiring: [BtLayer] config published: 8 destinations, 0 visits
+2026-05-22T13:39:42+0900 jetson python[93081]: 2026-05-22 13:39:42.879 INFO everybot.app.wiring: [BB] init=True scenario=patrol_situation_check emg=False map=True wifi=True battery=88%
+2026-05-22T13:39:43+0900 jetson python[93081]: 2026-05-22 13:39:43.703 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/config/destinations type=config_destinations
+2026-05-22T13:39:43+0900 jetson python[93081]: 2026-05-22 13:39:43.703 INFO everybot.app.wiring: [BtLayer] config published: 8 destinations, 0 visits
+2026-05-22T13:39:45+0900 jetson python[93081]: 2026-05-22 13:39:45.748 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/config/destinations type=config_destinations
+2026-05-22T13:39:45+0900 jetson python[93081]: 2026-05-22 13:39:45.749 INFO everybot.app.wiring: [BtLayer] config published: 8 destinations, 0 visits
+2026-05-22T13:39:46+0900 jetson python[93081]: 2026-05-22 13:39:46.702 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/status type=robot_status
+2026-05-22T13:39:46+0900 jetson python[93081]: 2026-05-22 13:39:46.703 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/location type=location_update
+2026-05-22T13:39:46+0900 jetson python[93081]: 2026-05-22 13:39:46.703 INFO everybot.app.wiring: [BtLayer] robot/location published: id=sweethome name=대기영역 (0.79, -0.04)
+2026-05-22T13:39:47+0900 jetson python[93081]: 2026-05-22 13:39:47.751 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/config/destinations type=config_destinations
+2026-05-22T13:39:47+0900 jetson python[93081]: 2026-05-22 13:39:47.751 INFO everybot.app.wiring: [BtLayer] config published: 8 destinations, 0 visits
+2026-05-22T13:39:48+0900 jetson python[93081]: 2026-05-22 13:39:48.119 INFO everybot.app.wiring: [BB] init=True scenario=patrol_situation_check emg=False map=True wifi=True battery=88%
+2026-05-22T13:39:49+0900 jetson python[93081]: 2026-05-22 13:39:49.782 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/config/destinations type=config_destinations
+2026-05-22T13:39:49+0900 jetson python[93081]: 2026-05-22 13:39:49.782 INFO everybot.app.wiring: [BtLayer] config published: 8 destinations, 0 visits
+2026-05-22T13:39:51+0900 jetson python[93081]: 2026-05-22 13:39:51.648 INFO everybot.services.amr_service: [AMR] send_target_position → (1.02, 4.74, -1.53)
+2026-05-22T13:39:51+0900 jetson python[93081]: 2026-05-22 13:39:51.648 INFO everybot.bt.nodes: [NavWaypoints] → wp[2]='demo' {'x': 1.02, 'y': 4.74, 'theta': -1.532}
+2026-05-22T13:39:51+0900 jetson python[93081]: 2026-05-22 13:39:51.719 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/status type=robot_status
+2026-05-22T13:39:51+0900 jetson python[93081]: 2026-05-22 13:39:51.721 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/location type=location_update
+2026-05-22T13:39:51+0900 jetson python[93081]: 2026-05-22 13:39:51.721 INFO everybot.app.wiring: [BtLayer] robot/location published: id=sweethome name=대기영역 (0.80, -0.03)
+2026-05-22T13:39:51+0900 jetson python[93081]: 2026-05-22 13:39:51.818 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/config/destinations type=config_destinations
+2026-05-22T13:39:51+0900 jetson python[93081]: 2026-05-22 13:39:51.819 INFO everybot.app.wiring: [BtLayer] config published: 8 destinations, 0 visits
+2026-05-22T13:39:51+0900 jetson python[93081]: 2026-05-22 13:39:51.918 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/move/status type=move_status
+2026-05-22T13:39:53+0900 jetson python[93081]: 2026-05-22 13:39:53.342 INFO everybot.app.wiring: [BB] init=True scenario=patrol_situation_check emg=False map=True wifi=True battery=88%
+2026-05-22T13:39:53+0900 jetson python[93081]: 2026-05-22 13:39:53.821 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/config/destinations type=config_destinations
+2026-05-22T13:39:53+0900 jetson python[93081]: 2026-05-22 13:39:53.821 INFO everybot.app.wiring: [BtLayer] config published: 8 destinations, 0 visits
+2026-05-22T13:39:55+0900 jetson python[93081]: 2026-05-22 13:39:55.862 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/config/destinations type=config_destinations
+2026-05-22T13:39:55+0900 jetson python[93081]: 2026-05-22 13:39:55.863 INFO everybot.app.wiring: [BtLayer] config published: 8 destinations, 0 visits
+2026-05-22T13:39:56+0900 jetson python[93081]: 2026-05-22 13:39:56.747 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/status type=robot_status
+2026-05-22T13:39:56+0900 jetson python[93081]: 2026-05-22 13:39:56.748 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/location type=location_update
+2026-05-22T13:39:56+0900 jetson python[93081]: 2026-05-22 13:39:56.748 INFO everybot.app.wiring: [BtLayer] robot/location published: id=sweethome name=대기영역 (0.79, -0.03)
+2026-05-22T13:39:56+0900 jetson python[93081]: 2026-05-22 13:39:56.967 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/move/status type=move_status
+2026-05-22T13:39:57+0900 jetson python[93081]: 2026-05-22 13:39:57.953 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/config/destinations type=config_destinations
+2026-05-22T13:39:57+0900 jetson python[93081]: 2026-05-22 13:39:57.953 INFO everybot.app.wiring: [BtLayer] config published: 8 destinations, 0 visits
+2026-05-22T13:39:58+0900 jetson python[93081]: 2026-05-22 13:39:58.257 INFO everybot.services.ui_mqtt_service: [UiMqtt] recv topic=robot/debug/fall type=debug_fall_detected
+2026-05-22T13:39:58+0900 jetson python[93081]: 2026-05-22 13:39:58.305 INFO everybot.bt.bridge: [Bridge] UiMqtt msg received: type=debug_fall_detected
+2026-05-22T13:39:58+0900 jetson python[93081]: 2026-05-22 13:39:58.306 WARNING everybot.bt.bridge: [Bridge] debug fall detected=True candidate=False status=debug
+2026-05-22T13:39:58+0900 jetson python[93081]: 2026-05-22 13:39:58.316 WARNING everybot.bt.nodes: [FallDetectedDummy] detected=True candidate=False status=clear
+2026-05-22T13:39:58+0900 jetson python[93081]: 2026-05-22 13:39:58.317 INFO everybot.bt.nodes: [SavePatrolState] target=demo idx=2 dwell_remaining=0.0
+2026-05-22T13:39:58+0900 jetson python[93081]: 2026-05-22 13:39:58.317 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/detection type=detection_event
+2026-05-22T13:39:58+0900 jetson python[93081]: 2026-05-22 13:39:58.318 INFO everybot.services.amr_service: [AMR] send_stop
+2026-05-22T13:39:58+0900 jetson python[93081]: 2026-05-22 13:39:58.318 INFO everybot.bt.nodes: [AmrStop] stop sent
+2026-05-22T13:39:58+0900 jetson python[93081]: 2026-05-22 13:39:58.319 INFO everybot.bt.nodes: [Speak] → ' 위험 상황이 감지 되었습니다!'
+2026-05-22T13:39:58+0900 jetson python[93081]: 2026-05-22 13:39:58.632 INFO everybot.app.wiring: [BB] init=True scenario=patrol_situation_check emg=False map=True wifi=True battery=88%
+2026-05-22T13:39:59+0900 jetson python[93081]: 2026-05-22 13:39:59.968 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/config/destinations type=config_destinations
+2026-05-22T13:39:59+0900 jetson python[93081]: 2026-05-22 13:39:59.969 INFO everybot.app.wiring: [BtLayer] config published: 8 destinations, 0 visits
+2026-05-22T13:40:01+0900 jetson python[93081]: 2026-05-22 13:40:01.768 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/status type=robot_status
+2026-05-22T13:40:01+0900 jetson python[93081]: 2026-05-22 13:40:01.769 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/location type=location_update
+2026-05-22T13:40:01+0900 jetson python[93081]: 2026-05-22 13:40:01.769 INFO everybot.app.wiring: [BtLayer] robot/location published: id=sweethome name=대기영역 (0.96, 0.52)
+2026-05-22T13:40:01+0900 jetson python[93081]: 2026-05-22 13:40:01.969 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/move/status type=move_status
+2026-05-22T13:40:01+0900 jetson python[93081]: 2026-05-22 13:40:01.970 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/config/destinations type=config_destinations
+2026-05-22T13:40:01+0900 jetson python[93081]: 2026-05-22 13:40:01.971 INFO everybot.app.wiring: [BtLayer] config published: 8 destinations, 0 visits
+2026-05-22T13:40:03+0900 jetson python[93081]: 2026-05-22 13:40:03.494 WARNING everybot.services.jetson_ai_service: [AIService] TTS job wait timeout job_id=tts_260522_133958_745d0277 after 5.0s
+2026-05-22T13:40:03+0900 jetson python[93081]: 2026-05-22 13:40:03.518 WARNING everybot.bt.nodes: [Speak] TTS job ended with status=timeout
+2026-05-22T13:40:04+0900 jetson python[93081]: 2026-05-22 13:40:04.000 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/config/destinations type=config_destinations
+2026-05-22T13:40:04+0900 jetson python[93081]: 2026-05-22 13:40:04.001 INFO everybot.app.wiring: [BtLayer] config published: 8 destinations, 0 visits
+2026-05-22T13:40:04+0900 jetson python[93081]: 2026-05-22 13:40:04.001 INFO everybot.app.wiring: [BB] init=True scenario=patrol_situation_check emg=False map=True wifi=True battery=88%
+2026-05-22T13:40:06+0900 jetson python[93081]: 2026-05-22 13:40:06.008 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/config/destinations type=config_destinations
+2026-05-22T13:40:06+0900 jetson python[93081]: 2026-05-22 13:40:06.008 INFO everybot.app.wiring: [BtLayer] config published: 8 destinations, 0 visits
+2026-05-22T13:40:06+0900 jetson python[93081]: 2026-05-22 13:40:06.796 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/status type=robot_status
+2026-05-22T13:40:06+0900 jetson python[93081]: 2026-05-22 13:40:06.797 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/location type=location_update
+2026-05-22T13:40:06+0900 jetson python[93081]: 2026-05-22 13:40:06.797 INFO everybot.app.wiring: [BtLayer] robot/location published: id=sweethome name=대기영역 (0.96, 0.52)
+2026-05-22T13:40:07+0900 jetson python[93081]: 2026-05-22 13:40:07.007 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/move/status type=move_status
+2026-05-22T13:40:08+0900 jetson python[93081]: 2026-05-22 13:40:08.058 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/config/destinations type=config_destinations
+2026-05-22T13:40:08+0900 jetson python[93081]: 2026-05-22 13:40:08.058 INFO everybot.app.wiring: [BtLayer] config published: 8 destinations, 0 visits
+2026-05-22T13:40:08+0900 jetson python[93081]: 2026-05-22 13:40:08.717 WARNING everybot.services.jetson_ai_service: [AIService] TTS job wait timeout job_id=tts_260522_134003_b174e90a after 5.0s
+2026-05-22T13:40:09+0900 jetson python[93081]: 2026-05-22 13:40:09.059 INFO everybot.app.wiring: [BB] init=True scenario=patrol_situation_check emg=False map=True wifi=True battery=88%
+2026-05-22T13:40:10+0900 jetson python[93081]: 2026-05-22 13:40:10.058 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/config/destinations type=config_destinations
+2026-05-22T13:40:10+0900 jetson python[93081]: 2026-05-22 13:40:10.058 INFO everybot.app.wiring: [BtLayer] config published: 8 destinations, 0 visits
+2026-05-22T13:40:11+0900 jetson python[93081]: 2026-05-22 13:40:11.807 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/status type=robot_status
+2026-05-22T13:40:11+0900 jetson python[93081]: 2026-05-22 13:40:11.808 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/location type=location_update
+2026-05-22T13:40:11+0900 jetson python[93081]: 2026-05-22 13:40:11.808 INFO everybot.app.wiring: [BtLayer] robot/location published: id=sweethome name=대기영역 (0.96, 0.52)
+2026-05-22T13:40:18+0900 jetson python[93081]: 2026-05-22 13:40:18.842 WARNING everybot.services.jetson_ai_service: [AIService] agent event wait timeout after 10.0s
+2026-05-22T13:40:21+0900 jetson python[93081]: 2026-05-22 13:40:21.259 INFO everybot.bt.nodes: [VoiceStatusCheck] intent=timeout end_reason=timeout response=
+2026-05-22T13:40:21+0900 jetson python[93081]: 2026-05-22 13:40:21.262 INFO everybot.bt.nodes: [Speak] → ' 응답이 없어 위험 상황으로 감지되어 관리자에게 메시지를 전송했습니다.'
+2026-05-22T13:40:21+0900 jetson python[93081]: 2026-05-22 13:40:21.263 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/status type=robot_status
+2026-05-22T13:40:21+0900 jetson python[93081]: 2026-05-22 13:40:21.264 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/location type=location_update
+2026-05-22T13:40:21+0900 jetson python[93081]: 2026-05-22 13:40:21.264 INFO everybot.app.wiring: [BtLayer] robot/location published: id=sweethome name=대기영역 (0.96, 0.52)
+2026-05-22T13:40:21+0900 jetson python[93081]: 2026-05-22 13:40:21.265 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/move/status type=move_status
+2026-05-22T13:40:21+0900 jetson python[93081]: 2026-05-22 13:40:21.265 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/config/destinations type=config_destinations
+2026-05-22T13:40:21+0900 jetson python[93081]: 2026-05-22 13:40:21.265 INFO everybot.app.wiring: [BtLayer] config published: 8 destinations, 0 visits
+2026-05-22T13:40:23+0900 jetson python[93081]: 2026-05-22 13:40:23.278 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/config/destinations type=config_destinations
+2026-05-22T13:40:23+0900 jetson python[93081]: 2026-05-22 13:40:23.278 INFO everybot.app.wiring: [BtLayer] config published: 8 destinations, 0 visits
+2026-05-22T13:40:23+0900 jetson python[93081]: 2026-05-22 13:40:23.530 INFO everybot.app.wiring: [BB] init=True scenario=patrol_situation_check emg=False map=True wifi=True battery=88%
+2026-05-22T13:40:25+0900 jetson python[93081]: 2026-05-22 13:40:25.278 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/config/destinations type=config_destinations
+2026-05-22T13:40:25+0900 jetson python[93081]: 2026-05-22 13:40:25.279 INFO everybot.app.wiring: [BtLayer] config published: 8 destinations, 0 visits
+2026-05-22T13:40:26+0900 jetson python[93081]: 2026-05-22 13:40:26.278 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/status type=robot_status
+2026-05-22T13:40:26+0900 jetson python[93081]: 2026-05-22 13:40:26.279 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/location type=location_update
+2026-05-22T13:40:26+0900 jetson python[93081]: 2026-05-22 13:40:26.279 INFO everybot.app.wiring: [BtLayer] robot/location published: id=sweethome name=대기영역 (0.96, 0.52)
+2026-05-22T13:40:26+0900 jetson python[93081]: 2026-05-22 13:40:26.279 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/move/status type=move_status
+2026-05-22T13:40:26+0900 jetson python[93081]: 2026-05-22 13:40:26.510 WARNING everybot.services.jetson_ai_service: [AIService] TTS job wait timeout job_id=tts_260522_134021_a346129a after 5.0s
+2026-05-22T13:40:26+0900 jetson python[93081]: 2026-05-22 13:40:26.570 WARNING everybot.bt.nodes: [Speak] TTS job ended with status=timeout
+2026-05-22T13:40:27+0900 jetson python[93081]: 2026-05-22 13:40:27.328 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/config/destinations type=config_destinations
+2026-05-22T13:40:27+0900 jetson python[93081]: 2026-05-22 13:40:27.329 INFO everybot.app.wiring: [BtLayer] config published: 8 destinations, 0 visits
+2026-05-22T13:40:27+0900 jetson python[93081]: 2026-05-22 13:40:27.931 INFO everybot.bt.nodes: [WaitSpeakerIdle] high idle
+2026-05-22T13:40:27+0900 jetson python[93081]: 2026-05-22 13:40:27.932 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/detection type=detection_event
+2026-05-22T13:40:27+0900 jetson python[93081]: 2026-05-22 13:40:27.932 INFO everybot.bt.nodes: [RestorePatrolState] restored target=demo
+2026-05-22T13:40:27+0900 jetson python[93081]: 2026-05-22 13:40:27.932 INFO everybot.bt.nodes: [ClearFallDetection] fall flags reset
+2026-05-22T13:40:27+0900 jetson python[93081]: 2026-05-22 13:40:27.933 INFO everybot.bt.nodes: [Speak] → ' 순찰을 계속 진행합니다.'
+2026-05-22T13:40:27+0900 jetson python[93081]: 2026-05-22 13:40:27.978 INFO everybot.services.amr_service: [AMR] send_target_position → (1.02, 4.74, -1.53)
+2026-05-22T13:40:27+0900 jetson python[93081]: 2026-05-22 13:40:27.978 INFO everybot.bt.nodes: [NavWaypoints] → wp[2]='demo' {'x': 1.02, 'y': 4.74, 'theta': -1.532}
+2026-05-22T13:40:27+0900 jetson python[93081]: 2026-05-22 13:40:27.978 INFO everybot.bt.nodes: [NavWaypoints] resume patrol navigation wp[2] target=demo
+2026-05-22T13:40:28+0900 jetson python[93081]: 2026-05-22 13:40:28.710 INFO everybot.app.wiring: [BB] init=True scenario=patrol_situation_check emg=False map=True wifi=True battery=88%
+2026-05-22T13:40:29+0900 jetson python[93081]: 2026-05-22 13:40:29.359 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/config/destinations type=config_destinations
+2026-05-22T13:40:29+0900 jetson python[93081]: 2026-05-22 13:40:29.359 INFO everybot.app.wiring: [BtLayer] config published: 8 destinations, 0 visits
+2026-05-22T13:40:31+0900 jetson python[93081]: 2026-05-22 13:40:31.303 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/status type=robot_status
+2026-05-22T13:40:31+0900 jetson python[93081]: 2026-05-22 13:40:31.303 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/location type=location_update
+2026-05-22T13:40:31+0900 jetson python[93081]: 2026-05-22 13:40:31.303 INFO everybot.app.wiring: [BtLayer] robot/location published: id=sweethome name=대기영역 (0.96, 0.52)
+2026-05-22T13:40:31+0900 jetson python[93081]: 2026-05-22 13:40:31.359 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/config/destinations type=config_destinations
+2026-05-22T13:40:31+0900 jetson python[93081]: 2026-05-22 13:40:31.360 INFO everybot.app.wiring: [BtLayer] config published: 8 destinations, 0 visits
+2026-05-22T13:40:33+0900 jetson python[93081]: 2026-05-22 13:40:33.098 WARNING everybot.services.jetson_ai_service: [AIService] TTS job wait timeout job_id=tts_260522_134027_e5c2c426 after 5.0s
+2026-05-22T13:40:33+0900 jetson python[93081]: 2026-05-22 13:40:33.108 WARNING everybot.bt.nodes: [Speak] TTS job ended with status=timeout
+2026-05-22T13:40:33+0900 jetson python[93081]: 2026-05-22 13:40:33.359 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/config/destinations type=config_destinations
+2026-05-22T13:40:33+0900 jetson python[93081]: 2026-05-22 13:40:33.359 INFO everybot.app.wiring: [BtLayer] config published: 8 destinations, 0 visits
+2026-05-22T13:40:33+0900 jetson python[93081]: 2026-05-22 13:40:33.710 INFO everybot.app.wiring: [BB] init=True scenario=patrol_situation_check emg=False map=True wifi=True battery=88%
+2026-05-22T13:40:35+0900 jetson python[93081]: 2026-05-22 13:40:35.055 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/move/status type=move_status
+2026-05-22T13:40:35+0900 jetson python[93081]: 2026-05-22 13:40:35.409 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/config/destinations type=config_destinations
+2026-05-22T13:40:35+0900 jetson python[93081]: 2026-05-22 13:40:35.409 INFO everybot.app.wiring: [BtLayer] config published: 8 destinations, 0 visits
+2026-05-22T13:40:36+0900 jetson python[93081]: 2026-05-22 13:40:36.309 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/status type=robot_status
+2026-05-22T13:40:36+0900 jetson python[93081]: 2026-05-22 13:40:36.309 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/location type=location_update
+2026-05-22T13:40:36+0900 jetson python[93081]: 2026-05-22 13:40:36.309 INFO everybot.app.wiring: [BtLayer] robot/location published: id=sweethome name=대기영역 (0.96, 0.52)
+2026-05-22T13:40:37+0900 jetson python[93081]: 2026-05-22 13:40:37.459 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/config/destinations type=config_destinations
+2026-05-22T13:40:37+0900 jetson python[93081]: 2026-05-22 13:40:37.460 INFO everybot.app.wiring: [BtLayer] config published: 8 destinations, 0 visits
+2026-05-22T13:40:38+0900 jetson python[93081]: 2026-05-22 13:40:38.756 INFO everybot.app.wiring: [BB] init=True scenario=patrol_situation_check emg=False map=True wifi=True battery=88%
+2026-05-22T13:40:39+0900 jetson python[93081]: 2026-05-22 13:40:39.509 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/config/destinations type=config_destinations
+2026-05-22T13:40:39+0900 jetson python[93081]: 2026-05-22 13:40:39.509 INFO everybot.app.wiring: [BtLayer] config published: 8 destinations, 0 visits
+2026-05-22T13:40:40+0900 jetson python[93081]: 2026-05-22 13:40:40.059 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/move/status type=move_status
+2026-05-22T13:40:41+0900 jetson python[93081]: 2026-05-22 13:40:41.309 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/status type=robot_status
+2026-05-22T13:40:41+0900 jetson python[93081]: 2026-05-22 13:40:41.309 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/location type=location_update
+2026-05-22T13:40:41+0900 jetson python[93081]: 2026-05-22 13:40:41.309 INFO everybot.app.wiring: [BtLayer] robot/location published: id=sweethome name=대기영역 (1.00, 0.76)
+2026-05-22T13:40:41+0900 jetson python[93081]: 2026-05-22 13:40:41.509 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/config/destinations type=config_destinations
+2026-05-22T13:40:41+0900 jetson python[93081]: 2026-05-22 13:40:41.509 INFO everybot.app.wiring: [BtLayer] config published: 8 destinations, 0 visits
+2026-05-22T13:40:43+0900 jetson python[93081]: 2026-05-22 13:40:43.553 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/config/destinations type=config_destinations
+2026-05-22T13:40:43+0900 jetson python[93081]: 2026-05-22 13:40:43.553 INFO everybot.app.wiring: [BtLayer] config published: 8 destinations, 0 visits
+2026-05-22T13:40:43+0900 jetson python[93081]: 2026-05-22 13:40:43.714 INFO everybot.app.wiring: [BB] init=True scenario=patrol_situation_check emg=False map=True wifi=True battery=88%
+2026-05-22T13:40:45+0900 jetson python[93081]: 2026-05-22 13:40:45.105 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/move/status type=move_status
+2026-05-22T13:40:45+0900 jetson python[93081]: 2026-05-22 13:40:45.617 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/config/destinations type=config_destinations
+2026-05-22T13:40:45+0900 jetson python[93081]: 2026-05-22 13:40:45.618 INFO everybot.app.wiring: [BtLayer] config published: 8 destinations, 0 visits
+2026-05-22T13:40:46+0900 jetson python[93081]: 2026-05-22 13:40:46.344 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/status type=robot_status
+2026-05-22T13:40:46+0900 jetson python[93081]: 2026-05-22 13:40:46.346 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/location type=location_update
+2026-05-22T13:40:46+0900 jetson python[93081]: 2026-05-22 13:40:46.346 INFO everybot.app.wiring: [BtLayer] robot/location published: id=entrance name=입구 (1.01, 1.89)
+2026-05-22T13:40:47+0900 jetson python[93081]: 2026-05-22 13:40:47.686 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/config/destinations type=config_destinations
+2026-05-22T13:40:47+0900 jetson python[93081]: 2026-05-22 13:40:47.686 INFO everybot.app.wiring: [BtLayer] config published: 8 destinations, 0 visits
+2026-05-22T13:40:48+0900 jetson python[93081]: 2026-05-22 13:40:48.916 INFO everybot.app.wiring: [BB] init=True scenario=patrol_situation_check emg=False map=True wifi=True battery=88%
+2026-05-22T13:40:49+0900 jetson python[93081]: 2026-05-22 13:40:49.748 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/config/destinations type=config_destinations
+2026-05-22T13:40:49+0900 jetson python[93081]: 2026-05-22 13:40:49.749 INFO everybot.app.wiring: [BtLayer] config published: 8 destinations, 0 visits
+2026-05-22T13:40:50+0900 jetson python[93081]: 2026-05-22 13:40:50.153 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/move/status type=move_status
+2026-05-22T13:40:51+0900 jetson python[93081]: 2026-05-22 13:40:51.815 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/status type=robot_status
+2026-05-22T13:40:51+0900 jetson python[93081]: 2026-05-22 13:40:51.816 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/location type=location_update
+2026-05-22T13:40:51+0900 jetson python[93081]: 2026-05-22 13:40:51.816 INFO everybot.app.wiring: [BtLayer] robot/location published: id=103 name=103호 (1.02, 3.39)
+2026-05-22T13:40:51+0900 jetson python[93081]: 2026-05-22 13:40:51.816 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/config/destinations type=config_destinations
+2026-05-22T13:40:51+0900 jetson python[93081]: 2026-05-22 13:40:51.817 INFO everybot.app.wiring: [BtLayer] config published: 8 destinations, 0 visits
+2026-05-22T13:40:53+0900 jetson python[93081]: 2026-05-22 13:40:53.829 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/config/destinations type=config_destinations
+2026-05-22T13:40:53+0900 jetson python[93081]: 2026-05-22 13:40:53.829 INFO everybot.app.wiring: [BtLayer] config published: 8 destinations, 0 visits
+2026-05-22T13:40:54+0900 jetson python[93081]: 2026-05-22 13:40:54.619 INFO everybot.app.wiring: [BB] init=True scenario=patrol_situation_check emg=False map=True wifi=True battery=88%
+2026-05-22T13:40:55+0900 jetson python[93081]: 2026-05-22 13:40:55.183 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/move/status type=move_status
+2026-05-22T13:40:55+0900 jetson python[93081]: 2026-05-22 13:40:55.854 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/config/destinations type=config_destinations
+2026-05-22T13:40:55+0900 jetson python[93081]: 2026-05-22 13:40:55.854 INFO everybot.app.wiring: [BtLayer] config published: 8 destinations, 0 visits
+2026-05-22T13:40:56+0900 jetson python[93081]: 2026-05-22 13:40:56.846 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/status type=robot_status
+2026-05-22T13:40:56+0900 jetson python[93081]: 2026-05-22 13:40:56.847 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/location type=location_update
+2026-05-22T13:40:56+0900 jetson python[93081]: 2026-05-22 13:40:56.847 INFO everybot.app.wiring: [BtLayer] robot/location published: id=demo name=시연장소 (1.00, 4.34)
+2026-05-22T13:40:57+0900 jetson python[93081]: 2026-05-22 13:40:57.875 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/config/destinations type=config_destinations
+2026-05-22T13:40:57+0900 jetson python[93081]: 2026-05-22 13:40:57.875 INFO everybot.app.wiring: [BtLayer] config published: 8 destinations, 0 visits
+2026-05-22T13:40:59+0900 jetson python[93081]: 2026-05-22 13:40:59.852 INFO everybot.app.wiring: [BB] init=True scenario=patrol_situation_check emg=False map=True wifi=True battery=88%
+2026-05-22T13:40:59+0900 jetson python[93081]: 2026-05-22 13:40:59.894 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/config/destinations type=config_destinations
+2026-05-22T13:40:59+0900 jetson python[93081]: 2026-05-22 13:40:59.896 INFO everybot.app.wiring: [BtLayer] config published: 8 destinations, 0 visits
+2026-05-22T13:41:00+0900 jetson python[93081]: 2026-05-22 13:41:00.227 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/move/status type=move_status
+2026-05-22T13:41:01+0900 jetson python[93081]: 2026-05-22 13:41:01.857 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/status type=robot_status
+2026-05-22T13:41:01+0900 jetson python[93081]: 2026-05-22 13:41:01.859 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/location type=location_update
+2026-05-22T13:41:01+0900 jetson python[93081]: 2026-05-22 13:41:01.860 INFO everybot.app.wiring: [BtLayer] robot/location published: id=demo name=시연장소 (1.02, 4.67)
+2026-05-22T13:41:01+0900 jetson python[93081]: 2026-05-22 13:41:01.898 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/config/destinations type=config_destinations
+2026-05-22T13:41:01+0900 jetson python[93081]: 2026-05-22 13:41:01.898 INFO everybot.app.wiring: [BtLayer] config published: 8 destinations, 0 visits
+2026-05-22T13:41:03+0900 jetson python[93081]: 2026-05-22 13:41:03.968 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/config/destinations type=config_destinations
+2026-05-22T13:41:03+0900 jetson python[93081]: 2026-05-22 13:41:03.969 INFO everybot.app.wiring: [BtLayer] config published: 8 destinations, 0 visits
+2026-05-22T13:41:05+0900 jetson python[93081]: 2026-05-22 13:41:05.178 INFO everybot.app.wiring: [BB] init=True scenario=patrol_situation_check emg=False map=True wifi=True battery=88%
+2026-05-22T13:41:05+0900 jetson python[93081]: 2026-05-22 13:41:05.270 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/move/status type=move_status
+2026-05-22T13:41:06+0900 jetson python[93081]: 2026-05-22 13:41:06.017 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/config/destinations type=config_destinations
+2026-05-22T13:41:06+0900 jetson python[93081]: 2026-05-22 13:41:06.018 INFO everybot.app.wiring: [BtLayer] config published: 8 destinations, 0 visits
+2026-05-22T13:41:06+0900 jetson python[93081]: 2026-05-22 13:41:06.881 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/status type=robot_status
+2026-05-22T13:41:06+0900 jetson python[93081]: 2026-05-22 13:41:06.881 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/location type=location_update
+2026-05-22T13:41:06+0900 jetson python[93081]: 2026-05-22 13:41:06.882 INFO everybot.app.wiring: [BtLayer] robot/location published: id=demo name=시연장소 (1.00, 4.65)
+2026-05-22T13:41:08+0900 jetson python[93081]: 2026-05-22 13:41:08.051 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/config/destinations type=config_destinations
+2026-05-22T13:41:08+0900 jetson python[93081]: 2026-05-22 13:41:08.052 INFO everybot.app.wiring: [BtLayer] config published: 8 destinations, 0 visits
+2026-05-22T13:41:10+0900 jetson python[93081]: 2026-05-22 13:41:10.155 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/config/destinations type=config_destinations
+2026-05-22T13:41:10+0900 jetson python[93081]: 2026-05-22 13:41:10.155 INFO everybot.app.wiring: [BtLayer] config published: 8 destinations, 0 visits
+2026-05-22T13:41:10+0900 jetson python[93081]: 2026-05-22 13:41:10.320 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/move/status type=move_status
+2026-05-22T13:41:10+0900 jetson python[93081]: 2026-05-22 13:41:10.412 INFO everybot.app.wiring: [BB] init=True scenario=patrol_situation_check emg=False map=True wifi=True battery=88%
+2026-05-22T13:41:11+0900 jetson python[93081]: 2026-05-22 13:41:11.893 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/status type=robot_status
+2026-05-22T13:41:11+0900 jetson python[93081]: 2026-05-22 13:41:11.894 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/location type=location_update
+2026-05-22T13:41:11+0900 jetson python[93081]: 2026-05-22 13:41:11.894 INFO everybot.app.wiring: [BtLayer] robot/location published: id=demo name=시연장소 (0.98, 4.65)
+2026-05-22T13:41:12+0900 jetson python[93081]: 2026-05-22 13:41:12.182 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/config/destinations type=config_destinations
+2026-05-22T13:41:12+0900 jetson python[93081]: 2026-05-22 13:41:12.182 INFO everybot.app.wiring: [BtLayer] config published: 8 destinations, 0 visits
+2026-05-22T13:41:14+0900 jetson python[93081]: 2026-05-22 13:41:14.237 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/config/destinations type=config_destinations
+2026-05-22T13:41:14+0900 jetson python[93081]: 2026-05-22 13:41:14.237 INFO everybot.app.wiring: [BtLayer] config published: 8 destinations, 0 visits
+2026-05-22T13:41:15+0900 jetson python[93081]: 2026-05-22 13:41:15.324 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/move/status type=move_status
+2026-05-22T13:41:16+0900 jetson python[93081]: 2026-05-22 13:41:16.502 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/config/destinations type=config_destinations
+2026-05-22T13:41:16+0900 jetson python[93081]: 2026-05-22 13:41:16.505 INFO everybot.app.wiring: [BtLayer] config published: 8 destinations, 0 visits
+2026-05-22T13:41:16+0900 jetson python[93081]: 2026-05-22 13:41:16.949 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/status type=robot_status
+2026-05-22T13:41:16+0900 jetson python[93081]: 2026-05-22 13:41:16.950 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/location type=location_update
+2026-05-22T13:41:16+0900 jetson python[93081]: 2026-05-22 13:41:16.950 INFO everybot.app.wiring: [BtLayer] robot/location published: id=demo name=시연장소 (0.88, 4.69)
+2026-05-22T13:41:17+0900 jetson python[93081]: 2026-05-22 13:41:17.522 INFO everybot.app.wiring: [BB] init=True scenario=patrol_situation_check emg=False map=True wifi=True battery=88%
+2026-05-22T13:41:18+0900 jetson python[93081]: 2026-05-22 13:41:18.544 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/config/destinations type=config_destinations
+2026-05-22T13:41:18+0900 jetson python[93081]: 2026-05-22 13:41:18.544 INFO everybot.app.wiring: [BtLayer] config published: 8 destinations, 0 visits
+2026-05-22T13:41:20+0900 jetson python[93081]: 2026-05-22 13:41:20.334 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/move/status type=move_status
+2026-05-22T13:41:20+0900 jetson python[93081]: 2026-05-22 13:41:20.559 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/config/destinations type=config_destinations
+2026-05-22T13:41:20+0900 jetson python[93081]: 2026-05-22 13:41:20.559 INFO everybot.app.wiring: [BtLayer] config published: 8 destinations, 0 visits
+2026-05-22T13:41:21+0900 jetson python[93081]: 2026-05-22 13:41:21.956 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/status type=robot_status
+2026-05-22T13:41:21+0900 jetson python[93081]: 2026-05-22 13:41:21.957 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/location type=location_update
+2026-05-22T13:41:21+0900 jetson python[93081]: 2026-05-22 13:41:21.957 INFO everybot.app.wiring: [BtLayer] robot/location published: id=demo name=시연장소 (1.06, 4.77)
+2026-05-22T13:41:22+0900 jetson python[93081]: 2026-05-22 13:41:22.559 INFO everybot.services.amr_service: [AMR] arrived event (MOVING→ARRIVED)
+2026-05-22T13:41:22+0900 jetson python[93081]: 2026-05-22 13:41:22.565 INFO everybot.bt.nodes: [NavWaypoints] wp[2] arrived ✓ state=2
+2026-05-22T13:41:22+0900 jetson python[93081]: 2026-05-22 13:41:22.565 INFO everybot.bt.nodes: [NavWaypoints] all waypoints done
+2026-05-22T13:41:22+0900 jetson python[93081]: 2026-05-22 13:41:22.577 INFO everybot.bt.nodes: [Speak] → ' 순찰이 종료되었습니다.'
+2026-05-22T13:41:22+0900 jetson python[93081]: 2026-05-22 13:41:22.579 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/move/status type=move_status
+2026-05-22T13:41:22+0900 jetson python[93081]: 2026-05-22 13:41:22.581 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/config/destinations type=config_destinations
+2026-05-22T13:41:22+0900 jetson python[93081]: 2026-05-22 13:41:22.581 INFO everybot.app.wiring: [BtLayer] config published: 8 destinations, 0 visits
+2026-05-22T13:41:23+0900 jetson python[93081]: 2026-05-22 13:41:23.336 INFO everybot.app.wiring: [BB] init=True scenario=patrol_situation_check emg=False map=True wifi=True battery=88%
+2026-05-22T13:41:24+0900 jetson python[93081]: 2026-05-22 13:41:24.585 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/config/destinations type=config_destinations
+2026-05-22T13:41:24+0900 jetson python[93081]: 2026-05-22 13:41:24.585 INFO everybot.app.wiring: [BtLayer] config published: 8 destinations, 0 visits
+2026-05-22T13:41:26+0900 jetson python[93081]: 2026-05-22 13:41:26.585 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/config/destinations type=config_destinations
+2026-05-22T13:41:26+0900 jetson python[93081]: 2026-05-22 13:41:26.585 INFO everybot.app.wiring: [BtLayer] config published: 8 destinations, 0 visits
+2026-05-22T13:41:26+0900 jetson python[93081]: 2026-05-22 13:41:26.985 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/status type=robot_status
+2026-05-22T13:41:26+0900 jetson python[93081]: 2026-05-22 13:41:26.985 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/location type=location_update
+2026-05-22T13:41:26+0900 jetson python[93081]: 2026-05-22 13:41:26.985 INFO everybot.app.wiring: [BtLayer] robot/location published: id=demo name=시연장소 (1.04, 4.71)
+2026-05-22T13:41:27+0900 jetson python[93081]: 2026-05-22 13:41:27.699 WARNING everybot.services.jetson_ai_service: [AIService] TTS job wait timeout job_id=tts_260522_134122_08af9891 after 5.0s
+2026-05-22T13:41:27+0900 jetson python[93081]: 2026-05-22 13:41:27.734 WARNING everybot.bt.nodes: [Speak] TTS job ended with status=timeout
+2026-05-22T13:41:27+0900 jetson python[93081]: 2026-05-22 13:41:27.735 INFO everybot.services.amr_service: [AMR] send_target_position → (0.87, -0.06, 1.57)
+2026-05-22T13:41:27+0900 jetson python[93081]: 2026-05-22 13:41:27.735 INFO everybot.bt.nodes: [NavTo] → 'home' {'x': 0.87, 'y': -0.06, 'theta': 1.571} (retry=0)
+2026-05-22T13:41:27+0900 jetson python[93081]: 2026-05-22 13:41:27.985 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/move/status type=move_status
+2026-05-22T13:41:28+0900 jetson python[93081]: 2026-05-22 13:41:28.336 INFO everybot.app.wiring: [BB] init=True scenario=patrol_situation_check emg=False map=True wifi=True battery=88%
+2026-05-22T13:41:28+0900 jetson python[93081]: 2026-05-22 13:41:28.585 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/config/destinations type=config_destinations
+2026-05-22T13:41:28+0900 jetson python[93081]: 2026-05-22 13:41:28.585 INFO everybot.app.wiring: [BtLayer] config published: 8 destinations, 0 visits
+2026-05-22T13:41:30+0900 jetson python[93081]: 2026-05-22 13:41:30.626 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/config/destinations type=config_destinations
+2026-05-22T13:41:30+0900 jetson python[93081]: 2026-05-22 13:41:30.626 INFO everybot.app.wiring: [BtLayer] config published: 8 destinations, 0 visits
+2026-05-22T13:41:32+0900 jetson python[93081]: 2026-05-22 13:41:32.034 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/status type=robot_status
+2026-05-22T13:41:32+0900 jetson python[93081]: 2026-05-22 13:41:32.035 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/location type=location_update
+2026-05-22T13:41:32+0900 jetson python[93081]: 2026-05-22 13:41:32.035 INFO everybot.app.wiring: [BtLayer] robot/location published: id=demo name=시연장소 (1.04, 4.72)
+2026-05-22T13:41:32+0900 jetson python[93081]: 2026-05-22 13:41:32.635 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/config/destinations type=config_destinations
+2026-05-22T13:41:32+0900 jetson python[93081]: 2026-05-22 13:41:32.635 INFO everybot.app.wiring: [BtLayer] config published: 8 destinations, 0 visits
+2026-05-22T13:41:33+0900 jetson python[93081]: 2026-05-22 13:41:33.035 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/move/status type=move_status
+2026-05-22T13:41:33+0900 jetson python[93081]: 2026-05-22 13:41:33.336 INFO everybot.app.wiring: [BB] init=True scenario=patrol_situation_check emg=False map=True wifi=True battery=88%
+2026-05-22T13:41:34+0900 jetson python[93081]: 2026-05-22 13:41:34.685 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/config/destinations type=config_destinations
+2026-05-22T13:41:34+0900 jetson python[93081]: 2026-05-22 13:41:34.685 INFO everybot.app.wiring: [BtLayer] config published: 8 destinations, 0 visits
+2026-05-22T13:41:36+0900 jetson python[93081]: 2026-05-22 13:41:36.685 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/config/destinations type=config_destinations
+2026-05-22T13:41:36+0900 jetson python[93081]: 2026-05-22 13:41:36.685 INFO everybot.app.wiring: [BtLayer] config published: 8 destinations, 0 visits
+2026-05-22T13:41:37+0900 jetson python[93081]: 2026-05-22 13:41:37.035 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/status type=robot_status
+2026-05-22T13:41:37+0900 jetson python[93081]: 2026-05-22 13:41:37.035 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/location type=location_update
+2026-05-22T13:41:37+0900 jetson python[93081]: 2026-05-22 13:41:37.035 INFO everybot.app.wiring: [BtLayer] robot/location published: id=101 name=101호 (0.73, 3.74)
+2026-05-22T13:41:38+0900 jetson python[93081]: 2026-05-22 13:41:38.131 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/move/status type=move_status
+2026-05-22T13:41:38+0900 jetson python[93081]: 2026-05-22 13:41:38.339 INFO everybot.app.wiring: [BB] init=True scenario=patrol_situation_check emg=False map=True wifi=True battery=88%
+2026-05-22T13:41:38+0900 jetson python[93081]: 2026-05-22 13:41:38.707 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/config/destinations type=config_destinations
+2026-05-22T13:41:38+0900 jetson python[93081]: 2026-05-22 13:41:38.707 INFO everybot.app.wiring: [BtLayer] config published: 8 destinations, 0 visits
+2026-05-22T13:41:40+0900 jetson python[93081]: 2026-05-22 13:41:40.711 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/config/destinations type=config_destinations
+2026-05-22T13:41:40+0900 jetson python[93081]: 2026-05-22 13:41:40.711 INFO everybot.app.wiring: [BtLayer] config published: 8 destinations, 0 visits
+2026-05-22T13:41:42+0900 jetson python[93081]: 2026-05-22 13:41:42.059 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/status type=robot_status
+2026-05-22T13:41:42+0900 jetson python[93081]: 2026-05-22 13:41:42.060 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/location type=location_update
+2026-05-22T13:41:42+0900 jetson python[93081]: 2026-05-22 13:41:42.060 INFO everybot.app.wiring: [BtLayer] robot/location published: id=101 name=101호 (0.81, 2.36)
+2026-05-22T13:41:42+0900 jetson python[93081]: 2026-05-22 13:41:42.789 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/config/destinations type=config_destinations
+2026-05-22T13:41:42+0900 jetson python[93081]: 2026-05-22 13:41:42.790 INFO everybot.app.wiring: [BtLayer] config published: 8 destinations, 0 visits
+2026-05-22T13:41:43+0900 jetson python[93081]: 2026-05-22 13:41:43.143 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/move/status type=move_status
+2026-05-22T13:41:43+0900 jetson python[93081]: 2026-05-22 13:41:43.514 INFO everybot.app.wiring: [BB] init=True scenario=patrol_situation_check emg=False map=True wifi=True battery=88%
+2026-05-22T13:41:44+0900 jetson python[93081]: 2026-05-22 13:41:44.859 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/config/destinations type=config_destinations
+2026-05-22T13:41:44+0900 jetson python[93081]: 2026-05-22 13:41:44.861 INFO everybot.app.wiring: [BtLayer] config published: 8 destinations, 0 visits
+2026-05-22T13:41:46+0900 jetson python[93081]: 2026-05-22 13:41:46.939 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/config/destinations type=config_destinations
+2026-05-22T13:41:46+0900 jetson python[93081]: 2026-05-22 13:41:46.940 INFO everybot.app.wiring: [BtLayer] config published: 8 destinations, 0 visits
+2026-05-22T13:41:47+0900 jetson python[93081]: 2026-05-22 13:41:47.093 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/status type=robot_status
+2026-05-22T13:41:47+0900 jetson python[93081]: 2026-05-22 13:41:47.094 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/location type=location_update
+2026-05-22T13:41:47+0900 jetson python[93081]: 2026-05-22 13:41:47.094 INFO everybot.app.wiring: [BtLayer] robot/location published: id=sweethome name=대기영역 (0.78, 0.72)
+2026-05-22T13:41:48+0900 jetson python[93081]: 2026-05-22 13:41:48.171 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/move/status type=move_status
+2026-05-22T13:41:48+0900 jetson python[93081]: 2026-05-22 13:41:48.684 INFO everybot.app.wiring: [BB] init=True scenario=patrol_situation_check emg=False map=True wifi=True battery=88%
+2026-05-22T13:41:48+0900 jetson python[93081]: 2026-05-22 13:41:48.998 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/config/destinations type=config_destinations
+2026-05-22T13:41:49+0900 jetson python[93081]: 2026-05-22 13:41:48.999 INFO everybot.app.wiring: [BtLayer] config published: 8 destinations, 0 visits
+2026-05-22T13:41:51+0900 jetson python[93081]: 2026-05-22 13:41:51.056 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/config/destinations type=config_destinations
+2026-05-22T13:41:51+0900 jetson python[93081]: 2026-05-22 13:41:51.056 INFO everybot.app.wiring: [BtLayer] config published: 8 destinations, 0 visits
+2026-05-22T13:41:52+0900 jetson python[93081]: 2026-05-22 13:41:52.141 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/status type=robot_status
+2026-05-22T13:41:52+0900 jetson python[93081]: 2026-05-22 13:41:52.142 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/location type=location_update
+2026-05-22T13:41:52+0900 jetson python[93081]: 2026-05-22 13:41:52.142 INFO everybot.app.wiring: [BtLayer] robot/location published: id=sweethome name=대기영역 (0.79, 0.18)
+2026-05-22T13:41:53+0900 jetson python[93081]: 2026-05-22 13:41:53.103 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/config/destinations type=config_destinations
+2026-05-22T13:41:53+0900 jetson python[93081]: 2026-05-22 13:41:53.104 INFO everybot.app.wiring: [BtLayer] config published: 8 destinations, 0 visits
+2026-05-22T13:41:53+0900 jetson python[93081]: 2026-05-22 13:41:53.216 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/move/status type=move_status
+2026-05-22T13:41:54+0900 jetson python[93081]: 2026-05-22 13:41:54.340 INFO everybot.app.wiring: [BB] init=True scenario=patrol_situation_check emg=False map=True wifi=True battery=88%
+2026-05-22T13:41:55+0900 jetson python[93081]: 2026-05-22 13:41:55.120 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/config/destinations type=config_destinations
+2026-05-22T13:41:55+0900 jetson python[93081]: 2026-05-22 13:41:55.121 INFO everybot.app.wiring: [BtLayer] config published: 8 destinations, 0 visits
+2026-05-22T13:41:57+0900 jetson python[93081]: 2026-05-22 13:41:57.123 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/config/destinations type=config_destinations
+2026-05-22T13:41:57+0900 jetson python[93081]: 2026-05-22 13:41:57.123 INFO everybot.app.wiring: [BtLayer] config published: 8 destinations, 0 visits
+2026-05-22T13:41:57+0900 jetson python[93081]: 2026-05-22 13:41:57.173 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/status type=robot_status
+2026-05-22T13:41:57+0900 jetson python[93081]: 2026-05-22 13:41:57.175 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/location type=location_update
+2026-05-22T13:41:57+0900 jetson python[93081]: 2026-05-22 13:41:57.176 INFO everybot.app.wiring: [BtLayer] robot/location published: id=sweethome name=대기영역 (0.81, -0.08)
+2026-05-22T13:41:58+0900 jetson python[93081]: 2026-05-22 13:41:58.318 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/move/status type=move_status
+2026-05-22T13:41:59+0900 jetson python[93081]: 2026-05-22 13:41:59.138 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/config/destinations type=config_destinations
+2026-05-22T13:41:59+0900 jetson python[93081]: 2026-05-22 13:41:59.138 INFO everybot.app.wiring: [BtLayer] config published: 8 destinations, 0 visits
+2026-05-22T13:41:59+0900 jetson python[93081]: 2026-05-22 13:41:59.515 INFO everybot.app.wiring: [BB] init=True scenario=patrol_situation_check emg=False map=True wifi=True battery=87%
+2026-05-22T13:42:01+0900 jetson python[93081]: 2026-05-22 13:42:01.160 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/config/destinations type=config_destinations
+2026-05-22T13:42:01+0900 jetson python[93081]: 2026-05-22 13:42:01.162 INFO everybot.app.wiring: [BtLayer] config published: 8 destinations, 0 visits
+2026-05-22T13:42:02+0900 jetson python[93081]: 2026-05-22 13:42:02.191 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/status type=robot_status
+2026-05-22T13:42:02+0900 jetson python[93081]: 2026-05-22 13:42:02.192 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/location type=location_update
+2026-05-22T13:42:02+0900 jetson python[93081]: 2026-05-22 13:42:02.192 INFO everybot.app.wiring: [BtLayer] robot/location published: id=sweethome name=대기영역 (0.81, -0.03)
+2026-05-22T13:42:03+0900 jetson python[93081]: 2026-05-22 13:42:03.186 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/config/destinations type=config_destinations
+2026-05-22T13:42:03+0900 jetson python[93081]: 2026-05-22 13:42:03.186 INFO everybot.app.wiring: [BtLayer] config published: 8 destinations, 0 visits
+2026-05-22T13:42:03+0900 jetson python[93081]: 2026-05-22 13:42:03.336 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/move/status type=move_status
+2026-05-22T13:42:04+0900 jetson python[93081]: 2026-05-22 13:42:04.690 INFO everybot.app.wiring: [BB] init=True scenario=patrol_situation_check emg=False map=True wifi=True battery=87%
+2026-05-22T13:42:05+0900 jetson python[93081]: 2026-05-22 13:42:05.205 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/config/destinations type=config_destinations
+2026-05-22T13:42:05+0900 jetson python[93081]: 2026-05-22 13:42:05.205 INFO everybot.app.wiring: [BtLayer] config published: 8 destinations, 0 visits
+2026-05-22T13:42:07+0900 jetson python[93081]: 2026-05-22 13:42:07.197 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/status type=robot_status
+2026-05-22T13:42:07+0900 jetson python[93081]: 2026-05-22 13:42:07.198 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/location type=location_update
+2026-05-22T13:42:07+0900 jetson python[93081]: 2026-05-22 13:42:07.198 INFO everybot.app.wiring: [BtLayer] robot/location published: id=sweethome name=대기영역 (0.91, -0.11)
+2026-05-22T13:42:07+0900 jetson python[93081]: 2026-05-22 13:42:07.248 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/config/destinations type=config_destinations
+2026-05-22T13:42:07+0900 jetson python[93081]: 2026-05-22 13:42:07.249 INFO everybot.app.wiring: [BtLayer] config published: 8 destinations, 0 visits
+2026-05-22T13:42:08+0900 jetson python[93081]: 2026-05-22 13:42:08.374 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/move/status type=move_status
+2026-05-22T13:42:09+0900 jetson python[93081]: 2026-05-22 13:42:09.256 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/config/destinations type=config_destinations
+2026-05-22T13:42:09+0900 jetson python[93081]: 2026-05-22 13:42:09.256 INFO everybot.app.wiring: [BtLayer] config published: 8 destinations, 0 visits
+2026-05-22T13:42:09+0900 jetson python[93081]: 2026-05-22 13:42:09.584 INFO everybot.services.amr_service: [AMR] arrived event (MOVING→ARRIVED)
+2026-05-22T13:42:09+0900 jetson python[93081]: 2026-05-22 13:42:09.665 INFO everybot.bt.nodes: [NavTo] arrived ✓
+2026-05-22T13:42:09+0900 jetson python[93081]: 2026-05-22 13:42:09.667 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/patrol type=patrol_event
+2026-05-22T13:42:09+0900 jetson python[93081]: 2026-05-22 13:42:09.670 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/move/status type=move_status
+2026-05-22T13:42:09+0900 jetson python[93081]: 2026-05-22 13:42:09.722 INFO everybot.bt.nodes: [MicMute] muted=True result={'ok': True, 'muted': True}
+2026-05-22T13:42:09+0900 jetson python[93081]: 2026-05-22 13:42:09.723 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/status type=notify_scenario_done
+2026-05-22T13:42:09+0900 jetson python[93081]: 2026-05-22 13:42:09.723 INFO everybot.bt.nodes: [ScenarioDone] scenario=patrol_situation_check → Idle
+2026-05-22T13:42:09+0900 jetson python[93081]: 2026-05-22 13:42:09.822 INFO everybot.bt.nodes: [MicMute] muted=True result={'ok': True, 'muted': True}
+2026-05-22T13:42:09+0900 jetson python[93081]: 2026-05-22 13:42:09.823 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/status type=request_show_menu
+2026-05-22T13:42:09+0900 jetson python[93081]: 2026-05-22 13:42:09.875 INFO everybot.app.wiring: [BB] init=True scenario=idle emg=False map=True wifi=True battery=87%
+2026-05-22T13:42:11+0900 jetson python[93081]: 2026-05-22 13:42:11.277 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/config/destinations type=config_destinations
+2026-05-22T13:42:11+0900 jetson python[93081]: 2026-05-22 13:42:11.278 INFO everybot.app.wiring: [BtLayer] config published: 8 destinations, 0 visits
+2026-05-22T13:42:12+0900 jetson python[93081]: 2026-05-22 13:42:12.255 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/status type=robot_status
+2026-05-22T13:42:12+0900 jetson python[93081]: 2026-05-22 13:42:12.256 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/location type=location_update
+2026-05-22T13:42:12+0900 jetson python[93081]: 2026-05-22 13:42:12.256 INFO everybot.app.wiring: [BtLayer] robot/location published: id=sweethome name=대기영역 (0.71, -0.06)
+2026-05-22T13:42:13+0900 jetson python[93081]: 2026-05-22 13:42:13.289 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/config/destinations type=config_destinations
+2026-05-22T13:42:13+0900 jetson python[93081]: 2026-05-22 13:42:13.290 INFO everybot.app.wiring: [BtLayer] config published: 8 destinations, 0 visits
+2026-05-22T13:42:15+0900 jetson python[93081]: 2026-05-22 13:42:15.039 INFO everybot.app.wiring: [BB] init=True scenario=idle emg=False map=True wifi=True battery=87%
+2026-05-22T13:42:15+0900 jetson python[93081]: 2026-05-22 13:42:15.348 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/config/destinations type=config_destinations
+2026-05-22T13:42:15+0900 jetson python[93081]: 2026-05-22 13:42:15.349 INFO everybot.app.wiring: [BtLayer] config published: 8 destinations, 0 visits
+2026-05-22T13:42:17+0900 jetson python[93081]: 2026-05-22 13:42:17.292 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/status type=robot_status
+2026-05-22T13:42:17+0900 jetson python[93081]: 2026-05-22 13:42:17.293 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/location type=location_update
+2026-05-22T13:42:17+0900 jetson python[93081]: 2026-05-22 13:42:17.295 INFO everybot.app.wiring: [BtLayer] robot/location published: id=sweethome name=대기영역 (0.71, -0.05)
+2026-05-22T13:42:17+0900 jetson python[93081]: 2026-05-22 13:42:17.396 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/config/destinations type=config_destinations
+2026-05-22T13:42:17+0900 jetson python[93081]: 2026-05-22 13:42:17.397 INFO everybot.app.wiring: [BtLayer] config published: 8 destinations, 0 visits
+2026-05-22T13:42:19+0900 jetson python[93081]: 2026-05-22 13:42:19.462 INFO everybot.services.ui_mqtt_service: [UiMqtt] pub topic=robot/config/destinations type=config_destinations
+2026-05-22T13:42:19+0900 jetson python[93081]: 2026-05-22 13:42:19.463 INFO everybot.app.wiring: [BtLayer] config published: 8 destinations, 0 visits

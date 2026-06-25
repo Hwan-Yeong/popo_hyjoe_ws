@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+IFACE="$1"
+ACTION="$2"
+
+case "$ACTION" in
+  up|dhcp4-change|connectivity-change)
+    /usr/local/sbin/orangepi-nat.sh >/dev/null 2>&1 || \
+      logger -t orangepi-network "dispatcher failed for ${IFACE}/${ACTION}"
+    ;;
+esac

@@ -1,0 +1,152 @@
+[0.022s] Invoking command in '/home/everybot/bt_ws/homecare_robot_core_2026/src/hw/build/inusensor_ros2_driver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/everybot/bt_ws/homecare_robot_core_2026/src/hw/build/inusensor_ros2_driver -- -j6 -l6
+[0.136s] [35m[1mConsolidate compiler generated dependencies of target inusensor_ros2_driver_node[0m
+[0.193s] [ 25%] [32mBuilding CXX object CMakeFiles/inusensor_ros2_driver_node.dir/src/inusensor_node.cpp.o[0m
+[7.389s] In file included from [01m[K/opt/Inuitive/InuDev/include/BaseStream.h:13[m[K,
+[7.389s]                  from [01m[K/opt/Inuitive/InuDev/include/BaseOutputStream.h:13[m[K,
+[7.389s]                  from [01m[K/opt/Inuitive/InuDev/include/InuSensor.h:15[m[K,
+[7.390s]                  from [01m[K/home/everybot/bt_ws/homecare_robot_core_2026/src/hw/src/inusensor_ros2_driver/include/inusensor_ros2_driver/inusensor_manager.hpp:4[m[K,
+[7.390s]                  from [01m[K/home/everybot/bt_ws/homecare_robot_core_2026/src/hw/src/inusensor_ros2_driver/include/inusensor_ros2_driver/inusensor_node.hpp:18[m[K,
+[7.390s]                  from [01m[K/home/everybot/bt_ws/homecare_robot_core_2026/src/hw/src/inusensor_ros2_driver/src/inusensor_node.cpp:1[m[K:
+[7.390s] [01m[K/opt/Inuitive/InuDev/include/BaseFrame.h:[m[K In constructor ‘[01m[KInuDev::CBaseFrame::CBaseFrame(uint64_t, unsigned int, unsigned int, bool, std::string)[m[K’:
+[7.390s] [01m[K/opt/Inuitive/InuDev/include/BaseFrame.h:145:25:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KiUserID[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[7.390s]   145 |             [01;35m[Kstd::string iUserID = std::string()[m[K) :
+[7.390s]       |             [01;35m[K~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[7.435s] In file included from [01m[K/opt/Inuitive/InuDev/include/HwInformation.h:13[m[K,
+[7.435s]                  from [01m[K/opt/Inuitive/InuDev/include/InuSensor.h:18[m[K,
+[7.435s]                  from [01m[K/home/everybot/bt_ws/homecare_robot_core_2026/src/hw/src/inusensor_ros2_driver/include/inusensor_ros2_driver/inusensor_manager.hpp:4[m[K,
+[7.436s]                  from [01m[K/home/everybot/bt_ws/homecare_robot_core_2026/src/hw/src/inusensor_ros2_driver/include/inusensor_ros2_driver/inusensor_node.hpp:18[m[K,
+[7.436s]                  from [01m[K/home/everybot/bt_ws/homecare_robot_core_2026/src/hw/src/inusensor_ros2_driver/src/inusensor_node.cpp:1[m[K:
+[7.436s] [01m[K/opt/Inuitive/InuDev/include/GeneralFrame.h:[m[K At global scope:
+[7.436s] [01m[K/opt/Inuitive/InuDev/include/GeneralFrame.h:56:24:[m[K [01;35m[Kwarning: [m[Ktype qualifiers ignored on function return type [[01;35m[K-Wignored-qualifiers[m[K]
+[7.436s]    56 |         INUSTREAMS_API [01;35m[KInuDev[m[K::byte* const GetData() const { return mData; }
+[7.436s]       |                        [01;35m[K^~~~~~[m[K
+[7.514s] In file included from [01m[K/opt/Inuitive/InuDev/include/DepthStream.h:14[m[K,
+[7.514s]                  from [01m[K/home/everybot/bt_ws/homecare_robot_core_2026/src/hw/src/inusensor_ros2_driver/include/inusensor_ros2_driver/inusensor_manager.hpp:5[m[K,
+[7.514s]                  from [01m[K/home/everybot/bt_ws/homecare_robot_core_2026/src/hw/src/inusensor_ros2_driver/include/inusensor_ros2_driver/inusensor_node.hpp:18[m[K,
+[7.514s]                  from [01m[K/home/everybot/bt_ws/homecare_robot_core_2026/src/hw/src/inusensor_ros2_driver/src/inusensor_node.cpp:1[m[K:
+[7.514s] [01m[K/opt/Inuitive/InuDev/include/ImageFrame.h:159:9:[m[K [01;35m[Kwarning: [m[Ktype qualifiers ignored on function return type [[01;35m[K-Wignored-qualifiers[m[K]
+[7.514s]   159 |         [01;35m[Kconst[m[K uint64_t GetReadoutTime() const { return mReadoutTime; }
+[7.515s]       |         [01;35m[K^~~~~[m[K
+[11.580s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[11.580s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[11.580s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[11.580s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[11.581s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[11.581s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[11.581s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[11.581s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[11.581s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[11.581s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[11.582s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[11.582s]                  from [01m[K/home/everybot/bt_ws/homecare_robot_core_2026/src/hw/src/inusensor_ros2_driver/include/inusensor_ros2_driver/inusensor_node.hpp:4[m[K,
+[11.582s]                  from [01m[K/home/everybot/bt_ws/homecare_robot_core_2026/src/hw/src/inusensor_ros2_driver/src/inusensor_node.cpp:1[m[K:
+[11.582s] [01m[K/home/everybot/bt_ws/homecare_robot_core_2026/src/hw/src/inusensor_ros2_driver/src/inusensor_node.cpp:[m[K In member function ‘[01m[Kvoid inusensor_ros2_driver::InuSensorNode::onDepthFrameReceived(std::shared_ptr<InuDev::CDepthStream>, std::shared_ptr<const InuDev::CImageFrame>, InuDev::CInuError)[m[K’:
+[11.582s] [01m[K/home/everybot/bt_ws/homecare_robot_core_2026/src/hw/src/inusensor_ros2_driver/src/inusensor_node.cpp:811:30:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%lu[m[K’ expects argument of type ‘[01m[Klong unsigned int[m[K’, but argument 5 has type ‘[01m[Kunsigned int[m[K’ [[01;35m[K-Wformat=[m[K]
+[11.582s]   811 |                              [01;35m[K"Invalid depth frame %lu received from SDK"[m[K, [32m[Kframe->FrameIndex[m[K);
+[11.582s]       |                              [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K  [32m[K~~~~~~~~~~~~~~~~~[m[K
+[11.583s]       |                                                                                  [32m[K|[m[K
+[11.583s]       |                                                                                  [32m[Kunsigned int[m[K
+[11.583s] [01m[K/home/everybot/bt_ws/homecare_robot_core_2026/src/hw/src/inusensor_ros2_driver/src/inusensor_node.cpp:811:53:[m[K [01;36m[Knote: [m[Kformat string is defined here
+[11.583s]   811 |                              "Invalid depth frame [01;36m[K%lu[m[K received from SDK", frame->FrameIndex);
+[11.583s]       |                                                   [01;36m[K~~^[m[K
+[11.583s]       |                                                     [01;36m[K|[m[K
+[11.583s]       |                                                     [01;36m[Klong unsigned int[m[K
+[11.583s]       |                                                   [32m[K%u[m[K
+[11.584s] [01m[K/home/everybot/bt_ws/homecare_robot_core_2026/src/hw/src/inusensor_ros2_driver/src/inusensor_node.cpp:792:80:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kstream[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[11.584s]   792 | void InuSensorNode::onDepthFrameReceived([01;35m[Kstd::shared_ptr<InuDev::CDepthStream> stream[m[K,
+[11.584s]       |                                          [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+[11.586s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[11.586s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[11.587s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[11.587s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[11.587s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[11.587s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[11.587s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[11.588s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[11.588s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[11.588s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[11.588s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[11.588s]                  from [01m[K/home/everybot/bt_ws/homecare_robot_core_2026/src/hw/src/inusensor_ros2_driver/include/inusensor_ros2_driver/inusensor_node.hpp:4[m[K,
+[11.588s]                  from [01m[K/home/everybot/bt_ws/homecare_robot_core_2026/src/hw/src/inusensor_ros2_driver/src/inusensor_node.cpp:1[m[K:
+[11.588s] [01m[K/home/everybot/bt_ws/homecare_robot_core_2026/src/hw/src/inusensor_ros2_driver/src/inusensor_node.cpp:[m[K In member function ‘[01m[Kvoid inusensor_ros2_driver::InuSensorNode::onRGBFrameReceived(std::shared_ptr<InuDev::CImageStream>, std::shared_ptr<const InuDev::CImageFrame>, InuDev::CInuError)[m[K’:
+[11.588s] [01m[K/home/everybot/bt_ws/homecare_robot_core_2026/src/hw/src/inusensor_ros2_driver/src/inusensor_node.cpp:860:30:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%lu[m[K’ expects argument of type ‘[01m[Klong unsigned int[m[K’, but argument 5 has type ‘[01m[Kunsigned int[m[K’ [[01;35m[K-Wformat=[m[K]
+[11.589s]   860 |                              [01;35m[K"Invalid RGB frame %lu received from SDK"[m[K, [32m[Kframe->FrameIndex[m[K);
+[11.589s]       |                              [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K  [32m[K~~~~~~~~~~~~~~~~~[m[K
+[11.589s]       |                                                                                [32m[K|[m[K
+[11.589s]       |                                                                                [32m[Kunsigned int[m[K
+[11.589s] [01m[K/home/everybot/bt_ws/homecare_robot_core_2026/src/hw/src/inusensor_ros2_driver/src/inusensor_node.cpp:860:51:[m[K [01;36m[Knote: [m[Kformat string is defined here
+[11.589s]   860 |                              "Invalid RGB frame [01;36m[K%lu[m[K received from SDK", frame->FrameIndex);
+[11.590s]       |                                                 [01;36m[K~~^[m[K
+[11.590s]       |                                                   [01;36m[K|[m[K
+[11.590s]       |                                                   [01;36m[Klong unsigned int[m[K
+[11.590s]       |                                                 [32m[K%u[m[K
+[11.590s] [01m[K/home/everybot/bt_ws/homecare_robot_core_2026/src/hw/src/inusensor_ros2_driver/src/inusensor_node.cpp:841:78:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kstream[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[11.590s]   841 | void InuSensorNode::onRGBFrameReceived([01;35m[Kstd::shared_ptr<InuDev::CImageStream> stream[m[K,
+[11.590s]       |                                        [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+[11.608s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[11.608s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[11.608s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[11.608s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[11.608s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[11.609s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[11.609s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[11.609s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[11.609s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[11.609s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[11.609s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[11.610s]                  from [01m[K/home/everybot/bt_ws/homecare_robot_core_2026/src/hw/src/inusensor_ros2_driver/include/inusensor_ros2_driver/inusensor_node.hpp:4[m[K,
+[11.610s]                  from [01m[K/home/everybot/bt_ws/homecare_robot_core_2026/src/hw/src/inusensor_ros2_driver/src/inusensor_node.cpp:1[m[K:
+[11.610s] [01m[K/home/everybot/bt_ws/homecare_robot_core_2026/src/hw/src/inusensor_ros2_driver/src/inusensor_node.cpp:[m[K In member function ‘[01m[Kvoid inusensor_ros2_driver::InuSensorNode::onIMUAccFrame(std::shared_ptr<InuDev::CImuStream>, std::shared_ptr<const InuDev::CImuFrame>, InuDev::CInuError)[m[K’:
+[11.610s] [01m[K/home/everybot/bt_ws/homecare_robot_core_2026/src/hw/src/inusensor_ros2_driver/src/inusensor_node.cpp:1221:30:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%lu[m[K’ expects argument of type ‘[01m[Klong unsigned int[m[K’, but argument 5 has type ‘[01m[Kunsigned int[m[K’ [[01;35m[K-Wformat=[m[K]
+[11.611s]  1221 |                              [01;35m[K"Invalid IMU ACC frame %lu"[m[K, [32m[Kframe->FrameIndex[m[K);
+[11.611s]       |                              [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K  [32m[K~~~~~~~~~~~~~~~~~[m[K
+[11.611s]       |                                                                  [32m[K|[m[K
+[11.611s]       |                                                                  [32m[Kunsigned int[m[K
+[11.611s] [01m[K/home/everybot/bt_ws/homecare_robot_core_2026/src/hw/src/inusensor_ros2_driver/src/inusensor_node.cpp:1221:55:[m[K [01;36m[Knote: [m[Kformat string is defined here
+[11.611s]  1221 |                              "Invalid IMU ACC frame [01;36m[K%lu[m[K", frame->FrameIndex);
+[11.611s]       |                                                     [01;36m[K~~^[m[K
+[11.611s]       |                                                       [01;36m[K|[m[K
+[11.612s]       |                                                       [01;36m[Klong unsigned int[m[K
+[11.612s]       |                                                     [32m[K%u[m[K
+[11.612s] [01m[K/home/everybot/bt_ws/homecare_robot_core_2026/src/hw/src/inusensor_ros2_driver/src/inusensor_node.cpp:1208:71:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kstream[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[11.612s]  1208 | void InuSensorNode::onIMUAccFrame([01;35m[Kstd::shared_ptr<InuDev::CImuStream> stream[m[K,
+[11.612s]       |                                   [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+[11.614s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[11.614s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[11.614s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[11.614s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[11.614s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[11.615s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[11.615s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[11.615s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[11.615s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[11.615s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[11.615s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[11.616s]                  from [01m[K/home/everybot/bt_ws/homecare_robot_core_2026/src/hw/src/inusensor_ros2_driver/include/inusensor_ros2_driver/inusensor_node.hpp:4[m[K,
+[11.616s]                  from [01m[K/home/everybot/bt_ws/homecare_robot_core_2026/src/hw/src/inusensor_ros2_driver/src/inusensor_node.cpp:1[m[K:
+[11.616s] [01m[K/home/everybot/bt_ws/homecare_robot_core_2026/src/hw/src/inusensor_ros2_driver/src/inusensor_node.cpp:[m[K In member function ‘[01m[Kvoid inusensor_ros2_driver::InuSensorNode::onIMUGyroFrame(std::shared_ptr<InuDev::CImuStream>, std::shared_ptr<const InuDev::CImuFrame>, InuDev::CInuError)[m[K’:
+[11.616s] [01m[K/home/everybot/bt_ws/homecare_robot_core_2026/src/hw/src/inusensor_ros2_driver/src/inusensor_node.cpp:1276:30:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%lu[m[K’ expects argument of type ‘[01m[Klong unsigned int[m[K’, but argument 5 has type ‘[01m[Kunsigned int[m[K’ [[01;35m[K-Wformat=[m[K]
+[11.616s]  1276 |                              [01;35m[K"Invalid IMU GYRO frame %lu"[m[K, [32m[Kframe->FrameIndex[m[K);
+[11.616s]       |                              [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K  [32m[K~~~~~~~~~~~~~~~~~[m[K
+[11.617s]       |                                                                   [32m[K|[m[K
+[11.617s]       |                                                                   [32m[Kunsigned int[m[K
+[11.617s] [01m[K/home/everybot/bt_ws/homecare_robot_core_2026/src/hw/src/inusensor_ros2_driver/src/inusensor_node.cpp:1276:56:[m[K [01;36m[Knote: [m[Kformat string is defined here
+[11.617s]  1276 |                              "Invalid IMU GYRO frame [01;36m[K%lu[m[K", frame->FrameIndex);
+[11.617s]       |                                                      [01;36m[K~~^[m[K
+[11.617s]       |                                                        [01;36m[K|[m[K
+[11.617s]       |                                                        [01;36m[Klong unsigned int[m[K
+[11.617s]       |                                                      [32m[K%u[m[K
+[11.618s] [01m[K/home/everybot/bt_ws/homecare_robot_core_2026/src/hw/src/inusensor_ros2_driver/src/inusensor_node.cpp:1263:72:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kstream[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[11.618s]  1263 | void InuSensorNode::onIMUGyroFrame([01;35m[Kstd::shared_ptr<InuDev::CImuStream> stream[m[K,
+[11.618s]       |                                    [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+[11.618s] [01m[K/home/everybot/bt_ws/homecare_robot_core_2026/src/hw/src/inusensor_ros2_driver/src/inusensor_node.cpp:[m[K In member function ‘[01m[Kbool inusensor_ros2_driver::InuSensorNode::isRecoveryTriggerError(InuDev::CInuError)[m[K’:
+[11.618s] [01m[K/home/everybot/bt_ws/homecare_robot_core_2026/src/hw/src/inusensor_ros2_driver/src/inusensor_node.cpp:1352:41:[m[K [01;31m[Kerror: [m[K‘[01m[KeServiceProcessFailure[m[K’ is not a member of ‘[01m[KInuDev::EErrorCode[m[K’
+[11.618s]  1352 |     return (code == InuDev::EErrorCode::[01;31m[KeServiceProcessFailure[m[K || code == InuDev::EErrorCode::eSensorDetectionFailure);
+[11.618s]       |                                         [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[11.619s] [01m[K/home/everybot/bt_ws/homecare_robot_core_2026/src/hw/src/inusensor_ros2_driver/src/inusensor_node.cpp:1352:95:[m[K [01;31m[Kerror: [m[K‘[01m[KeSensorDetectionFailure[m[K’ is not a member of ‘[01m[KInuDev::EErrorCode[m[K’
+[11.619s]  1352 |     return (code == InuDev::EErrorCode::eServiceProcessFailure || code == InuDev::EErrorCode::[01;31m[KeSensorDetectionFailure[m[K);
+[11.619s]       |                                                                                               [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[16.816s] gmake[2]: *** [CMakeFiles/inusensor_ros2_driver_node.dir/build.make:90: CMakeFiles/inusensor_ros2_driver_node.dir/src/inusensor_node.cpp.o] Error 1
+[16.816s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/inusensor_ros2_driver_node.dir/all] Error 2
+[16.817s] gmake: *** [Makefile:146: all] Error 2
+[16.827s] Invoked command in '/home/everybot/bt_ws/homecare_robot_core_2026/src/hw/build/inusensor_ros2_driver' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/everybot/bt_ws/homecare_robot_core_2026/src/hw/build/inusensor_ros2_driver -- -j6 -l6

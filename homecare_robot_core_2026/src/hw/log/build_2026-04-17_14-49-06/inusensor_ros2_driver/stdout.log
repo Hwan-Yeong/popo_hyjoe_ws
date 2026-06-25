@@ -1,0 +1,4 @@
+[35m[1mConsolidate compiler generated dependencies of target inusensor_ros2_driver_node[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/inusensor_ros2_driver_node.dir/src/main.cpp.o[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/inusensor_ros2_driver_node.dir/src/inusensor_manager.cpp.o[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/inusensor_ros2_driver_node.dir/src/inusensor_node.cpp.o[0m

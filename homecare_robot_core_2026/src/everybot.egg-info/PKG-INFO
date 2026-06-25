@@ -1,0 +1,19 @@
+Metadata-Version: 2.4
+Name: everybot
+Version: 0.0.1
+Author-email: sjk <jksong@everybot.net>
+License: Proprietary
+Keywords: robot,jetson,linux,softap,mqtt
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: POSIX :: Linux
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Provides-Extra: yaml
+Requires-Dist: PyYAML>=6.0.1; extra == "yaml"
+Provides-Extra: mqtt
+Requires-Dist: paho-mqtt>=2.1.0; extra == "mqtt"
+Provides-Extra: dev
+Requires-Dist: pytest>=8.0.0; extra == "dev"
+Requires-Dist: ruff>=0.6.0; extra == "dev"
+Requires-Dist: mypy>=1.8.0; extra == "dev"
+Requires-Dist: types-PyYAML>=6.0.12.20240808; extra == "dev"

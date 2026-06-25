@@ -1,0 +1,28 @@
+[Unit]
+Description=Everybot Robot H/W Component Bringup
+After=network-online.target NetworkManager.service sound.target systemd-udev-settle.service
+Wants=network-online.target sound.target systemd-udev-settle.service
+
+[Service]
+Type=simple
+User=root
+Group=everybot
+
+SupplementaryGroups=video
+
+WorkingDirectory=/home/everybot/bt_ws/homecare_robot_core_2026
+ExecStart=/home/everybot/bt_ws/homecare_robot_core_2026/systemd/hw_bringup.sh
+
+Environment=PYTHONUNBUFFERED=1
+Environment=HW_CONFIG_PATH=/home/everybot/bt_ws/homecare_robot_core_2026/configs/hw_components.yaml
+
+Restart=on-failure
+RestartSec=10
+TimeoutStopSec=30
+
+StandardOutput=null
+StandardError=journal
+SyslogIdentifier=hw-bringup
+
+[Install]
+WantedBy=multi-user.target

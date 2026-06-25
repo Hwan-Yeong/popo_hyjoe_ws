@@ -1,0 +1,184 @@
+# ══════════════════════════════════════════════════════════════
+# hw_components.yaml - HW 컴포넌트 통합 설정
+# 경로: configs/hw_components.yaml
+# 환경변수 오버라이드: HW_CONFIG_PATH=/path/to/custom.yaml
+#
+# 목적:
+# - 4개 HW 매니저(camera/mic/speaker/rf)의 하드코딩 상수를 외부 설정으로 분리
+# - 실기기 튜닝 시 코드 수정 없이 YAML 값만 변경
+# - YAML 파일이 없거나 파싱 실패해도 각 매니저는 코드 기본값으로 fallback
+# ══════════════════════════════════════════════════════════════
+
+# ── 공통 ──────────────────────────────────────────────────────
+common:
+  # HW 데이터 루트 경로.
+  # 각 매니저는 이 하위에 camera, mic, speaker, rf 디렉터리를 생성한다.
+  hw_data_dir: "/dev/shm/hw_data"
+
+# ── Camera Recorder ───────────────────────────────────────────
+camera:
+  # HTTP API 서버 포트.
+  api_port: 8081
+
+  # 이 초 이상 이미지 timestamp가 갱신되지 않으면 /status에서 ok:false 처리.
+  stale_threshold_sec: 5.0
+
+  # Top Camera: USB Webcam, 상단 카메라.
+  # camera_recorder는 V4L2를 직접 열지 않고 usb_cam ROS2 driver가 publish하는 topic을 구독한다.
+  top:
+    # 상단 웹캠 RGB 이미지 topic.
+    # hw_bringup.sh에서 usb_cam 노드를 /web_cam namespace로 기동하므로 기본값은 /web_cam/image_raw 이다.
+    rgb_topic: "/web_cam/image_raw"
+
+    # topic 이미지 기준 해상도와 기대 프레임레이트.
+    width: 640
+    height: 480
+    fps: 15
+
+    # JPEG 저장 품질. 85는 파일 크기와 품질의 절충값.
+    jpeg_quality: 85
+
+  # Middle Camera: Inuitive M4.51S RGBD, 중단 카메라.
+  middle:
+    # ROS2 RGB/Depth 이미지 토픽.
+    rgb_topic: "/camera/rgb/image_raw"
+    depth_topic: "/camera/depth/image_raw"
+
+    # RGB 토픽 이미지 기준 해상도와 기대 FPS.
+    width: 640
+    height: 480
+    fps: 15
+
+# ── Mic Manager ───────────────────────────────────────────────
+mic:
+  # HTTP API 서버 포트.
+  api_port: 8082
+
+  # 입력 샘플레이트 설정.
+  # XS Lav USB-C native 입력은 48kHz이고, resample_down=3으로 16kHz를 만든다.
+  sample_rate_in: 48000
+  resample_down: 3
+
+  # sounddevice 캡처 블록 크기. 4800 samples @ 48kHz = 100ms.
+  block_size_in: 4800
+
+  # ALSA/USB 마이크가 부팅 직후 아직 준비되지 않았을 때 캡처 재시도 간격(초).
+  capture_retry_interval_sec: 3.0
+  
+  # cold boot 직후 USB audio stack 준비를 기다리는 최대 시간(초).
+  # 이 시간 안에 /proc/asound/cards 또는 sounddevice 목록에서 아래 키워드가 보이면 즉시 진행한다.
+  startup_device_wait_sec: 30.0
+
+  # 지정 마이크 판별 키워드. sounddevice 장치명과 /proc/asound/cards 내용을 모두 검사한다.
+  device_keywords:
+    - "ab13x"
+    - "lav"
+    - "xs"
+    - "sennheiser"
+    - "usbc"
+
+  # sounddevice 목록이 stale 상태여도 ALSA에는 마이크가 보일 때 직접 열어볼 장치명.
+  # Sennheiser XS LAV USB-C가 /proc/asound/cards에서 CARD=USBC로 잡히는 실기기 기준값.
+  preferred_alsa_device: "plughw:CARD=USBC,DEV=0"
+
+  # USB mic 미검출 반복 시 N회마다 sounddevice/proc/arecord 진단 snapshot을 로그와 status에 남긴다.
+  device_diagnostics_interval_retries: 10
+
+
+  # true면 USB 마이크를 찾지 못해도 OS 기본 입력 장치로 fallback한다.
+  # 로봇 실기기에서는 잘못된 기본 장치로 "정상처럼 보이는 오동작"을 막기 위해 false 권장.
+  allow_default_input_fallback: false
+  
+  # 서비스 시작 후 노이즈 프로파일 수집 시간. 이 시간 동안 조용한 환경이 필요하다.
+  noise_profile_sec: 1.5
+
+  # noisereduce 노이즈 억제 강도. 0.0=없음, 1.0=최대.
+  prop_decrease: 0.75 #0.92
+
+  # AGC 목표 RMS 레벨. 발화 음량 정규화 기준.
+  target_rms: 0.07 #0.05
+
+  # AGC 최대 게인 배율. 과도한 증폭 방지.
+  max_gain: 16.0 # 10.0
+
+  # 음성 판단 SNR 임계값(dB). 이 이상을 발화로 판단한다.
+  speech_snr_db: 2.5 # 8.0
+
+  # 무음 구간 게인 억제값.
+  silence_gain: 0.20
+
+  # HPF/LPF 차단 주파수. 저주파/고주파 잡음 제거 목적.
+  hpf_cutoff: 80.0
+  lpf_cutoff: 7600.0 #7000
+
+  # 음성 종료 후 발화 상태 유지 프레임 수. 8프레임은 약 800ms.
+  speech_hold_frames: 10
+
+# ── Speaker Manager ───────────────────────────────────────────
+speaker:
+  # HTTP API 서버 포트.
+  api_port: 8083
+
+  # GPIO 전원 제어.
+  # true면 GPIO 트리거를 비활성화한다. 하드웨어 미연결/개발 환경에서 사용.
+  gpio_disable: false
+  gpio_chip: "/dev/gpiochip0"
+  gpio_line: 144
+  gpio_power_pulse_sec: 3.0
+
+  # Bluetooth 스피커 설정.
+  # bt_mac은 bluetoothctl info/connect에 사용한다.
+  # bt_sink는 PulseAudio paplay 또는 pygame 출력 라우팅에 사용한다.
+  bt_mac: "DA:FB:5C:C8:B1:C9" # DA:55:CB::9F:03:B6
+  bt_sink: "bluez_sink.DA_FB_5C_C8_B1_C9.a2dp_sink" # 위 bt mac과 동일하게 변경 
+
+  # BT 연결 상태 모니터링과 자동 복구 설정.
+  bt_poll_interval_sec: 3.0
+  bt_recovery_max_retries: 5
+  bt_recovery_backoff_sec: 10.0
+
+  # 타입별 초기 볼륨. 단위는 0-100%.
+  volume_bgm: 45
+  volume_tts: 45
+  volume_alert: 80
+
+  # TTS/Alert 재생 중 BGM을 임시로 낮출 볼륨.
+  bgm_duck_volume: 35
+
+  # pygame 마이그레이션 설정.
+  # true면 pygame.mixer Channel 기반 재생을 우선 시도하고, 실패 시 paplay fallback으로 동작한다.
+  use_pygame: true
+  pygame_frequency: 44100
+  pygame_buffer: 1024
+
+  # Web UI가 브라우저에서 직접 API를 호출할 때 허용할 CORS origin 목록.
+  # 개발/현장 테스트는 ["*"]로 열 수 있고, 운영 UI origin이 정해지면
+  # 예: ["http://192.168.20.70:3000", "http://robot-ui.local"] 처럼 좁혀서 사용한다.
+  cors_allow_origins:
+    - "*"
+
+  # PulseAudio 접근 설정.
+  # systemd/root 실행 시 사용자 PulseAudio 소켓과 cookie 접근에 필요하다.
+  audio_user_uid: 1000
+  audio_user_home: "/home/everybot"
+
+# ── RF Manager ────────────────────────────────────────────────
+rf:
+  # HTTP API 서버 포트.
+  api_port: 8084
+
+  # 씨스콜 SUD-100 USB 시리얼 포트.
+  # RF_SERIAL_PORT 환경변수가 있으면 환경변수가 YAML보다 우선한다.
+  serial_port: "/dev/ttyUSB0"
+  baud_rate: 115200
+
+  # 시리얼 연결 실패 후 재시도 간격.
+  serial_reconnect_interval_sec: 3.0
+
+  # Bell ID 기준값.
+  # 이 값 이하는 동작하지 않도록 보호하며, 유효 범위는 3FA17B19 이상이다.
+  # pos=N 호출 시 bell_id = hex(0x3FA17B18 + N)으로 계산한다.
+  base_bell_id: "3FA17B18"
+
+  # 호출벨 수신 이벤트를 메모리에 보관할 최대 건수.
+  bell_event_history_size: 50

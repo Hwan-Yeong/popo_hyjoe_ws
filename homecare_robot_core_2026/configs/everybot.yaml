@@ -1,0 +1,134 @@
+name: "Everybot-robot"
+tick_hz: 20.0
+
+# ── AMR 연결 설정 ────────────────────────────────────────────────
+amr:
+  ip: "192.168.60.206"
+  port: 10000
+  recv_buf_size: 262144
+
+# ── HW Components API URL ────────────────────────────────────────
+hw_api:
+  speaker_url: "http://localhost:8083"
+  rf_url: "http://localhost:8084"
+  camera_url: "http://localhost:8081"
+  mic_url: "http://localhost:8082"
+  tts_url: "http://localhost:8085"
+  fall_status_url: "http://localhost:8008/api/fall-status"
+  fall_status_timeout: 0.25
+  agent_events_url: "http://localhost:8086"
+  agent_events_timeout: 2.0
+  conversation_wait_timeout: 10.0
+  face_api_url: "http://192.168.10.2:8087" ###in orange pi5...
+  face_api_timeout: 1.0
+  
+# ── BT 디버그 설정 ───────────────────────────────────────────────
+bt:
+  debug_mode: "snapshot" #silent or snapshot
+  tick_log_interval: 100
+
+# ── State 파일 경로 ─────────────────────────────────────────────
+state:
+  path: "/var/lib/everybot/state.json"
+
+wired:
+  host: "192.168.10.2"
+  port: 10001
+  reconnect_sec: 1.0
+
+network:
+  wifi_ifname: "wlP1p1s0"
+  auto_softap_on_disconnect: false
+  disconnect_grace_sec: 30.0
+  
+mqtt:
+  enabled: true
+  host: "192.168.20.83"
+  port: 1883
+  client_id: "Everybot-robot"
+  topic_prefix: "robots/"
+  keepalive: 30
+
+# OrangePi ↔ Jetson 로컬 MQTT (Jetson mosquitto 브로커)
+# UI → Robot: robot/cmd/*
+# Robot → UI: robot/status, robot/location, robot/move/status 등
+#
+# [QA 명령 주입 방법] OrangePi가 wired(10001)를 점유 중일 때:
+#   1. enabled: true 로 변경
+#   2. mosquitto -p 11883 -d   (로컬 브로커 기동)
+#   3. mosquitto_pub -h 127.0.0.1 -p 11883 -t "robot/cmd/move" \
+#        -m '{"command_id":"qa-1","target_location_id":"wp_lobby","target_location_name":"로비","requested_by":"qa"}'
+ui_mqtt:
+  enabled: true                      # QA 시 true로 변경 (위 주석 참조)
+  host: "127.0.0.1"                  # Jetson 로컬 mosquitto 브로커
+  port: 11883                        # 로컬 전용 포트 (원격 1883과 분리)
+  client_id: "Everybot-ui-client"
+  keepalive: 30
+
+  # UI → Robot 구독 토픽 (5/21 데모 스펙)
+  subscribe_topics:
+    - "robot/cmd/move"
+    - "robot/cmd/pause"
+    - "robot/cmd/resume"
+    - "robot/cmd/stop"
+    - "robot/cmd/release"
+    - "robot/debug/fall"
+    - "robot/debug/wander"
+    - "/ui/event"
+    - "/ui/call"
+    - "/ui/setting/change"
+    - "/ui/picture_capture"
+
+  # Robot → UI 발행 토픽 (5/21 데모 스펙)
+  topic_status: "robot/status"
+  topic_location: "robot/location"
+  topic_move_status: "robot/move/status"
+  topic_detection: "robot/detection"
+  topic_patrol: "robot/patrol"
+  topic_config_destinations: "robot/config/destinations"
+  topic_morning_call_event: "robot/morning-call/event"
+  topic_morning_call_door: "robot/morning-call/door"
+  topic_config_schedule: "robot/config/morning-call-schedule"
+  status_publish_interval: 5.0
+
+# ── HomeAssistant IoT 연동 ───────────────────────────────────────
+# ha_ip / ha_token은 state.json(모바일 프로비저닝)에서 자동 로드됨.
+# enabled: false이면 HA 연결 시도 자체를 하지 않음 (IoT 미사용 환경).
+ha:
+  enabled: false
+    
+# ── 맵 파일 경로 (상대경로) ──────────────────────────────────────
+map:
+  pgm_path:  "configs/map/map.pgm"
+  yaml_path: "configs/map/map.yaml"
+  forbidden_zones_path: "configs/map/forbidden_zones.json"
+  roi_zones_path: "configs/map/roi_zones.json"
+
+# ── Waypoint 파일 경로 ──────────────────────────────────────────
+waypoints:
+  file_path: "configs/map/waypoints.json"
+
+# ── 로봇 운영 설정 파일 경로 ────────────────────────────────────
+robot_settings:
+  file_path: "configs/robot_settings.json"
+
+# ── 5/21 데모 기능 설정 ───────────────────────────────────────
+feature_settings:
+  file_path: "configs/feature_settings.json"
+
+program_schedule:
+  file_path: "configs/program_schedule.json"
+
+# ── TTS 모드: "ai" (AI TTS API) | "file" (파일 재생 폴백) ────────
+tts:
+  mode:      "file"
+  file_root: "assets/tts/"
+
+  # ── BGM 파일 경로 ────────────────────────────────────────────────
+bgm:
+  file_root: "assets/bgm/"
+
+# ── 맵 생성 웹서버 포트 ─────────────────────────────────────────
+map_creation:
+  server_port: 8080
+

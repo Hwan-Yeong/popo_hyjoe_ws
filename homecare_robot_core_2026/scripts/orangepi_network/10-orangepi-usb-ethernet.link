@@ -1,0 +1,6 @@
+[Match]
+Driver=r8152
+Path=platform-3610000.usb-usb-0:2:1.0
+
+[Link]
+Name=orangepi0

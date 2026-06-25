@@ -1,0 +1,12 @@
+
+[dev]
+pytest>=8.0.0
+ruff>=0.6.0
+mypy>=1.8.0
+types-PyYAML>=6.0.12.20240808
+
+[mqtt]
+paho-mqtt>=2.1.0
+
+[yaml]
+PyYAML>=6.0.1

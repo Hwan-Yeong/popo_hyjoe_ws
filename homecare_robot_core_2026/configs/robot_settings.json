@@ -1,0 +1,9 @@
+{
+  "speaker_volume": 50,
+  "tts_volume": 40,
+  "bgm_volume": 40,
+  "arrival_wait_sec": 3.0,
+  "battery_threshold": 10.0,
+  "charge_done_threshold": 80.0,
+  "scenario_timeout_sec": 10000.0
+}

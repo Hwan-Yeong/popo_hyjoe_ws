@@ -1,0 +1,187 @@
+<?xml version="1.0"?>
+<robot name="m4_51s" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <!-- Xacro parameters for dynamic configuration -->
+  <xacro:arg name="camera_x" default="0.0"/>
+  <xacro:arg name="camera_y" default="0.0"/>
+  <xacro:arg name="camera_z" default="0.0"/>
+  <xacro:arg name="camera_roll" default="0.0"/>
+  <xacro:arg name="camera_pitch" default="0.0"/>
+  <xacro:arg name="camera_yaw" default="0.0"/>
+
+  <!-- Material definitions -->
+  <material name="blue">
+    <color rgba="0.0 0.0 1.0 0.2"/>
+  </material>
+  
+  <material name="gray">
+    <color rgba="0.5 0.5 0.5 0.3"/>
+  </material>
+
+  <material name="cyan">
+    <color rgba="0.0 0.5 0.5 0.3"/>
+  </material>
+  
+  <material name="red">
+    <color rgba="1.0 0.0 0.0 1.0"/>
+  </material>
+  
+  <material name="green">
+    <color rgba="0.0 1.0 0.0 1.0"/>
+  </material>
+  
+  <material name="yellow">
+    <color rgba="1.0 1.0 0.0 1.0"/>
+  </material>
+
+  <!-- camera Link -->
+  <link name="camera_link">
+    <visual>
+      <geometry>
+        <box size="0.3 0.2 0.1"/>
+      </geometry>
+      <material name="blue"/>
+    </visual>
+  </link>
+
+  <!-- InuSensor Main Link (RealSense D435 치수: 90mm × 25mm × 25mm) -->
+  <link name="inusensor">
+    <visual>
+      <geometry>
+        <box size="0.090 0.025 0.025"/>
+      </geometry>
+      <material name="cyan"/>
+    </visual>
+    <collision>
+      <geometry>
+        <box size="0.090 0.025 0.025"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <!-- Camera Link (intermediate frame) -->
+  <link name="camera">
+    <visual>
+      <geometry>
+        <box size="0.095 0.030 0.030"/>
+      </geometry>
+      <material name="gray"/>
+    </visual>
+    <collision>
+      <geometry>
+        <box size="0.095 0.030 0.030"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <!-- Joint: camera_link to camera (카메라 좌표계 -> 로봇 좌표계 회전) -->
+  <joint name="base_to_camera" type="fixed">
+    <parent link="camera_link"/>
+    <child link="camera"/>
+    <!-- 카메라 좌표계를 로봇 좌표계에 맞게 회전 -->
+    <!-- Camera: Z=forward, X=right, Y=down -->
+    <!-- Robot:  X=forward, Y=left,  Z=up   -->
+     <!--<origin xyz="$(arg camera_x) $(arg camera_y) $(arg camera_z)" 
+            rpy="-1.57079632679 0.0 -1.57079632679"/>-->
+  </joint>
+
+  <!-- Joint: camera to inusensor -->
+  <joint name="camera_to_inusensor" type="fixed">
+    <parent link="camera"/>
+    <child link="inusensor"/>
+    <!-- InuSensor는 camera 프레임 중심에 위치 -->
+    <!--<origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/> -->
+    <origin xyz="$(arg camera_x) $(arg camera_y) $(arg camera_z)" 
+            rpy="-1.57079632679 0.0 -1.57079632679"/>
+  </joint>
+
+  <!-- Depth Camera Link (센서 0 - Right Camera - 왼쪽 끝, 빨간색) -->
+  <link name="inusensor_depth">
+    <visual>
+      <geometry>
+        <cylinder radius="0.008" length="0.003"/>
+      </geometry>
+      <material name="red"/>
+    </visual>
+  </link>
+
+  <!-- Joint: inusensor to depth (Right Camera - 왼쪽 끝) -->
+  <joint name="inusensor_to_depth" type="fixed">
+    <parent link="inusensor"/>
+    <child link="inusensor_depth"/>
+    <!-- Right Camera를 왼쪽 끝으로 배치 (센서 중심에서 -30mm) -->
+    <origin xyz="0.030 0.0 0.0" rpy="0.0 0.0 0.0"/>
+  </joint>
+
+  <!-- Left Camera Link (센서 1 - Left Camera - 가운데, 파란색) -->
+  <link name="inusensor_left">
+    <visual>
+      <geometry>
+        <cylinder radius="0.008" length="0.003"/>
+      </geometry>
+      <material name="blue"/>
+    </visual>
+  </link>
+
+  <!-- Joint: inusensor to left camera (가운데) -->
+  <joint name="inusensor_to_left" type="fixed">
+    <parent link="inusensor"/>
+    <child link="inusensor_left"/>
+    <!-- Left Camera를 가운데 배치 -->
+    <!-- Right 기준 +48mm이므로: -30 + 48 = +18mm -->
+    <origin xyz="0.018 -0.000521 -0.000156"  
+            rpy="0.002729 0.003240 -0.010860"/>
+  </joint>
+
+  <!-- RGB Camera Link (센서 2 - Mono Camera - 오른쪽 끝, 초록색) -->
+  <link name="inusensor_rgb">
+    <visual>
+      <geometry>
+        <cylinder radius="0.008" length="0.003"/>
+      </geometry>
+      <material name="green"/>
+    </visual>
+  </link>
+
+  <!-- Joint: inusensor to rgb (오른쪽 끝) -->
+  <joint name="inusensor_to_rgb" type="fixed">
+    <parent link="inusensor"/>
+    <child link="inusensor_rgb"/>
+    <!-- RGB Camera를 오른쪽 끝으로 배치 -->
+    <!-- Right 기준 +63mm이므로: -30 + 63 = +33mm -->
+    <origin xyz="-0.033 0.001272 0.001133"
+          rpy="0.002679 -0.014789 0.021351"/>
+            
+  </joint>
+
+  <!-- IMU Link -->
+  <link name="inusensor_imu">
+    <visual>
+      <geometry>
+        <box size="0.008 0.008 0.003"/>
+      </geometry>
+      <material name="yellow"/>
+    </visual>
+  </link>
+
+  <!-- Joint: inusensor to imu -->
+  <joint name="inusensor_to_imu" type="fixed">
+    <parent link="inusensor"/>
+    <child link="inusensor_imu"/>
+    <!-- IMU 오프셋 (거의 기준점과 동일) -->
+    <!-- T: [0.0078125, 0, 0] mm ≈ [0.000008, 0, 0] m (무시할 수 있는 수준) -->
+    <origin xyz="0.000008 0.0 0.0" rpy="0.0 0.0 0.0"/>
+  </joint>
+
+  <!-- Base Frame Link (inusensor_base) - TF 발행용 -->
+  <link name="inusensor_base">
+  </link>
+
+  <!-- Joint: inusensor to base frame -->
+  <joint name="inusensor_to_base" type="fixed">
+    <parent link="inusensor"/>
+    <child link="inusensor_base"/>
+    <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+  </joint>
+
+</robot>

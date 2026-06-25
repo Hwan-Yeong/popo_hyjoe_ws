@@ -1,0 +1,42 @@
+# InuSensor ROS2 Driver Configuration
+
+inusensor_node:
+  ros__parameters:
+    # Frame IDs
+    frame_id: "camera"
+    base_frame_id: "inusensor_base"
+    depth_frame_id: "inusensor_depth"
+    rgb_frame_id: "inusensor_rgb"
+    imu_frame_id: "inusensor_imu"
+    
+    # Publishing options
+    publish_depth: true
+    publish_rgb: true
+    publish_imu: true
+    publish_tf: true
+    
+    # Depth processing parameters
+    depth_distance_threshold: 2.0  # meters - objects beyond this distance are masked out
+    
+    # Stream parameters based on M4.51S specifications
+    depth_channel_id: 5
+    rgb_channel_id: 8
+    
+    # Publishing rates (optional - sensor driven)
+    depth_publish_rate: 15.0
+    rgb_publish_rate: 15.0
+    tf_publish_rate: 2.0
+    
+    # Image processing options
+    apply_depth_colormap: false  # Set to true for visualization
+    depth_colormap_type: "jet"   # jet, hot, cool, etc.
+    
+    # 구현 X #
+    # IMU options
+    combine_imu_data: true       # Combine acc and gyro into single IMU message
+    apply_imu_calibration: true  # Apply bias and scale corrections
+    imu_sync_timeout_ms: 50      # IMU synchronization timeout in milliseconds
+    
+    # Debug options
+    enable_debug_output: false
+    frame_count_interval: 100    # Log frame count every N frames

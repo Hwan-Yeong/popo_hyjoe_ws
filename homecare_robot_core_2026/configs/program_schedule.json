@@ -1,0 +1,19 @@
+{
+  "schedules": [
+    {
+      "time": "09:00",
+      "title": "아침 체조",
+      "location": "로비"
+    },
+    {
+      "time": "10:30",
+      "title": "건강 상담",
+      "location": "상담실"
+    },
+    {
+      "time": "14:00",
+      "title": "영화 상영",
+      "location": "다목적실"
+    }
+  ]
+}

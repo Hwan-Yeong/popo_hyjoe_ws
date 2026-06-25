@@ -1,0 +1,94 @@
+{
+  "waypoints": [
+    {
+      "key": "entrance",
+      "label": "입구",
+      "x": 1.82,
+      "y": 1.49,
+      "theta": 0.888,
+      "type": "normal",
+      "comment": "",
+      "bell_id": ""
+    },
+    {
+      "key": "101",
+      "label": "101호",
+      "x": 0.22,
+      "y": 2.84,
+      "theta": 1.571,
+      "type": "normal",
+      "comment": "",
+      "bell_id": "3FA17B1B"
+    },
+    {
+      "key": "102",
+      "label": "102호",
+      "x": -1.43,
+      "y": 2.84,
+      "theta": 1.497,
+      "type": "normal",
+      "comment": "",
+      "bell_id": "3FA17B1A"
+    },
+    {
+      "key": "103",
+      "label": "103호",
+      "x": 1.53,
+      "y": 2.94,
+      "theta": 1.626,
+      "type": "normal",
+      "comment": "",
+      "bell_id": "3FA17B19"
+    },
+    {
+      "key": "dock",
+      "label": "충전장소",
+      "x": 0.3,
+      "y": 0,
+      "theta": 0,
+      "type": "dock",
+      "comment": "",
+      "bell_id": ""
+    },
+    {
+      "key": "shha",
+      "label": "승현자리",
+      "x": 1.02,
+      "y": -1.11,
+      "theta": -1.571,
+      "type": "normal",
+      "comment": "",
+      "bell_id": ""
+    },
+    {
+      "key": "home",
+      "label": "대기장소",
+      "x": 0.87,
+      "y": -0.06,
+      "theta": 1.571,
+      "type": "home",
+      "comment": "",
+      "bell_id": ""
+    },
+    {
+      "key": "demo",
+      "label": "시연장소",
+      "x": -3.24,
+      "y": 3.38,
+      "theta": 0.065,
+      "type": "normal",
+      "comment": "",
+      "bell_id": ""
+    },
+    {
+      "key": "demo2",
+      "label": "순찰2",
+      "x": 2.72,
+      "y": 3.42,
+      "theta": -3.031,
+      "type": "normal",
+      "comment": "",
+      "bell_id": ""
+    }
+  ]
+}

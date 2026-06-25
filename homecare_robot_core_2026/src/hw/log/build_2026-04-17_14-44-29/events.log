@@ -1,0 +1,436 @@
+[0.000000] (-) TimerEvent: {}
+[0.000868] (inusensor_ros2_driver) JobQueued: {'identifier': 'inusensor_ros2_driver', 'dependencies': OrderedDict()}
+[0.001494] (inusensor_ros2_driver) JobStarted: {'identifier': 'inusensor_ros2_driver'}
+[0.018853] (inusensor_ros2_driver) JobProgress: {'identifier': 'inusensor_ros2_driver', 'progress': 'cmake'}
+[0.020501] (inusensor_ros2_driver) JobProgress: {'identifier': 'inusensor_ros2_driver', 'progress': 'build'}
+[0.022043] (inusensor_ros2_driver) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/everybot/bt_ws/homecare_robot_core_2026/src/hw/build/inusensor_ros2_driver', '--', '-j6', '-l6'], 'cwd': '/home/everybot/bt_ws/homecare_robot_core_2026/src/hw/build/inusensor_ros2_driver', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'everybot'), ('SSH_CLIENT', '192.168.0.22 63086 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/everybot'), ('OLDPWD', '/home/everybot/bt_ws/homecare_robot_core_2026/src/hw/src'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/everybot/Everybot/homecare_robot_core_2026/src/hw/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'everybot'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm'), ('XDG_SESSION_ID', '87'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/everybot/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('FASTRTPS_DEFAULT_PROFILES_FILE', '/home/everybot/Everybot/homecare_robot_core_2026/src/hw/fastdds_config/fastdds.xml'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'ko_KR.UTF-8'), ('XAUTHORITY', '/home/everybot/.Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '29'), ('AMENT_PREFIX_PATH', '/home/everybot/Everybot/homecare_robot_core_2026/src/hw/install/inusensor_ros2_driver:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/everybot/bt_ws/homecare_robot_core_2026/src/hw/build/inusensor_ros2_driver'), ('SSH_CONNECTION', '192.168.0.22 63086 192.168.0.29 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share/:/usr/share/'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/everybot/Everybot/homecare_robot_core_2026/src/hw/install/inusensor_ros2_driver:/opt/ros/humble')]), 'shell': False}
+[0.093162] (inusensor_ros2_driver) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.099119] (-) TimerEvent: {}
+[0.199731] (-) TimerEvent: {}
+[0.300663] (-) TimerEvent: {}
+[0.394186] (inusensor_ros2_driver) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.400786] (-) TimerEvent: {}
+[0.425393] (inusensor_ros2_driver) StdoutLine: {'line': b'-- Found rclcpp: 16.0.16 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.500038] (inusensor_ros2_driver) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.500856] (-) TimerEvent: {}
+[0.505573] (inusensor_ros2_driver) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.517951] (inusensor_ros2_driver) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.537654] (inusensor_ros2_driver) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.563332] (inusensor_ros2_driver) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.600969] (-) TimerEvent: {}
+[0.630792] (inusensor_ros2_driver) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.633687] (inusensor_ros2_driver) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.701141] (-) TimerEvent: {}
+[0.801822] (-) TimerEvent: {}
+[0.833905] (inusensor_ros2_driver) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.901963] (-) TimerEvent: {}
+[0.938185] (inusensor_ros2_driver) StdoutLine: {'line': b'-- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[0.997147] (inusensor_ros2_driver) StdoutLine: {'line': b'-- Found camera_info_manager: 3.1.12 (/opt/ros/humble/share/camera_info_manager/cmake)\n'}
+[1.002032] (-) TimerEvent: {}
+[1.011934] (inusensor_ros2_driver) StdoutLine: {'line': b'-- Found tf2: 0.25.17 (/opt/ros/humble/share/tf2/cmake)\n'}
+[1.019629] (inusensor_ros2_driver) StdoutLine: {'line': b'-- Found tf2_ros: 0.25.17 (/opt/ros/humble/share/tf2_ros/cmake)\n'}
+[1.102171] (-) TimerEvent: {}
+[1.179715] (inusensor_ros2_driver) StdoutLine: {'line': b'-- Found tf2_geometry_msgs: 0.25.17 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)\n'}
+[1.186465] (inusensor_ros2_driver) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)\n'}
+[1.189606] (inusensor_ros2_driver) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[1.192362] (inusensor_ros2_driver) StdoutLine: {'line': b'-- Found image_transport: 3.1.12 (/opt/ros/humble/share/image_transport/cmake)\n'}
+[1.202281] (-) TimerEvent: {}
+[1.222615] (inusensor_ros2_driver) StdoutLine: {'line': b'-- InuDev SDK found at /opt/Inuitive/InuDev\n'}
+[1.222971] (inusensor_ros2_driver) StdoutLine: {'line': b'-- Found InuDev libraries: /opt/Inuitive/InuDev/lib/libInuStreams.so;/opt/Inuitive/InuDev/lib/libInuCommonUtilities.so\n'}
+[1.226757] (inusensor_ros2_driver) StderrLine: {'line': b'\x1b[0mLibrary Linking..........\x1b[0m\n'}
+[1.227067] (inusensor_ros2_driver) StdoutLine: {'line': b'-- Target Install..........\n'}
+[1.228555] (inusensor_ros2_driver) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[1.302501] (-) TimerEvent: {}
+[1.403388] (-) TimerEvent: {}
+[1.406270] (inusensor_ros2_driver) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[1.409342] (inusensor_ros2_driver) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[1.409820] (inusensor_ros2_driver) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/everybot/bt_ws/homecare_robot_core_2026/src/hw/src/inusensor_ros2_driver/include\n'}
+[1.409994] (inusensor_ros2_driver) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[1.412297] (inusensor_ros2_driver) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[1.412493] (inusensor_ros2_driver) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[1.413197] (inusensor_ros2_driver) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[1.414203] (inusensor_ros2_driver) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[1.414991] (inusensor_ros2_driver) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[1.417296] (inusensor_ros2_driver) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[1.417474] (inusensor_ros2_driver) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[1.418127] (inusensor_ros2_driver) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[1.420499] (inusensor_ros2_driver) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.460451] (inusensor_ros2_driver) StdoutLine: {'line': b'-- Generating done\n'}
+[1.472500] (inusensor_ros2_driver) StdoutLine: {'line': b'-- Build files have been written to: /home/everybot/bt_ws/homecare_robot_core_2026/src/hw/build/inusensor_ros2_driver\n'}
+[1.503511] (-) TimerEvent: {}
+[1.553239] (inusensor_ros2_driver) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target inusensor_ros2_driver_node\x1b[0m\n'}
+[1.603788] (-) TimerEvent: {}
+[1.613702] (inusensor_ros2_driver) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/inusensor_ros2_driver_node.dir/src/inusensor_node.cpp.o\x1b[0m\n'}
+[1.614461] (inusensor_ros2_driver) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/inusensor_ros2_driver_node.dir/src/inusensor_manager.cpp.o\x1b[0m\n'}
+[1.614668] (inusensor_ros2_driver) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/inusensor_ros2_driver_node.dir/src/main.cpp.o\x1b[0m\n'}
+[1.704037] (-) TimerEvent: {}
+[1.805077] (-) TimerEvent: {}
+[1.906092] (-) TimerEvent: {}
+[2.007085] (-) TimerEvent: {}
+[2.108106] (-) TimerEvent: {}
+[2.209187] (-) TimerEvent: {}
+[2.310248] (-) TimerEvent: {}
+[2.411339] (-) TimerEvent: {}
+[2.513110] (-) TimerEvent: {}
+[2.615102] (-) TimerEvent: {}
+[2.716985] (-) TimerEvent: {}
+[2.818873] (-) TimerEvent: {}
+[2.899393] (inusensor_ros2_driver) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/Inuitive/InuDev/include/BaseStream.h:13\x1b[m\x1b[K,\n'}
+[2.900168] (inusensor_ros2_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/Inuitive/InuDev/include/BaseOutputStream.h:13\x1b[m\x1b[K,\n'}
+[2.900432] (inusensor_ros2_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/Inuitive/InuDev/include/InuSensor.h:15\x1b[m\x1b[K,\n'}
+[2.900656] (inusensor_ros2_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/everybot/bt_ws/homecare_robot_core_2026/src/hw/src/inusensor_ros2_driver/include/inusensor_ros2_driver/inusensor_manager.hpp:4\x1b[m\x1b[K,\n'}
+[2.900824] (inusensor_ros2_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/everybot/bt_ws/homecare_robot_core_2026/src/hw/src/inusensor_ros2_driver/src/inusensor_manager.cpp:1\x1b[m\x1b[K:\n'}
+[2.900973] (inusensor_ros2_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/Inuitive/InuDev/include/BaseFrame.h:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KInuDev::CBaseFrame::CBaseFrame(uint64_t, unsigned int, unsigned int, bool, std::string)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.901114] (inusensor_ros2_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/Inuitive/InuDev/include/BaseFrame.h:145:25:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[KiUserID\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[2.901296] (inusensor_ros2_driver) StderrLine: {'line': b'  145 |             \x1b[01;35m\x1b[Kstd::string iUserID = std::string()\x1b[m\x1b[K) :\n'}
+[2.901432] (inusensor_ros2_driver) StderrLine: {'line': b'      |             \x1b[01;35m\x1b[K~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.919094] (-) TimerEvent: {}
+[3.020850] (-) TimerEvent: {}
+[3.121962] (-) TimerEvent: {}
+[3.214502] (inusensor_ros2_driver) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/Inuitive/InuDev/include/HwInformation.h:13\x1b[m\x1b[K,\n'}
+[3.215279] (inusensor_ros2_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/Inuitive/InuDev/include/InuSensor.h:18\x1b[m\x1b[K,\n'}
+[3.215468] (inusensor_ros2_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/everybot/bt_ws/homecare_robot_core_2026/src/hw/src/inusensor_ros2_driver/include/inusensor_ros2_driver/inusensor_manager.hpp:4\x1b[m\x1b[K,\n'}
+[3.215626] (inusensor_ros2_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/everybot/bt_ws/homecare_robot_core_2026/src/hw/src/inusensor_ros2_driver/src/inusensor_manager.cpp:1\x1b[m\x1b[K:\n'}
+[3.215777] (inusensor_ros2_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/Inuitive/InuDev/include/GeneralFrame.h:\x1b[m\x1b[K At global scope:\n'}
+[3.215914] (inusensor_ros2_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/Inuitive/InuDev/include/GeneralFrame.h:56:24:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ktype qualifiers ignored on function return type [\x1b[01;35m\x1b[K-Wignored-qualifiers\x1b[m\x1b[K]\n'}
+[3.216054] (inusensor_ros2_driver) StderrLine: {'line': b'   56 |         INUSTREAMS_API \x1b[01;35m\x1b[KInuDev\x1b[m\x1b[K::byte* const GetData() const { return mData; }\n'}
+[3.216186] (inusensor_ros2_driver) StderrLine: {'line': b'      |                        \x1b[01;35m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[3.222069] (-) TimerEvent: {}
+[3.290215] (inusensor_ros2_driver) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/Inuitive/InuDev/include/DepthStream.h:14\x1b[m\x1b[K,\n'}
+[3.290998] (inusensor_ros2_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/everybot/bt_ws/homecare_robot_core_2026/src/hw/src/inusensor_ros2_driver/include/inusensor_ros2_driver/inusensor_manager.hpp:5\x1b[m\x1b[K,\n'}
+[3.291195] (inusensor_ros2_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/everybot/bt_ws/homecare_robot_core_2026/src/hw/src/inusensor_ros2_driver/src/inusensor_manager.cpp:1\x1b[m\x1b[K:\n'}
+[3.291351] (inusensor_ros2_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/Inuitive/InuDev/include/ImageFrame.h:159:9:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ktype qualifiers ignored on function return type [\x1b[01;35m\x1b[K-Wignored-qualifiers\x1b[m\x1b[K]\n'}
+[3.291497] (inusensor_ros2_driver) StderrLine: {'line': b'  159 |         \x1b[01;35m\x1b[Kconst\x1b[m\x1b[K uint64_t GetReadoutTime() const { return mReadoutTime; }\n'}
+[3.291629] (inusensor_ros2_driver) StderrLine: {'line': b'      |         \x1b[01;35m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[3.322312] (-) TimerEvent: {}
+[3.423363] (-) TimerEvent: {}
+[3.527678] (-) TimerEvent: {}
+[3.628730] (-) TimerEvent: {}
+[3.729752] (-) TimerEvent: {}
+[3.830731] (-) TimerEvent: {}
+[3.931764] (-) TimerEvent: {}
+[4.032837] (-) TimerEvent: {}
+[4.133864] (-) TimerEvent: {}
+[4.234909] (-) TimerEvent: {}
+[4.335974] (-) TimerEvent: {}
+[4.437087] (-) TimerEvent: {}
+[4.538183] (-) TimerEvent: {}
+[4.639342] (-) TimerEvent: {}
+[4.740865] (-) TimerEvent: {}
+[4.842044] (-) TimerEvent: {}
+[4.943201] (-) TimerEvent: {}
+[5.044430] (-) TimerEvent: {}
+[5.145546] (-) TimerEvent: {}
+[5.246626] (-) TimerEvent: {}
+[5.347714] (-) TimerEvent: {}
+[5.448853] (-) TimerEvent: {}
+[5.549974] (-) TimerEvent: {}
+[5.651121] (-) TimerEvent: {}
+[5.752267] (-) TimerEvent: {}
+[5.853509] (-) TimerEvent: {}
+[5.954591] (-) TimerEvent: {}
+[6.055789] (-) TimerEvent: {}
+[6.157068] (-) TimerEvent: {}
+[6.258179] (-) TimerEvent: {}
+[6.359252] (-) TimerEvent: {}
+[6.460359] (-) TimerEvent: {}
+[6.561427] (-) TimerEvent: {}
+[6.662512] (-) TimerEvent: {}
+[6.763498] (-) TimerEvent: {}
+[6.864443] (-) TimerEvent: {}
+[6.965655] (-) TimerEvent: {}
+[7.066682] (-) TimerEvent: {}
+[7.167812] (-) TimerEvent: {}
+[7.268927] (-) TimerEvent: {}
+[7.370011] (-) TimerEvent: {}
+[7.471084] (-) TimerEvent: {}
+[7.572183] (-) TimerEvent: {}
+[7.673332] (-) TimerEvent: {}
+[7.774427] (-) TimerEvent: {}
+[7.875523] (-) TimerEvent: {}
+[7.976641] (-) TimerEvent: {}
+[8.077734] (-) TimerEvent: {}
+[8.178839] (-) TimerEvent: {}
+[8.279943] (-) TimerEvent: {}
+[8.381110] (-) TimerEvent: {}
+[8.482220] (-) TimerEvent: {}
+[8.583336] (-) TimerEvent: {}
+[8.684492] (-) TimerEvent: {}
+[8.785603] (-) TimerEvent: {}
+[8.886742] (-) TimerEvent: {}
+[8.987872] (-) TimerEvent: {}
+[9.089104] (-) TimerEvent: {}
+[9.190261] (-) TimerEvent: {}
+[9.248645] (inusensor_ros2_driver) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/Inuitive/InuDev/include/BaseStream.h:13\x1b[m\x1b[K,\n'}
+[9.249440] (inusensor_ros2_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/Inuitive/InuDev/include/BaseOutputStream.h:13\x1b[m\x1b[K,\n'}
+[9.249631] (inusensor_ros2_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/Inuitive/InuDev/include/InuSensor.h:15\x1b[m\x1b[K,\n'}
+[9.249776] (inusensor_ros2_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/everybot/bt_ws/homecare_robot_core_2026/src/hw/src/inusensor_ros2_driver/include/inusensor_ros2_driver/inusensor_manager.hpp:4\x1b[m\x1b[K,\n'}
+[9.249922] (inusensor_ros2_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/everybot/bt_ws/homecare_robot_core_2026/src/hw/src/inusensor_ros2_driver/include/inusensor_ros2_driver/inusensor_node.hpp:18\x1b[m\x1b[K,\n'}
+[9.250056] (inusensor_ros2_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/everybot/bt_ws/homecare_robot_core_2026/src/hw/src/inusensor_ros2_driver/src/main.cpp:2\x1b[m\x1b[K:\n'}
+[9.250190] (inusensor_ros2_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/Inuitive/InuDev/include/BaseFrame.h:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KInuDev::CBaseFrame::CBaseFrame(uint64_t, unsigned int, unsigned int, bool, std::string)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[9.250324] (inusensor_ros2_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/Inuitive/InuDev/include/BaseFrame.h:145:25:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[KiUserID\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[9.250459] (inusensor_ros2_driver) StderrLine: {'line': b'  145 |             \x1b[01;35m\x1b[Kstd::string iUserID = std::string()\x1b[m\x1b[K) :\n'}
+[9.250586] (inusensor_ros2_driver) StderrLine: {'line': b'      |             \x1b[01;35m\x1b[K~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[9.272417] (inusensor_ros2_driver) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/Inuitive/InuDev/include/BaseStream.h:13\x1b[m\x1b[K,\n'}
+[9.273041] (inusensor_ros2_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/Inuitive/InuDev/include/BaseOutputStream.h:13\x1b[m\x1b[K,\n'}
+[9.273263] (inusensor_ros2_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/Inuitive/InuDev/include/InuSensor.h:15\x1b[m\x1b[K,\n'}
+[9.273434] (inusensor_ros2_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/everybot/bt_ws/homecare_robot_core_2026/src/hw/src/inusensor_ros2_driver/include/inusensor_ros2_driver/inusensor_manager.hpp:4\x1b[m\x1b[K,\n'}
+[9.273581] (inusensor_ros2_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/everybot/bt_ws/homecare_robot_core_2026/src/hw/src/inusensor_ros2_driver/include/inusensor_ros2_driver/inusensor_node.hpp:18\x1b[m\x1b[K,\n'}
+[9.273714] (inusensor_ros2_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/everybot/bt_ws/homecare_robot_core_2026/src/hw/src/inusensor_ros2_driver/src/inusensor_node.cpp:1\x1b[m\x1b[K:\n'}
+[9.273862] (inusensor_ros2_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/Inuitive/InuDev/include/BaseFrame.h:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KInuDev::CBaseFrame::CBaseFrame(uint64_t, unsigned int, unsigned int, bool, std::string)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[9.273996] (inusensor_ros2_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/Inuitive/InuDev/include/BaseFrame.h:145:25:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[KiUserID\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[9.274150] (inusensor_ros2_driver) StderrLine: {'line': b'  145 |             \x1b[01;35m\x1b[Kstd::string iUserID = std::string()\x1b[m\x1b[K) :\n'}
+[9.274282] (inusensor_ros2_driver) StderrLine: {'line': b'      |             \x1b[01;35m\x1b[K~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[9.290431] (-) TimerEvent: {}
+[9.297192] (inusensor_ros2_driver) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/Inuitive/InuDev/include/HwInformation.h:13\x1b[m\x1b[K,\n'}
+[9.297892] (inusensor_ros2_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/Inuitive/InuDev/include/InuSensor.h:18\x1b[m\x1b[K,\n'}
+[9.298075] (inusensor_ros2_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/everybot/bt_ws/homecare_robot_core_2026/src/hw/src/inusensor_ros2_driver/include/inusensor_ros2_driver/inusensor_manager.hpp:4\x1b[m\x1b[K,\n'}
+[9.298228] (inusensor_ros2_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/everybot/bt_ws/homecare_robot_core_2026/src/hw/src/inusensor_ros2_driver/include/inusensor_ros2_driver/inusensor_node.hpp:18\x1b[m\x1b[K,\n'}
+[9.298364] (inusensor_ros2_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/everybot/bt_ws/homecare_robot_core_2026/src/hw/src/inusensor_ros2_driver/src/main.cpp:2\x1b[m\x1b[K:\n'}
+[9.298499] (inusensor_ros2_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/Inuitive/InuDev/include/GeneralFrame.h:\x1b[m\x1b[K At global scope:\n'}
+[9.298627] (inusensor_ros2_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/Inuitive/InuDev/include/GeneralFrame.h:56:24:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ktype qualifiers ignored on function return type [\x1b[01;35m\x1b[K-Wignored-qualifiers\x1b[m\x1b[K]\n'}
+[9.298760] (inusensor_ros2_driver) StderrLine: {'line': b'   56 |         INUSTREAMS_API \x1b[01;35m\x1b[KInuDev\x1b[m\x1b[K::byte* const GetData() const { return mData; }\n'}
+[9.298890] (inusensor_ros2_driver) StderrLine: {'line': b'      |                        \x1b[01;35m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[9.321576] (inusensor_ros2_driver) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/Inuitive/InuDev/include/HwInformation.h:13\x1b[m\x1b[K,\n'}
+[9.322319] (inusensor_ros2_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/Inuitive/InuDev/include/InuSensor.h:18\x1b[m\x1b[K,\n'}
+[9.322500] (inusensor_ros2_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/everybot/bt_ws/homecare_robot_core_2026/src/hw/src/inusensor_ros2_driver/include/inusensor_ros2_driver/inusensor_manager.hpp:4\x1b[m\x1b[K,\n'}
+[9.322659] (inusensor_ros2_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/everybot/bt_ws/homecare_robot_core_2026/src/hw/src/inusensor_ros2_driver/include/inusensor_ros2_driver/inusensor_node.hpp:18\x1b[m\x1b[K,\n'}
+[9.322796] (inusensor_ros2_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/everybot/bt_ws/homecare_robot_core_2026/src/hw/src/inusensor_ros2_driver/src/inusensor_node.cpp:1\x1b[m\x1b[K:\n'}
+[9.322931] (inusensor_ros2_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/Inuitive/InuDev/include/GeneralFrame.h:\x1b[m\x1b[K At global scope:\n'}
+[9.323062] (inusensor_ros2_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/Inuitive/InuDev/include/GeneralFrame.h:56:24:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ktype qualifiers ignored on function return type [\x1b[01;35m\x1b[K-Wignored-qualifiers\x1b[m\x1b[K]\n'}
+[9.323260] (inusensor_ros2_driver) StderrLine: {'line': b'   56 |         INUSTREAMS_API \x1b[01;35m\x1b[KInuDev\x1b[m\x1b[K::byte* const GetData() const { return mData; }\n'}
+[9.323389] (inusensor_ros2_driver) StderrLine: {'line': b'      |                        \x1b[01;35m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[9.381747] (inusensor_ros2_driver) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/Inuitive/InuDev/include/DepthStream.h:14\x1b[m\x1b[K,\n'}
+[9.382548] (inusensor_ros2_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/everybot/bt_ws/homecare_robot_core_2026/src/hw/src/inusensor_ros2_driver/include/inusensor_ros2_driver/inusensor_manager.hpp:5\x1b[m\x1b[K,\n'}
+[9.382802] (inusensor_ros2_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/everybot/bt_ws/homecare_robot_core_2026/src/hw/src/inusensor_ros2_driver/include/inusensor_ros2_driver/inusensor_node.hpp:18\x1b[m\x1b[K,\n'}
+[9.382974] (inusensor_ros2_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/everybot/bt_ws/homecare_robot_core_2026/src/hw/src/inusensor_ros2_driver/src/main.cpp:2\x1b[m\x1b[K:\n'}
+[9.383124] (inusensor_ros2_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/Inuitive/InuDev/include/ImageFrame.h:159:9:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ktype qualifiers ignored on function return type [\x1b[01;35m\x1b[K-Wignored-qualifiers\x1b[m\x1b[K]\n'}
+[9.383329] (inusensor_ros2_driver) StderrLine: {'line': b'  159 |         \x1b[01;35m\x1b[Kconst\x1b[m\x1b[K uint64_t GetReadoutTime() const { return mReadoutTime; }\n'}
+[9.383474] (inusensor_ros2_driver) StderrLine: {'line': b'      |         \x1b[01;35m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[9.390570] (-) TimerEvent: {}
+[9.406585] (inusensor_ros2_driver) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/Inuitive/InuDev/include/DepthStream.h:14\x1b[m\x1b[K,\n'}
+[9.407375] (inusensor_ros2_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/everybot/bt_ws/homecare_robot_core_2026/src/hw/src/inusensor_ros2_driver/include/inusensor_ros2_driver/inusensor_manager.hpp:5\x1b[m\x1b[K,\n'}
+[9.407609] (inusensor_ros2_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/everybot/bt_ws/homecare_robot_core_2026/src/hw/src/inusensor_ros2_driver/include/inusensor_ros2_driver/inusensor_node.hpp:18\x1b[m\x1b[K,\n'}
+[9.407770] (inusensor_ros2_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/everybot/bt_ws/homecare_robot_core_2026/src/hw/src/inusensor_ros2_driver/src/inusensor_node.cpp:1\x1b[m\x1b[K:\n'}
+[9.407916] (inusensor_ros2_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/Inuitive/InuDev/include/ImageFrame.h:159:9:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ktype qualifiers ignored on function return type [\x1b[01;35m\x1b[K-Wignored-qualifiers\x1b[m\x1b[K]\n'}
+[9.408060] (inusensor_ros2_driver) StderrLine: {'line': b'  159 |         \x1b[01;35m\x1b[Kconst\x1b[m\x1b[K uint64_t GetReadoutTime() const { return mReadoutTime; }\n'}
+[9.408193] (inusensor_ros2_driver) StderrLine: {'line': b'      |         \x1b[01;35m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[9.490880] (-) TimerEvent: {}
+[9.591937] (-) TimerEvent: {}
+[9.693050] (-) TimerEvent: {}
+[9.794190] (-) TimerEvent: {}
+[9.895310] (-) TimerEvent: {}
+[9.996485] (-) TimerEvent: {}
+[10.097703] (-) TimerEvent: {}
+[10.198860] (-) TimerEvent: {}
+[10.299976] (-) TimerEvent: {}
+[10.401138] (-) TimerEvent: {}
+[10.502299] (-) TimerEvent: {}
+[10.603463] (-) TimerEvent: {}
+[10.704982] (-) TimerEvent: {}
+[10.806144] (-) TimerEvent: {}
+[10.907657] (-) TimerEvent: {}
+[11.009194] (-) TimerEvent: {}
+[11.110678] (-) TimerEvent: {}
+[11.211825] (-) TimerEvent: {}
+[11.313095] (-) TimerEvent: {}
+[11.414258] (-) TimerEvent: {}
+[11.515379] (-) TimerEvent: {}
+[11.616542] (-) TimerEvent: {}
+[11.717706] (-) TimerEvent: {}
+[11.818848] (-) TimerEvent: {}
+[11.920041] (-) TimerEvent: {}
+[12.021237] (-) TimerEvent: {}
+[12.122348] (-) TimerEvent: {}
+[12.223557] (-) TimerEvent: {}
+[12.324810] (-) TimerEvent: {}
+[12.425921] (-) TimerEvent: {}
+[12.527307] (-) TimerEvent: {}
+[12.628348] (-) TimerEvent: {}
+[12.729393] (-) TimerEvent: {}
+[12.830418] (-) TimerEvent: {}
+[12.931412] (-) TimerEvent: {}
+[13.032479] (-) TimerEvent: {}
+[13.133512] (-) TimerEvent: {}
+[13.234569] (-) TimerEvent: {}
+[13.335588] (-) TimerEvent: {}
+[13.436768] (-) TimerEvent: {}
+[13.537805] (-) TimerEvent: {}
+[13.546064] (inusensor_ros2_driver) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[13.546734] (inusensor_ros2_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[13.546993] (inusensor_ros2_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[13.547150] (inusensor_ros2_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[13.547291] (inusensor_ros2_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[13.547425] (inusensor_ros2_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[13.547553] (inusensor_ros2_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[13.547677] (inusensor_ros2_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[13.547801] (inusensor_ros2_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[13.547931] (inusensor_ros2_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[13.548053] (inusensor_ros2_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[13.548175] (inusensor_ros2_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/everybot/bt_ws/homecare_robot_core_2026/src/hw/src/inusensor_ros2_driver/include/inusensor_ros2_driver/inusensor_node.hpp:4\x1b[m\x1b[K,\n'}
+[13.548339] (inusensor_ros2_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/everybot/bt_ws/homecare_robot_core_2026/src/hw/src/inusensor_ros2_driver/src/inusensor_node.cpp:1\x1b[m\x1b[K:\n'}
+[13.548487] (inusensor_ros2_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/everybot/bt_ws/homecare_robot_core_2026/src/hw/src/inusensor_ros2_driver/src/inusensor_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid inusensor_ros2_driver::InuSensorNode::onDepthFrameReceived(std::shared_ptr<InuDev::CDepthStream>, std::shared_ptr<const InuDev::CImageFrame>, InuDev::CInuError)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[13.548716] (inusensor_ros2_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/everybot/bt_ws/homecare_robot_core_2026/src/hw/src/inusensor_ros2_driver/src/inusensor_node.cpp:811:30:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kformat \xe2\x80\x98\x1b[01m\x1b[K%lu\x1b[m\x1b[K\xe2\x80\x99 expects argument of type \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99, but argument 5 has type \xe2\x80\x98\x1b[01m\x1b[Kunsigned int\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wformat=\x1b[m\x1b[K]\n'}
+[13.548860] (inusensor_ros2_driver) StderrLine: {'line': b'  811 |                              \x1b[01;35m\x1b[K"Invalid depth frame %lu received from SDK"\x1b[m\x1b[K, \x1b[32m\x1b[Kframe->FrameIndex\x1b[m\x1b[K);\n'}
+[13.548993] (inusensor_ros2_driver) StderrLine: {'line': b'      |                              \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K  \x1b[32m\x1b[K~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.549163] (inusensor_ros2_driver) StderrLine: {'line': b'      |                                                                                  \x1b[32m\x1b[K|\x1b[m\x1b[K\n'}
+[13.549290] (inusensor_ros2_driver) StderrLine: {'line': b'      |                                                                                  \x1b[32m\x1b[Kunsigned int\x1b[m\x1b[K\n'}
+[13.549414] (inusensor_ros2_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/everybot/bt_ws/homecare_robot_core_2026/src/hw/src/inusensor_ros2_driver/src/inusensor_node.cpp:811:53:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kformat string is defined here\n'}
+[13.549566] (inusensor_ros2_driver) StderrLine: {'line': b'  811 |                              "Invalid depth frame \x1b[01;36m\x1b[K%lu\x1b[m\x1b[K received from SDK", frame->FrameIndex);\n'}
+[13.549693] (inusensor_ros2_driver) StderrLine: {'line': b'      |                                                   \x1b[01;36m\x1b[K~~^\x1b[m\x1b[K\n'}
+[13.549816] (inusensor_ros2_driver) StderrLine: {'line': b'      |                                                     \x1b[01;36m\x1b[K|\x1b[m\x1b[K\n'}
+[13.549939] (inusensor_ros2_driver) StderrLine: {'line': b'      |                                                     \x1b[01;36m\x1b[Klong unsigned int\x1b[m\x1b[K\n'}
+[13.550061] (inusensor_ros2_driver) StderrLine: {'line': b'      |                                                   \x1b[32m\x1b[K%u\x1b[m\x1b[K\n'}
+[13.550182] (inusensor_ros2_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/everybot/bt_ws/homecare_robot_core_2026/src/hw/src/inusensor_ros2_driver/src/inusensor_node.cpp:792:80:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kstream\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[13.550335] (inusensor_ros2_driver) StderrLine: {'line': b'  792 | void InuSensorNode::onDepthFrameReceived(\x1b[01;35m\x1b[Kstd::shared_ptr<InuDev::CDepthStream> stream\x1b[m\x1b[K,\n'}
+[13.550457] (inusensor_ros2_driver) StderrLine: {'line': b'      |                                          \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~\x1b[m\x1b[K\n'}
+[13.553583] (inusensor_ros2_driver) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[13.553934] (inusensor_ros2_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[13.554085] (inusensor_ros2_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[13.554219] (inusensor_ros2_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[13.554344] (inusensor_ros2_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[13.554467] (inusensor_ros2_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[13.554591] (inusensor_ros2_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[13.554743] (inusensor_ros2_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[13.554866] (inusensor_ros2_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[13.554988] (inusensor_ros2_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[13.555109] (inusensor_ros2_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[13.555251] (inusensor_ros2_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/everybot/bt_ws/homecare_robot_core_2026/src/hw/src/inusensor_ros2_driver/include/inusensor_ros2_driver/inusensor_node.hpp:4\x1b[m\x1b[K,\n'}
+[13.555378] (inusensor_ros2_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/everybot/bt_ws/homecare_robot_core_2026/src/hw/src/inusensor_ros2_driver/src/inusensor_node.cpp:1\x1b[m\x1b[K:\n'}
+[13.555502] (inusensor_ros2_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/everybot/bt_ws/homecare_robot_core_2026/src/hw/src/inusensor_ros2_driver/src/inusensor_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid inusensor_ros2_driver::InuSensorNode::onRGBFrameReceived(std::shared_ptr<InuDev::CImageStream>, std::shared_ptr<const InuDev::CImageFrame>, InuDev::CInuError)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[13.555635] (inusensor_ros2_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/everybot/bt_ws/homecare_robot_core_2026/src/hw/src/inusensor_ros2_driver/src/inusensor_node.cpp:860:30:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kformat \xe2\x80\x98\x1b[01m\x1b[K%lu\x1b[m\x1b[K\xe2\x80\x99 expects argument of type \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99, but argument 5 has type \xe2\x80\x98\x1b[01m\x1b[Kunsigned int\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wformat=\x1b[m\x1b[K]\n'}
+[13.555766] (inusensor_ros2_driver) StderrLine: {'line': b'  860 |                              \x1b[01;35m\x1b[K"Invalid RGB frame %lu received from SDK"\x1b[m\x1b[K, \x1b[32m\x1b[Kframe->FrameIndex\x1b[m\x1b[K);\n'}
+[13.555890] (inusensor_ros2_driver) StderrLine: {'line': b'      |                              \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K  \x1b[32m\x1b[K~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.556013] (inusensor_ros2_driver) StderrLine: {'line': b'      |                                                                                \x1b[32m\x1b[K|\x1b[m\x1b[K\n'}
+[13.556244] (inusensor_ros2_driver) StderrLine: {'line': b'      |                                                                                \x1b[32m\x1b[Kunsigned int\x1b[m\x1b[K\n'}
+[13.556412] (inusensor_ros2_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/everybot/bt_ws/homecare_robot_core_2026/src/hw/src/inusensor_ros2_driver/src/inusensor_node.cpp:860:51:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kformat string is defined here\n'}
+[13.556545] (inusensor_ros2_driver) StderrLine: {'line': b'  860 |                              "Invalid RGB frame \x1b[01;36m\x1b[K%lu\x1b[m\x1b[K received from SDK", frame->FrameIndex);\n'}
+[13.556675] (inusensor_ros2_driver) StderrLine: {'line': b'      |                                                 \x1b[01;36m\x1b[K~~^\x1b[m\x1b[K\n'}
+[13.556827] (inusensor_ros2_driver) StderrLine: {'line': b'      |                                                   \x1b[01;36m\x1b[K|\x1b[m\x1b[K\n'}
+[13.557121] (inusensor_ros2_driver) StderrLine: {'line': b'      |                                                   \x1b[01;36m\x1b[Klong unsigned int\x1b[m\x1b[K\n'}
+[13.557254] (inusensor_ros2_driver) StderrLine: {'line': b'      |                                                 \x1b[32m\x1b[K%u\x1b[m\x1b[K\n'}
+[13.557384] (inusensor_ros2_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/everybot/bt_ws/homecare_robot_core_2026/src/hw/src/inusensor_ros2_driver/src/inusensor_node.cpp:841:78:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kstream\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[13.557516] (inusensor_ros2_driver) StderrLine: {'line': b'  841 | void InuSensorNode::onRGBFrameReceived(\x1b[01;35m\x1b[Kstd::shared_ptr<InuDev::CImageStream> stream\x1b[m\x1b[K,\n'}
+[13.557639] (inusensor_ros2_driver) StderrLine: {'line': b'      |                                        \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~\x1b[m\x1b[K\n'}
+[13.575169] (inusensor_ros2_driver) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[13.575731] (inusensor_ros2_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[13.575907] (inusensor_ros2_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[13.576084] (inusensor_ros2_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[13.576225] (inusensor_ros2_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[13.576407] (inusensor_ros2_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[13.576543] (inusensor_ros2_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[13.576743] (inusensor_ros2_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[13.576885] (inusensor_ros2_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[13.577020] (inusensor_ros2_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[13.577146] (inusensor_ros2_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[13.577271] (inusensor_ros2_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/everybot/bt_ws/homecare_robot_core_2026/src/hw/src/inusensor_ros2_driver/include/inusensor_ros2_driver/inusensor_node.hpp:4\x1b[m\x1b[K,\n'}
+[13.577429] (inusensor_ros2_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/everybot/bt_ws/homecare_robot_core_2026/src/hw/src/inusensor_ros2_driver/src/inusensor_node.cpp:1\x1b[m\x1b[K:\n'}
+[13.577560] (inusensor_ros2_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/everybot/bt_ws/homecare_robot_core_2026/src/hw/src/inusensor_ros2_driver/src/inusensor_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid inusensor_ros2_driver::InuSensorNode::onIMUAccFrame(std::shared_ptr<InuDev::CImuStream>, std::shared_ptr<const InuDev::CImuFrame>, InuDev::CInuError)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[13.577696] (inusensor_ros2_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/everybot/bt_ws/homecare_robot_core_2026/src/hw/src/inusensor_ros2_driver/src/inusensor_node.cpp:1221:30:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kformat \xe2\x80\x98\x1b[01m\x1b[K%lu\x1b[m\x1b[K\xe2\x80\x99 expects argument of type \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99, but argument 5 has type \xe2\x80\x98\x1b[01m\x1b[Kunsigned int\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wformat=\x1b[m\x1b[K]\n'}
+[13.577832] (inusensor_ros2_driver) StderrLine: {'line': b' 1221 |                              \x1b[01;35m\x1b[K"Invalid IMU ACC frame %lu"\x1b[m\x1b[K, \x1b[32m\x1b[Kframe->FrameIndex\x1b[m\x1b[K);\n'}
+[13.577956] (inusensor_ros2_driver) StderrLine: {'line': b'      |                              \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K  \x1b[32m\x1b[K~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.578085] (inusensor_ros2_driver) StderrLine: {'line': b'      |                                                                  \x1b[32m\x1b[K|\x1b[m\x1b[K\n'}
+[13.578209] (inusensor_ros2_driver) StderrLine: {'line': b'      |                                                                  \x1b[32m\x1b[Kunsigned int\x1b[m\x1b[K\n'}
+[13.578330] (inusensor_ros2_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/everybot/bt_ws/homecare_robot_core_2026/src/hw/src/inusensor_ros2_driver/src/inusensor_node.cpp:1221:55:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kformat string is defined here\n'}
+[13.578477] (inusensor_ros2_driver) StderrLine: {'line': b' 1221 |                              "Invalid IMU ACC frame \x1b[01;36m\x1b[K%lu\x1b[m\x1b[K", frame->FrameIndex);\n'}
+[13.578600] (inusensor_ros2_driver) StderrLine: {'line': b'      |                                                     \x1b[01;36m\x1b[K~~^\x1b[m\x1b[K\n'}
+[13.578721] (inusensor_ros2_driver) StderrLine: {'line': b'      |                                                       \x1b[01;36m\x1b[K|\x1b[m\x1b[K\n'}
+[13.578840] (inusensor_ros2_driver) StderrLine: {'line': b'      |                                                       \x1b[01;36m\x1b[Klong unsigned int\x1b[m\x1b[K\n'}
+[13.578959] (inusensor_ros2_driver) StderrLine: {'line': b'      |                                                     \x1b[32m\x1b[K%u\x1b[m\x1b[K\n'}
+[13.579079] (inusensor_ros2_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/everybot/bt_ws/homecare_robot_core_2026/src/hw/src/inusensor_ros2_driver/src/inusensor_node.cpp:1208:71:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kstream\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[13.579223] (inusensor_ros2_driver) StderrLine: {'line': b' 1208 | void InuSensorNode::onIMUAccFrame(\x1b[01;35m\x1b[Kstd::shared_ptr<InuDev::CImuStream> stream\x1b[m\x1b[K,\n'}
+[13.579348] (inusensor_ros2_driver) StderrLine: {'line': b'      |                                   \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~\x1b[m\x1b[K\n'}
+[13.581732] (inusensor_ros2_driver) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[13.581985] (inusensor_ros2_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[13.582119] (inusensor_ros2_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[13.582244] (inusensor_ros2_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[13.582366] (inusensor_ros2_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[13.582485] (inusensor_ros2_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[13.582604] (inusensor_ros2_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[13.582722] (inusensor_ros2_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[13.582842] (inusensor_ros2_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[13.583100] (inusensor_ros2_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[13.583233] (inusensor_ros2_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[13.583358] (inusensor_ros2_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/everybot/bt_ws/homecare_robot_core_2026/src/hw/src/inusensor_ros2_driver/include/inusensor_ros2_driver/inusensor_node.hpp:4\x1b[m\x1b[K,\n'}
+[13.583483] (inusensor_ros2_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/everybot/bt_ws/homecare_robot_core_2026/src/hw/src/inusensor_ros2_driver/src/inusensor_node.cpp:1\x1b[m\x1b[K:\n'}
+[13.583609] (inusensor_ros2_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/everybot/bt_ws/homecare_robot_core_2026/src/hw/src/inusensor_ros2_driver/src/inusensor_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid inusensor_ros2_driver::InuSensorNode::onIMUGyroFrame(std::shared_ptr<InuDev::CImuStream>, std::shared_ptr<const InuDev::CImuFrame>, InuDev::CInuError)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[13.583771] (inusensor_ros2_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/everybot/bt_ws/homecare_robot_core_2026/src/hw/src/inusensor_ros2_driver/src/inusensor_node.cpp:1276:30:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kformat \xe2\x80\x98\x1b[01m\x1b[K%lu\x1b[m\x1b[K\xe2\x80\x99 expects argument of type \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99, but argument 5 has type \xe2\x80\x98\x1b[01m\x1b[Kunsigned int\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wformat=\x1b[m\x1b[K]\n'}
+[13.583929] (inusensor_ros2_driver) StderrLine: {'line': b' 1276 |                              \x1b[01;35m\x1b[K"Invalid IMU GYRO frame %lu"\x1b[m\x1b[K, \x1b[32m\x1b[Kframe->FrameIndex\x1b[m\x1b[K);\n'}
+[13.584058] (inusensor_ros2_driver) StderrLine: {'line': b'      |                              \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K  \x1b[32m\x1b[K~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.584181] (inusensor_ros2_driver) StderrLine: {'line': b'      |                                                                   \x1b[32m\x1b[K|\x1b[m\x1b[K\n'}
+[13.584329] (inusensor_ros2_driver) StderrLine: {'line': b'      |                                                                   \x1b[32m\x1b[Kunsigned int\x1b[m\x1b[K\n'}
+[13.584467] (inusensor_ros2_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/everybot/bt_ws/homecare_robot_core_2026/src/hw/src/inusensor_ros2_driver/src/inusensor_node.cpp:1276:56:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kformat string is defined here\n'}
+[13.584593] (inusensor_ros2_driver) StderrLine: {'line': b' 1276 |                              "Invalid IMU GYRO frame \x1b[01;36m\x1b[K%lu\x1b[m\x1b[K", frame->FrameIndex);\n'}
+[13.584717] (inusensor_ros2_driver) StderrLine: {'line': b'      |                                                      \x1b[01;36m\x1b[K~~^\x1b[m\x1b[K\n'}
+[13.584838] (inusensor_ros2_driver) StderrLine: {'line': b'      |                                                        \x1b[01;36m\x1b[K|\x1b[m\x1b[K\n'}
+[13.584957] (inusensor_ros2_driver) StderrLine: {'line': b'      |                                                        \x1b[01;36m\x1b[Klong unsigned int\x1b[m\x1b[K\n'}
+[13.585079] (inusensor_ros2_driver) StderrLine: {'line': b'      |                                                      \x1b[32m\x1b[K%u\x1b[m\x1b[K\n'}
+[13.585200] (inusensor_ros2_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/everybot/bt_ws/homecare_robot_core_2026/src/hw/src/inusensor_ros2_driver/src/inusensor_node.cpp:1263:72:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kstream\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[13.585331] (inusensor_ros2_driver) StderrLine: {'line': b' 1263 | void InuSensorNode::onIMUGyroFrame(\x1b[01;35m\x1b[Kstd::shared_ptr<InuDev::CImuStream> stream\x1b[m\x1b[K,\n'}
+[13.585452] (inusensor_ros2_driver) StderrLine: {'line': b'      |                                    \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~\x1b[m\x1b[K\n'}
+[13.586523] (inusensor_ros2_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/everybot/bt_ws/homecare_robot_core_2026/src/hw/src/inusensor_ros2_driver/src/inusensor_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kbool inusensor_ros2_driver::InuSensorNode::isRecoveryTriggerError(InuDev::CInuError)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[13.586671] (inusensor_ros2_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/everybot/bt_ws/homecare_robot_core_2026/src/hw/src/inusensor_ros2_driver/src/inusensor_node.cpp:1352:29:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KeServiceProcessFailure\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[KInuDev\x1b[m\x1b[K\xe2\x80\x99; did you mean \xe2\x80\x98\x1b[01m\x1b[KeServiceFailure\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[13.586830] (inusensor_ros2_driver) StderrLine: {'line': b' 1352 |     return (code == InuDev::\x1b[01;31m\x1b[KeServiceProcessFailure\x1b[m\x1b[K || code == InuDev::eSensorDetectionFailure);\n'}
+[13.586958] (inusensor_ros2_driver) StderrLine: {'line': b'      |                             \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.587081] (inusensor_ros2_driver) StderrLine: {'line': b'      |                             \x1b[32m\x1b[KeServiceFailure\x1b[m\x1b[K\n'}
+[13.593994] (inusensor_ros2_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/everybot/bt_ws/homecare_robot_core_2026/src/hw/src/inusensor_ros2_driver/src/inusensor_node.cpp:1352:71:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KeSensorDetectionFailure\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[KInuDev\x1b[m\x1b[K\xe2\x80\x99\n'}
+[13.594205] (inusensor_ros2_driver) StderrLine: {'line': b' 1352 |     return (code == InuDev::eServiceProcessFailure || code == InuDev::\x1b[01;31m\x1b[KeSensorDetectionFailure\x1b[m\x1b[K);\n'}
+[13.594343] (inusensor_ros2_driver) StderrLine: {'line': b'      |                                                                       \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.637952] (-) TimerEvent: {}
+[13.738914] (-) TimerEvent: {}
+[13.839966] (-) TimerEvent: {}
+[13.941101] (-) TimerEvent: {}
+[14.042236] (-) TimerEvent: {}
+[14.143344] (-) TimerEvent: {}
+[14.244470] (-) TimerEvent: {}
+[14.345540] (-) TimerEvent: {}
+[14.446610] (-) TimerEvent: {}
+[14.547648] (-) TimerEvent: {}
+[14.648793] (-) TimerEvent: {}
+[14.749895] (-) TimerEvent: {}
+[14.851020] (-) TimerEvent: {}
+[14.952157] (-) TimerEvent: {}
+[15.053365] (-) TimerEvent: {}
+[15.154498] (-) TimerEvent: {}
+[15.255593] (-) TimerEvent: {}
+[15.356707] (-) TimerEvent: {}
+[15.457734] (-) TimerEvent: {}
+[15.558791] (-) TimerEvent: {}
+[15.659882] (-) TimerEvent: {}
+[15.761013] (-) TimerEvent: {}
+[15.862163] (-) TimerEvent: {}
+[15.963264] (-) TimerEvent: {}
+[16.064384] (-) TimerEvent: {}
+[16.165530] (-) TimerEvent: {}
+[16.266584] (-) TimerEvent: {}
+[16.367626] (-) TimerEvent: {}
+[16.468719] (-) TimerEvent: {}
+[16.569722] (-) TimerEvent: {}
+[16.670666] (-) TimerEvent: {}
+[16.771606] (-) TimerEvent: {}
+[16.872584] (-) TimerEvent: {}
+[16.973518] (-) TimerEvent: {}
+[17.074449] (-) TimerEvent: {}
+[17.175372] (-) TimerEvent: {}
+[17.276388] (-) TimerEvent: {}
+[17.377306] (-) TimerEvent: {}
+[17.478194] (-) TimerEvent: {}
+[17.579087] (-) TimerEvent: {}
+[17.679985] (-) TimerEvent: {}
+[17.780937] (-) TimerEvent: {}
+[17.881864] (-) TimerEvent: {}
+[17.982802] (-) TimerEvent: {}
+[18.083762] (-) TimerEvent: {}
+[18.184757] (-) TimerEvent: {}
+[18.285717] (-) TimerEvent: {}
+[18.386654] (-) TimerEvent: {}
+[18.487577] (-) TimerEvent: {}
+[18.588507] (-) TimerEvent: {}
+[18.689466] (-) TimerEvent: {}
+[18.790445] (-) TimerEvent: {}
+[18.796978] (inusensor_ros2_driver) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/inusensor_ros2_driver_node.dir/build.make:90: CMakeFiles/inusensor_ros2_driver_node.dir/src/inusensor_node.cpp.o] Error 1\n'}
+[18.797881] (inusensor_ros2_driver) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/inusensor_ros2_driver_node.dir/all] Error 2\n'}
+[18.798666] (inusensor_ros2_driver) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[18.810894] (inusensor_ros2_driver) CommandEnded: {'returncode': 2}
+[18.867132] (inusensor_ros2_driver) JobEnded: {'identifier': 'inusensor_ros2_driver', 'rc': 2}
+[18.872568] (-) EventReactorShutdown: {}

@@ -1,0 +1,67 @@
+{
+  "waypoints": [
+    {
+      "key": "entrance",
+      "label": "입구",
+      "x": 1.82,
+      "y": 1.49,
+      "theta": 0.888,
+      "type": "normal",
+      "bell_id": ""
+    },
+    {
+      "key": "101",
+      "label": "101호",
+      "x": 0.22,
+      "y": 2.84,
+      "theta": 1.571,
+      "type": "normal",
+      "bell_id": "3FA17B1B"
+    },
+    {
+      "key": "102",
+      "label": "102호",
+      "x": -1.43,
+      "y": 2.84,
+      "theta": 1.497,
+      "type": "normal",
+      "bell_id": "3FA17B1A"
+    },
+    {
+      "key": "103",
+      "label": "103호",
+      "x": 1.53,
+      "y": 2.94,
+      "theta": 1.626,
+      "type": "normal",
+      "bell_id": "3FA17B19"
+    },
+    {
+      "key": "demo",
+      "label": "시연장소",
+      "x": -0.83,
+      "y": 4.89,
+      "theta": -0.119,
+      "type": "normal",
+      "bell_id": ""
+    },
+    {
+      "key": "home",
+      "label": "대기장소",
+      "x": 0.5,
+      "y": 0.0,
+      "theta": 0.0,
+      "type": "home",
+      "bell_id": ""
+    },
+    {
+      "key": "dock",
+      "label": "충전장소",
+      "x": 0.3,
+      "y": 0.0,
+      "theta": 0.0,
+      "type": "dock",
+      "bell_id": ""
+    }
+  ]
+}

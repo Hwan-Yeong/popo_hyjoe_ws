@@ -1,0 +1,2 @@
+[console_scripts]
+everybot = everybot.__main__:main

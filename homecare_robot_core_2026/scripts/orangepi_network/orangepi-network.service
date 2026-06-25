@@ -1,0 +1,12 @@
+[Unit]
+Description=Orange Pi shared Ethernet and NAT
+After=NetworkManager.service network-online.target
+Wants=NetworkManager.service network-online.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/sbin/orangepi-network-setup.sh
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target

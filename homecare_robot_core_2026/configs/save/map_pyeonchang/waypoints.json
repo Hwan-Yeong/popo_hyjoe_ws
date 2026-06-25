@@ -1,0 +1,94 @@
+{
+  "waypoints": [
+    {
+      "key": "dock",
+      "label": "충전장소",
+      "x": 0.3,
+      "y": 0,
+      "theta": 0,
+      "type": "dock",
+      "comment": "",
+      "bell_id": ""
+    },
+    {
+      "key": "home",
+      "label": "테스트",
+      "x": 2.239,
+      "y": -1.816,
+      "theta": -0.103,
+      "type": "normal",
+      "comment": "",
+      "bell_id": ""
+    },
+    {
+      "key": "home_demo",
+      "label": "대기장소",
+      "x": 2.239,
+      "y": -1.816,
+      "theta": -0.103,
+      "type": "normal",
+      "comment": "",
+      "bell_id": ""
+    },
+    {
+      "key": "220",
+      "label": "220호",
+      "x": -3.703,
+      "y": -5.359,
+      "theta": -0.811,
+      "type": "normal",
+      "comment": "",
+      "bell_id": "3FA17B1B"
+    },
+    {
+      "key": "hallway_225",
+      "label": "복도(225호)",
+      "x": -23.382,
+      "y": -4.431,
+      "theta": -0.061,
+      "type": "normal",
+      "comment": "",
+      "bell_id": ""
+    },
+    {
+      "key": "1st_ev",
+      "label": "엘리베이터(1차)",
+      "x": 4.577,
+      "y": 0.041,
+      "theta": -1.571,
+      "type": "normal",
+      "comment": "",
+      "bell_id": ""
+    },
+    {
+      "key": "2nd_ev",
+      "label": "엘리베이터(2차)",
+      "x": -15.491,
+      "y": 0.884,
+      "theta": -1.571,
+      "type": "normal",
+      "comment": "",
+      "bell_id": ""
+    },
+    {
+      "key": "hallway_216",
+      "label": "복도(216호)",
+      "x": 11.883,
+      "y": -5.612,
+      "theta": -3.106,
+      "type": "normal",
+      "comment": "",
+      "bell_id": ""
+    },
+    {
+      "key": "221",
+      "label": "221호",
+      "x": -8.087,
+      "y": -5.275,
+      "theta": -2.554,
+      "type": "normal",
+      "comment": "",
+      "bell_id": "3FA17B1A"
+    }
+  ]
+}

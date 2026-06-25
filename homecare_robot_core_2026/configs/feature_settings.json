@@ -1,0 +1,76 @@
+{
+  "ai_integration": {
+    "tts_wait_until_done": true,
+    "tts_poll_interval_sec": 0.25,
+    "tts_done_timeout_sec": 5.0,
+    "agent_events_baseline_on_start": true,
+    "agent_events_baseline_on_conversation_start": true,
+    "conversation_followup_grace_sec": 30.0,
+    "fall_candidate_min_hits": 7,
+    "fall_candidate_window_sec": 2.0,
+    "fall_candidate_requires_clear": true,
+    "fall_cooldown_sec": 30.0,
+    "wander_min_count": 20,
+    "wander_window_sec": 60.0,
+    "wander_cooldown_sec": 120.0,
+    "wander_unknown_only": true
+  },
+  "morning_call": {
+    "operating_hours": {
+      "start": "06:30",
+      "end": "08:30"
+    },
+    "max_door_retry": 1,
+    "door_wait_sec": 5,
+    "bell_duration_sec": 5,
+    "door_open_mode": "face_api",
+    "door_dummy_delay_sec": 3.0,
+    "use_schedule_name_fallback": false,
+    "schedule_announce_max_items": 2,
+    "free_conversation_max_session_sec": 300.0,
+    "free_conversation_poll_timeout_sec": 10.0,
+    "free_conversation_end_reasons": [
+      "explicit_close"
+    ],
+    "visits": [
+      {
+        "schedule_id": "mc-001",
+        "visit_order": 1,
+        "room": "220호",
+        "visit_time": "07:00",
+        "resident_name": "홍길동",
+        "target_location_id": "101"
+      },
+      {
+        "schedule_id": "mc-001",
+        "visit_order": 2,
+        "room": "221호",
+        "visit_time": "07:10",
+        "resident_name": "김말자",
+        "target_location_id": "102"
+      }
+    ]
+  },
+  "patrol": {
+    "operating_hours": {
+      "start": "01:00",
+      "end": "03:00"
+    },
+    "waypoint_sequence": [
+      "demo",
+      "demo2",
+      "demo1"
+    ],
+    "dwell_time_sec": 10,
+    "repeat": 20,
+    
+    "fall_detection_enabled": true,
+    "fall_candidate_enabled": true,
+    "fall_dummy_enabled": false,
+    
+    "fall_detected_first": false,
+    
+    "wander_detection_enabled": false,
+    "wander_dummy_enabled": false
+  }
+}

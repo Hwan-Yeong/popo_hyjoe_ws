@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/everybot/bt_ws/homecare_robot_core_2026/src/hw/build/inusensor_ros2_driver/inusensor_ros2_driver_node" "TARGETS" "inusensor_ros2_driver_node" "DESTINATION" "lib/inusensor_ros2_driver")

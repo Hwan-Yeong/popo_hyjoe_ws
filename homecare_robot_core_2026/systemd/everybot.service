@@ -1,0 +1,42 @@
+[Unit]
+Description=Everybot Robot Core
+After=hw_bringup.service
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=root
+Group=everybot
+SupplementaryGroups=video
+
+Environment=PYTHONUNBUFFERED=1
+Environment=DISPLAY=:0
+Environment=XAUTHORITY=/root/.Xauthority
+
+#WorkingDirectory=/home/everybot/Everybot/homecare_robot_core_2026
+
+ExecStartPre=/bin/sh -c 'cp /home/everybot/.Xauthority /root/.Xauthority'
+#ExecStartPre=/usr/bin/xhost +si:localuser:root
+#ExecStartPre=/usr/bin/sudo -u everybot /usr/bin/xhost +si:localuser:root
+
+#ExecStart=/home/everybot/Everybot/homecare_robot_core_2026/.venv/bin/python -m everybot --config /home/everybot/Everybot/homecare_robot_core_2026/configs/everybot.yaml
+
+
+WorkingDirectory=/home/everybot/bt_ws/homecare_robot_core_2026
+ExecStart=/home/everybot/Everybot/homecare_robot_core_2026/.venv/bin/python -m everybot --config /home/everybot/bt_ws/homecare_robot_core_2026/configs/everybot.yaml
+
+
+
+
+
+
+Restart=always
+RestartSec=5
+
+#StandardOutput=journal
+StandardOutput=null
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target
+
