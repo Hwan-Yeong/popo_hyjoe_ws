@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>depth_pointcloud_converter</name>
+  <version>0.0.1</version>
+  <description>
+    Standalone helper package that converts the InuSensor depth image
+    (sensor_msgs/Image, 16UC1, millimeters) plus its CameraInfo into a
+    sensor_msgs/PointCloud2, usable as a nav2 obstacle/voxel layer source.
+    Includes a base_link -> camera_link static TF and an RViz debug launch.
+    Does NOT modify the inusensor_ros2_driver package.
+  </description>
+  <maintainer email="chy97sky@gmail.com">hyjoe</maintainer>
+  <license>TODO: License declaration</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <depend>rclcpp</depend>
+  <depend>sensor_msgs</depend>
+
+  <!-- launch-time only -->
+  <exec_depend>tf2_ros</exec_depend>
+  <exec_depend>robot_state_publisher</exec_depend>
+  <exec_depend>rviz2</exec_depend>
+  <exec_depend>launch</exec_depend>
+  <exec_depend>launch_ros</exec_depend>
+
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>
